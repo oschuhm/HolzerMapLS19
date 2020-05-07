@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="40">
-    <author>Stefan Ludwig</author>
-    <version>1.4</version>
+    <author>Stefan Ludwig, LSFarmers</author>
+    <version>1.4.0.0.1</version>
     <title>
         <en>Holzer Map</en>
         <de>Holzer Map</de>
@@ -68,7 +68,7 @@
 	</l10n>
 	
 	<extraSourceFiles>
-		<!-- <sourceFile filename="scripts/setAnimalCapacity.lua" /> -->
+		<sourceFile filename="scripts/setAnimalCapacity.lua" />
 		<sourceFile filename="scripts/animalLimitIncreaser.lua" />
 		<sourceFile filename="scripts/EnhancedWeighStation.lua" />
 		<sourceFile filename="scripts/clipDistanceControl.lua"/>
