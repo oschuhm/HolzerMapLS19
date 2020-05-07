@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="11" filename="$data/fillPlanes/wheat_diffuse.png"/>
+    <File fileId="12" filename="$data/fillPlanes/wheat_normal.png"/>
+    <File fileId="13" filename="$data/fillPlanes/wheat_specular.png"/>
+    <File fileId="27" filename="$data/maps/textures/shared/warningStripes_diffuse.png"/>
+    <File fileId="28" filename="$data/maps/textures/shared/warningStripes_normal.png"/>
+    <File fileId="29" filename="$data/maps/textures/shared/warningStripes_specular.png"/>
+    <File fileId="31" filename="$data/placeables/animalHusbandry/strawAlpha_diffuse.png"/>
+    <File fileId="30" filename="$data/placeables/animalHusbandry/straw_diffuse.png"/>
+    <File fileId="5" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="22" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="16" filename="$data/shared/assets/assetLibraryDecals_diffuse.png"/>
+    <File fileId="17" filename="$data/shared/assets/assetLibraryDecals_normal.png"/>
+    <File fileId="18" filename="$data/shared/assets/assetLibraryDecals_specular.png"/>
+    <File fileId="2" filename="../maps/textures/chickenCoop2_diffuse.dds"/>
+    <File fileId="6" filename="../maps/textures/chickenCoop2_mask.dds"/>
+    <File fileId="3" filename="../maps/textures/chickenCoop2_normal.dds"/>
+    <File fileId="4" filename="../maps/textures/chickenCoop2_specular.dds"/>
+    <File fileId="19" filename="../maps/textures/decals2_diffuse.dds"/>
+    <File fileId="20" filename="../maps/textures/decals2_normal.dds"/>
+    <File fileId="21" filename="../maps/textures/decals2_specular.dds"/>
+    <File fileId="14" filename="../maps/textures/grid.dds"/>
+    <File fileId="25" filename="../maps/textures/wall4_diffuse.dds"/>
+    <File fileId="23" filename="../maps/textures/zaun_Diffuse.dds"/>
+    <File fileId="24" filename="../maps/textures/zaunpfahl_Diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="strawPlaneAlpha_mat" materialId="16">
+      <Texture fileId="31"/>
+    </Material>
+    <Material name="lambert2" materialId="6">
+      <Texture fileId="25"/>
+    </Material>
+    <Material name="alpha_mat" materialId="8" specularColor="0.494118 1 0.494118">
+      <Texture fileId="14"/>
+    </Material>
+    <Material name="assetLibraryDecals_mat" materialId="9">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="18"/>
+    </Material>
+    <Material name="zaun:zaun_mat" materialId="10" alphaBlending="true">
+      <Texture fileId="23"/>
+    </Material>
+    <Material name="warningStripes_mat" materialId="11">
+      <Texture fileId="27"/>
+      <Normalmap fileId="28"/>
+      <Glossmap fileId="29"/>
+    </Material>
+    <Material name="lambert1" materialId="13" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="strawPlane_mat" materialId="12">
+      <Texture fileId="30"/>
+    </Material>
+    <Material name="wheat_mat" materialId="7">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+    </Material>
+    <Material name="dirtDecal_mat" materialId="14" customShaderId="22">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+    </Material>
+    <Material name="zaunpfahl_mat" materialId="15">
+      <Texture fileId="24"/>
+    </Material>
+    <Material name="grain_barrier_mat" materialId="4" specularColor="1 1 1">
+    </Material>
+    <Material name="chickenCoop_mat1" materialId="5" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="mMaskMap" fileId="6"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="chickenCoop.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="smallChickenHusbandry" nodeId="50">
+      <Shape shapeId="1" name="animalLoadTrigger" translation="7.12042 -0.12418 -6.76111" static="true" trigger="true" collisionMask="11534336" clipDistance="300" nodeId="51" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="2" name="feedingTroughChicken" translation="7.20324 0.00149552 -4.27926" rotation="180 0 180" clipDistance="300" nodeId="52" materialIds="5" castsShadows="true" receiveShadows="true" buildNavMeshMask="255">
+        <Shape shapeId="3" name="feedingTroughTrigger" translation="0 0 -0.169167" static="true" trigger="true" collisionMask="8388608" clipDistance="300" nodeId="53" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="4" name="exactFillRootNode" translation="0 0 1.11022e-16" kinematic="true" trigger="true" collisionMask="1073741824" density="0.0001" nodeId="54" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="animalPlaces" translation="0 0 0.169167" nodeId="55">
+            <TransformGroup name="animalPlace1" translation="-0.357243 0 -0.426774" nodeId="56"/>
+            <TransformGroup name="animalPlace2" translation="0.354845 0 -0.515485" nodeId="57"/>
+          </TransformGroup>
+          <TransformGroup name="foodSpillAreas" translation="0 0 0.169167" nodeId="58">
+            <TransformGroup name="start" translation="-0.591861 0 0.217158" nodeId="59">
+              <TransformGroup name="height" translation="0.00425799 0 0.784424" nodeId="60"/>
+              <TransformGroup name="width" translation="1.2263 0 0" nodeId="61"/>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape shapeId="5" name="feedingTroughPlane" translation="0 0 0.169167" clipDistance="35" nodeId="62" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </Shape>
+      <TransformGroup name="palletSpawner" translation="-5.76425 0.257156 -3.98453" nodeId="63">
+        <TransformGroup name="palletSpawnerArea" translation="0.501533 0 -0.372921" nodeId="64">
+          <TransformGroup name="start" nodeId="65">
+            <TransformGroup name="width" translation="3.38146 1.18431e-14 0" nodeId="66"/>
+            <TransformGroup name="height" translation="0 6.444e-15 1.69737" nodeId="67"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="rideableDeliveryArea" nodeId="68">
+        <TransformGroup name="start" translation="-3 0 -5" nodeId="69">
+          <TransformGroup name="height" translation="0 0 8" nodeId="70"/>
+          <TransformGroup name="width" translation="6 0 0" nodeId="71"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="clearArea" nodeId="72">
+        <TransformGroup name="start" translation="-3 0 -5" nodeId="73">
+          <TransformGroup name="height" translation="0 0 8" nodeId="74"/>
+          <TransformGroup name="width" translation="6 0 0" nodeId="75"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="levelArea" nodeId="76">
+        <TransformGroup name="start" translation="-3 0 -5" nodeId="77">
+          <TransformGroup name="height" translation="6 0 0" nodeId="78"/>
+          <TransformGroup name="width" translation="0 0 8" nodeId="79"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="rampArea" nodeId="80">
+        <TransformGroup name="start1" translation="-2 0 -5" nodeId="81">
+          <TransformGroup name="height" translation="0 0 8" nodeId="82"/>
+          <TransformGroup name="width" translation="-1 0 0" nodeId="83"/>
+        </TransformGroup>
+        <TransformGroup name="start2" translation="2 0 -5" nodeId="84">
+          <TransformGroup name="height" translation="0 0 8" nodeId="85"/>
+          <TransformGroup name="width" translation="1 0 0" nodeId="86"/>
+        </TransformGroup>
+        <TransformGroup name="start3" translation="-3 0 2" nodeId="87">
+          <TransformGroup name="height" translation="0 0 1" nodeId="88"/>
+          <TransformGroup name="width" translation="6 0 0" nodeId="89"/>
+        </TransformGroup>
+        <TransformGroup name="start4" translation="-2 0 -5" nodeId="90">
+          <TransformGroup name="height" translation="0 0 -1" nodeId="91"/>
+          <TransformGroup name="width" translation="4 0 0" nodeId="92"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="foliageAreas" nodeId="93">
+        <TransformGroup name="corner1" translation="-2 0 -5" nodeId="94">
+          <TransformGroup name="start" nodeId="95">
+            <TransformGroup name="height" translation="0 0 7" nodeId="96"/>
+            <TransformGroup name="width" translation="-1 0 0" nodeId="97"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="corner2" nodeId="98">
+          <TransformGroup name="start" translation="2 0 -5" nodeId="99">
+            <TransformGroup name="height" translation="1 0 0" nodeId="100"/>
+            <TransformGroup name="width" translation="0 0 7" nodeId="101"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="corner3" nodeId="102">
+          <TransformGroup name="start" translation="-3 0 2" nodeId="103">
+            <TransformGroup name="height" translation="0 0 1" nodeId="104"/>
+            <TransformGroup name="width" translation="6 0 0" nodeId="105"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="corner4" nodeId="106">
+          <TransformGroup name="start" translation="-2 0 -5" nodeId="107">
+            <TransformGroup name="height" translation="0 0 -1" nodeId="108"/>
+            <TransformGroup name="width" translation="4 0 0" nodeId="109"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="visuals" nodeId="110">
+        <Shape shapeId="6" name="chickenCoop_vis" clipDistance="300" nodeId="111" materialIds="5" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="alpha" nodeId="112">
+            <Shape shapeId="7" name="grid" clipDistance="300" nodeId="113" materialIds="8" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="assetDecals" clipDistance="300" nodeId="114" materialIds="9" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="9" name="dirtDecals" clipDistance="300" nodeId="115" materialIds="14" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          </TransformGroup>
+          <Shape shapeId="10" name="water" translation="0 -0.0194708 0" clipDistance="300" nodeId="116" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="collision" nodeId="117">
+            <Shape shapeId="11" name="chickenCoop_coll" static="true" clipDistance="300" nodeId="118" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </TransformGroup>
+        </Shape>
+        <Shape shapeId="12" name="ground" translation="0 -0.129421 0" clipDistance="300" nodeId="119" materialIds="14" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="Maschendrahtmetallpfeiler" translation="-1.54024 0.023455 -2.47777" rotation="180 -14.6542 -180" scale="0.6 0.6 0.6" clipDistance="400" nodeId="120">
+          <Shape shapeId="13" name="zaunmaschendraht" translation="0.899252 0 -0.0110846" scale="0.578457 1 1" static="true" clipDistance="400" nodeId="121" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="metallrund" static="true" clipDistance="400" nodeId="122" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="Maschendrahtmetallpfeiler" translation="-2.74588 -0.0141511 -2.16094" rotation="1.03736e-10 -86.8786 1.72998e-05" scale="0.6 0.6 0.6" clipDistance="400" nodeId="123">
+          <Shape shapeId="13" name="zaunmaschendraht" translation="2 0 -0.0110846" static="true" clipDistance="400" nodeId="124" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="metallrund" static="true" clipDistance="400" nodeId="125" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="Maschendrahtmetallpfeiler" translation="-2.6176 -0.0141511 0.19147" rotation="1.03736e-10 -86.8786 1.72998e-05" scale="0.6 0.6 0.6" clipDistance="400" nodeId="126">
+          <Shape shapeId="13" name="zaunmaschendraht" translation="2 0 -0.0110846" static="true" clipDistance="400" nodeId="127" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="metallrund" static="true" clipDistance="400" nodeId="128" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="Maschendrahtmetallpfeiler" translation="-2.48736 -0.0141511 2.57964" rotation="1.03736e-10 -86.8786 1.72998e-05" scale="0.6 0.6 0.6" clipDistance="400" nodeId="129">
+          <Shape shapeId="13" name="zaunmaschendraht" translation="2 0 -0.0110846" static="true" clipDistance="400" nodeId="130" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="metallrund" static="true" clipDistance="400" nodeId="131" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="Maschendrahtmetallpfeiler" translation="-2.35919 -0.057668 4.92997" rotation="5.44511e-12 -0.00620565 1.72999e-05" scale="0.6 0.6 0.6" clipDistance="400" nodeId="132">
+          <Shape shapeId="13" name="zaunmaschendraht" translation="2 0 -0.0110846" static="true" clipDistance="400" nodeId="133" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="metallrund" static="true" clipDistance="400" nodeId="134" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="Maschendrahtmetallpfeiler" translation="0.0264662 -0.0908259 4.93023" rotation="5.44511e-12 -0.00620565 1.72999e-05" scale="0.6 0.6 0.6" clipDistance="400" nodeId="135">
+          <Shape shapeId="13" name="zaunmaschendraht" translation="2 0 -0.0110846" static="true" clipDistance="400" nodeId="136" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="metallrund" static="true" clipDistance="400" nodeId="137" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="Maschendrahtmetallpfeiler" translation="2.42249 -0.0908252 4.93049" rotation="5.44511e-12 -0.00620565 1.72999e-05" scale="0.6 0.6 0.6" clipDistance="400" nodeId="138">
+          <Shape shapeId="13" name="zaunmaschendraht" translation="2 0 -0.0110846" static="true" clipDistance="400" nodeId="139" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="metallrund" static="true" clipDistance="400" nodeId="140" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="Maschendrahtmetallpfeiler" translation="4.81603 -0.0908245 4.93075" rotation="5.44511e-12 -0.006 1.72999e-05" scale="0.6 0.6 0.6" clipDistance="400" nodeId="141">
+          <Shape shapeId="13" name="zaunmaschendraht" translation="2 0 -0.0110846" static="true" clipDistance="400" nodeId="142" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="metallrund" static="true" clipDistance="400" nodeId="143" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="Maschendrahtmetallpfeiler" translation="7.20048 -0.0908237 4.93101" rotation="5.44511e-12 -0.00620565 1.72999e-05" scale="0.6 0.6 0.6" clipDistance="400" nodeId="144">
+          <Shape shapeId="13" name="zaunmaschendraht" translation="2 0 -0.0110846" static="true" clipDistance="400" nodeId="145" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="metallrund" static="true" clipDistance="400" nodeId="146" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="Maschendrahtmetallpfeiler" translation="9.59823 -0.090823 -4.65619" rotation="2.62173e-11 180 1.72999e-05" scale="0.6 0.6 0.6" clipDistance="400" nodeId="147">
+          <Shape shapeId="13" name="zaunmaschendraht" translation="2 0 -0.0110846" static="true" clipDistance="400" nodeId="148" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="metallrund" static="true" clipDistance="400" nodeId="149" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="Maschendrahtmetallpfeiler" translation="7.21965 -0.0908237 -4.65619" rotation="2.62173e-11 180 1.72999e-05" scale="0.6 0.6 0.6" clipDistance="400" nodeId="150">
+          <Shape shapeId="13" name="zaunmaschendraht" translation="2 0 -0.0110846" static="true" clipDistance="400" nodeId="151" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="metallrund" static="true" clipDistance="400" nodeId="152" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="Maschendrahtmetallpfeiler" translation="4.81699 -0.0908244 -4.65619" rotation="2.62173e-11 180 1.72999e-05" scale="0.6 0.6 0.6" clipDistance="400" nodeId="153">
+          <Shape shapeId="13" name="zaunmaschendraht" translation="2 0 -0.0110846" static="true" clipDistance="400" nodeId="154" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="metallrund" static="true" clipDistance="400" nodeId="155" materialIds="15" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="metallrund" translation="2.60739 0 0" static="true" clipDistance="400" nodeId="156" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="Maschendrahtmetallpfeiler" translation="9.5961 -0.12624 4.93127" rotation="5.44511e-12 -0.00620565 1.72999e-05" scale="0.6 0.6 0.6" clipDistance="400" nodeId="157">
+          <Shape shapeId="13" name="zaunmaschendraht" translation="2 0 -0.0110846" static="true" clipDistance="400" nodeId="158" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="metallrund" static="true" clipDistance="400" nodeId="159" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="Maschendrahtmetallpfeiler" translation="11.9699 -0.15312 4.93153" rotation="5.44511e-12 -0.00620565 1.72999e-05" scale="0.6 0.6 0.6" clipDistance="400" nodeId="160">
+          <Shape shapeId="13" name="zaunmaschendraht" translation="2 0 -0.0110846" static="true" clipDistance="400" nodeId="161" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="metallrund" static="true" clipDistance="400" nodeId="162" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="Maschendrahtmetallpfeiler" translation="14.3551 -0.15312 4.93179" rotation="180 90 -180" scale="0.6 0.6 0.6" clipDistance="400" nodeId="163">
+          <Shape shapeId="13" name="zaunmaschendraht" translation="2 0 -0.0110846" static="true" clipDistance="400" nodeId="164" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="metallrund" static="true" clipDistance="400" nodeId="165" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="Maschendrahtmetallpfeiler" translation="14.3551 -0.15312 2.54292" rotation="180 90 -180" scale="0.6 0.6 0.6" clipDistance="400" nodeId="166">
+          <Shape shapeId="13" name="zaunmaschendraht" translation="2 0 -0.0110846" static="true" clipDistance="400" nodeId="167" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="metallrund" static="true" clipDistance="400" nodeId="168" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="Maschendrahtmetallpfeiler" translation="14.3551 -0.15312 0.169716" rotation="180 90 -180" scale="0.6 0.6 0.6" clipDistance="400" nodeId="169">
+          <Shape shapeId="13" name="zaunmaschendraht" translation="2 0 -0.0110846" static="true" clipDistance="400" nodeId="170" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="metallrund" static="true" clipDistance="400" nodeId="171" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="Maschendrahtmetallpfeiler" translation="14.3551 -0.15312 -2.21761" rotation="180 90 -180" scale="0.6 0.6 0.6" clipDistance="400" nodeId="172">
+          <Shape shapeId="13" name="zaunmaschendraht" translation="2 0 -0.0110846" static="true" clipDistance="400" nodeId="173" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="metallrund" static="true" clipDistance="400" nodeId="174" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="Maschendrahtmetallpfeiler" translation="12.0093 -0.0908223 -4.65619" rotation="2.62173e-11 180 1.72999e-05" scale="0.6 0.6 0.6" clipDistance="400" nodeId="175">
+          <Shape shapeId="13" name="zaunmaschendraht" translation="2 0 -0.0110846" static="true" clipDistance="400" nodeId="176" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="metallrund" static="true" clipDistance="400" nodeId="177" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="Maschendrahtmetallpfeiler" translation="14.3656 -0.0908216 -4.65619" rotation="2.62173e-11 180 1.72999e-05" scale="0.6 0.6 0.6" clipDistance="400" nodeId="178">
+          <Shape shapeId="13" name="zaunmaschendraht" translation="2 0 -0.0110846" static="true" clipDistance="400" nodeId="179" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="metallrund" static="true" clipDistance="400" nodeId="180" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <Shape shapeId="15" name="Wall1" translation="0.889725 -0.354028 4.99813" rotation="5.20888e-19 -90 -1.73029e-05" scale="0.3 0.5 0.45" static="true" clipDistance="800" nodeId="181" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="16" name="tipCollisions" translation="0.77479 1.01761 3.53511" scale="0.7 0.816246 0.72765" static="true" collisionMask="524288" nodeId="182" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="15" name="Wall1" translation="0.889725 -0.354027 8.39807" rotation="-180 0 180" scale="0.3 0.5 0.45" static="true" clipDistance="800" nodeId="183" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="16" name="tipCollisions" translation="0.77479 1.01761 3.80774" scale="0.7 0.816246 0.693047" static="true" collisionMask="524288" nodeId="184" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="15" name="Wall1" translation="-2.50982 -0.354025 8.39807" rotation="-4.2826e-11 90 -3.09616e-05" scale="0.3 0.5 0.45" static="true" clipDistance="800" nodeId="185" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="16" name="tipCollisions" translation="0.77479 1.01761 3.53511" scale="0.7 0.816246 0.72765" static="true" collisionMask="524288" nodeId="186" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="navMesh" nodeId="187">
+        <NavigationMesh name="NavMesh" nodeId="188" shapeId="17"/>
+        <TransformGroup name="planes" visibility="false" nodeId="189">
+          <Shape shapeId="18" name="pPlane1" clipDistance="300" nodeId="190" materialIds="13" castsShadows="true" receiveShadows="true" buildNavMeshMask="255"/>
+          <Shape shapeId="19" name="pPlane2" scale="1 1 1.9394" clipDistance="300" nodeId="191" materialIds="13" castsShadows="true" receiveShadows="true" buildNavMeshMask="255"/>
+          <Shape shapeId="20" name="pPlane3" clipDistance="300" nodeId="192" materialIds="13" castsShadows="true" receiveShadows="true" buildNavMeshMask="255"/>
+          <Shape shapeId="21" name="pPlane4" clipDistance="300" nodeId="193" materialIds="13" castsShadows="true" receiveShadows="true" buildNavMeshMask="255"/>
+          <Shape shapeId="22" name="pPlane5" clipDistance="300" nodeId="194" materialIds="13" castsShadows="true" receiveShadows="true" buildNavMeshMask="255"/>
+          <Shape shapeId="23" name="pPlane6" clipDistance="300" nodeId="195" materialIds="13" castsShadows="true" receiveShadows="true" buildNavMeshMask="255"/>
+          <Shape shapeId="24" name="pPlane7" clipDistance="300" nodeId="196" materialIds="13" castsShadows="true" receiveShadows="true" buildNavMeshMask="255"/>
+          <Shape shapeId="18" name="pPlane1" translation="-2.98183 0.0197306 0.210157" rotation="-180 89.4068 -180" scale="1 1 0.583681" clipDistance="300" nodeId="197" materialIds="13" castsShadows="true" receiveShadows="true" buildNavMeshMask="255"/>
+          <Shape shapeId="19" name="pPlane2" translation="2.45356 -0.0488444 3.06009" scale="3.78582 1 2.9635" clipDistance="300" nodeId="198" materialIds="13" castsShadows="true" receiveShadows="true" buildNavMeshMask="255"/>
+          <Shape shapeId="19" name="pPlane2" translation="4.74554 -0.026985 -1.63588" scale="2.52799 1 6.26364" clipDistance="300" nodeId="199" materialIds="13" castsShadows="true" receiveShadows="true" buildNavMeshMask="255"/>
+          <Shape shapeId="19" name="pPlane2" translation="7.69484 -0.0488444 2.83504" scale="3.78582 1 2.9635" clipDistance="300" nodeId="200" materialIds="13" castsShadows="true" receiveShadows="true" buildNavMeshMask="255"/>
+          <Shape shapeId="19" name="pPlane2" translation="9.97647 -0.026985 -1.3927" scale="2.52799 1 6.26364" clipDistance="300" nodeId="201" materialIds="13" castsShadows="true" receiveShadows="true" buildNavMeshMask="255"/>
+        </TransformGroup>
+      </TransformGroup>
+      <Shape shapeId="25" name="placeableBlockTrigger" visibility="false" static="true" trigger="true" collisionMask="11534336" nodeId="202" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <TransformGroup name="tipBlocker" nodeId="203">
+        <Shape shapeId="26" name="tipBlocker1" translation="0.00261402 0.146702 -1.77654" visibility="false" static="true" collisionMask="524288" clipDistance="300" nodeId="204" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      </TransformGroup>
+      <TransformGroup name="warningStripes" translation="0 0 3" nodeId="205">
+        <TransformGroup name="warningStripesAnimalLoadTrigger" translation="7.65457 0.224248 -12.9896" rotation="0 -0.360248 0" nodeId="206">
+          <Shape shapeId="27" name="warningStripesCorner1" translation="-2.6 -0.135667 2.78498" clipDistance="200" nodeId="207" materialIds="11" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="28" name="warningStripesCorner2" translation="0.71254 -0.149031 2.67398" clipDistance="200" nodeId="208" materialIds="11" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="27" name="warningStripesCorner3" translation="0.660501 -0.230838 5.99752" rotation="-180 0 -180" clipDistance="200" nodeId="209" materialIds="11" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="28" name="warningStripesCorner4" translation="-2.6 -0.222901 6" rotation="179.404 6.4033e-07 180" clipDistance="200" nodeId="210" materialIds="11" receiveShadows="true" decalLayer="1"/>
+        </TransformGroup>
+        <TransformGroup name="warningStripesPalletSpawner" translation="-7.42093 0.337029 -6.73002" rotation="-180 87.7356 -180" nodeId="211">
+          <Shape shapeId="27" name="warningStripesCorner1" translation="-1.48963 -0.193009 2.70888" rotation="2.26426 -0 0" clipDistance="200" nodeId="212" materialIds="11" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="28" name="warningStripesCorner2" translation="0.71254 -0.149008 2.67398" rotation="0.296819 1.86763e-07 1.39145" clipDistance="200" nodeId="213" materialIds="11" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="27" name="warningStripesCorner3" translation="0.660501 -0.266212 5.99752" rotation="179.274 -0 180" clipDistance="200" nodeId="214" materialIds="11" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="28" name="warningStripesCorner4" translation="-1.45691 -0.320219 5.99899" rotation="179.404 0.0179649 -178.273" clipDistance="200" nodeId="215" materialIds="11" receiveShadows="true" decalLayer="1"/>
+        </TransformGroup>
+      </TransformGroup>
+      <Shape shapeId="29" name="strawTrigger" translation="4.17832 -0.129 -0.798091" rotation="1.56414e-05 -89.609 -3.29432e-05" static="true" trigger="true" collisionMask="8388608" nodeId="216" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <Shape shapeId="30" name="exactFillRootNode" translation="0 0.0648399 -4.44871" kinematic="true" trigger="true" collisionMask="1073741824" nodeId="217" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <TransformGroup name="strawPlanes" translation="-6.6976 -0.109784 -6.12699" rotation="180 -87.425 -180" nodeId="218">
+          <Shape shapeId="31" name="strawPlane02" translation="3.15782 6.57432e-09 -7.36539" rotation="-3.09416e-05 89.5739 -3.09405e-05" scale="0.621058 1 0.5" clipDistance="300" nodeId="219" materialIds="12" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="32" name="strawPlane02Alpha" clipDistance="300" nodeId="220" materialIds="16" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+        </TransformGroup>
+        <Shape shapeId="33" name="baleTrigger" translation="0 0 3.43316" static="true" trigger="true" collisionMask="16777216" nodeId="221" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      </Shape>
+      <TransformGroup name="transform" nodeId="222">
+        <TransformGroup name="manureHeapArea" translation="0.388519 0.0448151 7.92026" rotation="180 -5.00896e-06 180" nodeId="223">
+          <TransformGroup name="start" nodeId="224">
+            <TransformGroup name="width" translation="2.7728 1.18431e-14 0" nodeId="225"/>
+            <TransformGroup name="height" translation="0 6.444e-15 2.37838" nodeId="226"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="182">
+      <Attribute name="collisionHeight" type="float" value="4"/>
+    </UserAttribute>
+    <UserAttribute nodeId="184">
+      <Attribute name="collisionHeight" type="float" value="4"/>
+    </UserAttribute>
+    <UserAttribute nodeId="186">
+      <Attribute name="collisionHeight" type="float" value="4"/>
+    </UserAttribute>
+    <UserAttribute nodeId="202">
+      <Attribute name="allowPalletSpawning" type="boolean" value="true"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

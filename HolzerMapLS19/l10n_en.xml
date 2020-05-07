@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+    <elements>
+    <e k="HolzerMapLS19_function_gcGrastrocknung" v="In der Heutrocknung kann Gras zu Heu verarbeitet werden."/>
+    <e k="HolzerMapLS19_shopItem_GrastrocknungSmall" v="Heutrocknung Unterreiter"/>
+    <e k="HolzerMapLS19_FactoryName" v="Heutrocknung Unterreiter"/>
+    <e k="HolzerMapLS19_Description" v="In der Heutrocknung kann Gras zu Heu verarbeitet werden."/>
+    <e k="HolzerMapLS19_HeaderInput" v="Rohstoffe"/>
+    <e k="HolzerMapLS19_Input1" v="Gras, Klee, Luzerne"/>
+	<e k="HolzerMapLS19_Input2" v="Hackschnitzel, Strohpellets"/>
+    <e k="HolzerMapLS19_HeaderOutput" v="Produkte"/>
+    <e k="HolzerMapLS19_Output1" v="Heu"/>
+	
+	<!-- Startfarm -->
+		<e k="HolzerMapLS19_startfarm_1_header" v="Boarhof"/>
+		<e k="HolzerMapLS19_startfarm_1_description" v="Hier können neben Schafen auch Pferde gehalten werden."/>
+		<e k="HolzerMapLS19_startfarm_2_header" v="Unterreiterhof"/>
+		<e k="HolzerMapLS19_startfarm_2_description" v="Hier können Rinder im Stall, auf einer angrenzenden Weide sowie einer Bergwiese gehalten werden. Zudem besitzt der Hof eine Heutrocknung."/>
+		<e k="HolzerMapLS19_startfarm_3_header" v="Oberreiterhof"/>
+		<e k="HolzerMapLS19_startfarm_3_description" v="Neben Hühnern und ein paar Schweinen kann man hier Milchvieh halten. Zudem besitzt der Hof ein kleines Getreidelager."/>
+		<e k="HolzerMapLS19_startfarm_4_header" v="Graberhof"/>
+		<e k="HolzerMapLS19_startfarm_4_description" v="Bei diesem Hof handelt es sich um einen reinen Milchviehbetrieb."/>
+		<e k="HolzerMapLS19_startfarm_5_header" v="Gundischhof"/>
+		<e k="HolzerMapLS19_startfarm_5_description" v="Hier können neben Milchvieh auch einige Schafe und Hühner gehalten werden."/>
+		<e k="HolzerMapLS19_startfarm_6_header" v="Schwoagahof"/>
+		<e k="HolzerMapLS19_startfarm_6_description" v="Bei diesem Hof handelt es sich um einen reinen Milchviehbetrieb."/>
+		<e k="HolzerMapLS19_startfarm_7_header" v="Buchberghof"/>
+		<e k="HolzerMapLS19_startfarm_7_description" v="Dieser Hof wurde vor kurzem vollständig zurückgebaut. Hier hast Du die Möglichkeit einen neuen Hof ganz nach Deinen Vorstellungen aufzubauen."/>
+		
+    </elements>
+</l10n>

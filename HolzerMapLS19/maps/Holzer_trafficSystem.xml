@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<trafficSystem>
+    <vehicles>
+        <vehicle topSpeed="0.0129" accel="0.0000030" probability="0.2" probabilityParked="0.2">
+            <assets filename="cars/vehicle01/vehicle_01.i3d" filenameParked="cars/vehicle01/vehicle_01.i3d" triggerIndex="7" lightsIndex="4" driverIndex="8">
+                <wheels>
+                    <wheel yRotNode="0" xRotNode="0" radius="0.57" distToRotCenter="2.6" />
+                    <wheel yRotNode="1" xRotNode="1" radius="0.57" distToRotCenter="2.6" />
+                    <wheel yRotNode="2" xRotNode="2" radius="0.57" distToRotCenter="0" />
+                    <wheel yRotNode="3" xRotNode="3" radius="0.57" distToRotCenter="0" />
+                </wheels>
+                <lights>
+                    <light index="4" lowProfile="4|0" highProfile="4|1" decoration="12|0" intensity="20"/>
+                    <brake decoration="6|0" intensity="75"/>
+                    <turnLeft decoration="5|0" intensity="50"/>
+                    <turnRight decoration="5|1" intensity="50"/>
+                </lights>
+                <colors index="9" indexParked="9" minDirt="0" maxDirt="0.3">
+                    <color rgb="0.97 0.97 0.97" /> <!-- white -->
+                    <color rgb="0.815 0.863 0.863" /> <!-- silver -->
+                    <color rgb="0.070 0.086 0.090" /> <!-- silver -->
+                    <color rgb="0.102 0.159 0.168" /> <!-- silver -->
+                    <color rgb="0.445 0.502 0.450" /> <!-- silver -->
+                    <color rgb="0.270 0.337 0.361" /> <!-- silver -->
+                    <color rgb="0.385 0.01 0.01" /> <!-- red -->
+                    <color rgb="0.010 0.082 0.250" /> <!-- blue -->
+                    <color rgb="0.011 0.018 0.014" /> <!-- black -->
+                </colors>
+				<sounds>
+					<motor filename="$data/sounds/vehicles/engine/npc/npc_car_01_loop.wav"     indoor="0.50" outdoor="0.8" indoorLowpassGain="0.50" outdoorLowpassGain="1.00" range="40" innerRange="5" pitchOffset="1" pitchScale="0.0" pitchMin="0.75" pitchMax="1.0" />
+					<honk filename="$data/sounds/vehicles/engine/npc/npc_car_horn_01_loop.wav" indoor="0.50" outdoor="1.0" indoorLowpassGain="0.50" outdoorLowpassGain="1.00" range="45" innerRange="8" />
+				</sounds>
+            </assets>
+        </vehicle>
+        <vehicle topSpeed="0.0129" accel="0.0000030" probability="0.2" probabilityParked="0.2">
+            <assets filename="cars/vehicle02/vehicle02.i3d" filenameParked="cars/vehicle02/vehicle02.i3d" triggerIndex="7" lightsIndex="4" driverIndex="8">
+                <wheels>
+                    <wheel yRotNode="0" xRotNode="0" radius="0.330" distToRotCenter="2.915" />
+                    <wheel yRotNode="1" xRotNode="1" radius="0.330" distToRotCenter="2.915" />
+                    <wheel yRotNode="2" xRotNode="2" radius="0.330" distToRotCenter="0" />
+                    <wheel yRotNode="3" xRotNode="3" radius="0.330" distToRotCenter="0" />
+                </wheels>
+                <lights>
+                    <light index="4" lowProfile="4|0" highProfile="4|1" decoration="4|3" intensity="20"/>
+                    <brake decoration="6|0" intensity="75"/>
+                    <turnLeft decoration="5|1" intensity="50"/>
+                    <turnRight decoration="5|0" intensity="50"/>
+                </lights>
+                <colors index="9" indexParked="9" minDirt="0" maxDirt="0.3">
+                    <color rgb="0.97 0.97 0.97" /> <!-- white -->
+                    <color rgb="0.815 0.863 0.863" /> <!-- silver -->
+                    <color rgb="0.070 0.086 0.090" /> <!-- silver -->
+                    <color rgb="0.102 0.159 0.168" /> <!-- silver -->
+                    <color rgb="0.445 0.502 0.450" /> <!-- silver -->
+                    <color rgb="0.270 0.337 0.361" /> <!-- silver -->
+                    <color rgb="0.385 0.01 0.01" /> <!-- red -->
+                    <color rgb="0.010 0.082 0.250" /> <!-- blue -->
+                    <color rgb="0.011 0.018 0.014" /> <!-- black -->
+                </colors>
+				<sounds>
+					<motor filename="$data/sounds/vehicles/engine/npc/npc_car_01_loop.wav"     indoor="0.50" outdoor="0.8" indoorLowpassGain="0.50" outdoorLowpassGain="1.00" range="40" innerRange="5" pitchOffset="1" pitchScale="0.0" pitchMin="0.75" pitchMax="1.0" />
+					<honk filename="$data/sounds/vehicles/engine/npc/npc_car_horn_01_loop.wav" indoor="0.50" outdoor="1.0" indoorLowpassGain="0.50" outdoorLowpassGain="1.00" range="45" innerRange="8" />
+				</sounds>
+            </assets>
+        </vehicle>
+        <vehicle topSpeed="0.0129" accel="0.0000030" probability="0.145" probabilityParked="0.1">
+            <assets filename="cars/vehicle03/vehicle03.i3d" filenameParked="cars/vehicle03/vehicle03.i3d" triggerIndex="7" lightsIndex="4" driverIndex="8">
+                <wheels>
+                    <wheel yRotNode="0" xRotNode="0" radius="0.330" distToRotCenter="3.25" />
+                    <wheel yRotNode="1" xRotNode="1" radius="0.330" distToRotCenter="3.25" />
+                    <wheel yRotNode="2" xRotNode="2" radius="0.330" distToRotCenter="0" />
+                    <wheel yRotNode="3" xRotNode="3" radius="0.330" distToRotCenter="0" />
+                </wheels>
+                <lights>
+                    <light index="4" lowProfile="4|0" highProfile="4|1" decoration="4|3" intensity="20"/>
+                    <brake decoration="6|0" intensity="75"/>
+                    <turnLeft decoration="5|1" intensity="50"/>
+                    <turnRight decoration="5|0" intensity="50"/>
+                </lights>
+                <colors index="9" indexParked="9" minDirt="0" maxDirt="0.3">
+                    <color rgb="0.97 0.97 0.97" /> <!-- white -->
+                    <color rgb="0.815 0.863 0.863" /> <!-- silver -->
+                    <color rgb="0.070 0.086 0.090" /> <!-- silver -->
+                    <color rgb="0.102 0.159 0.168" /> <!-- silver -->
+                    <color rgb="0.445 0.502 0.450" /> <!-- silver -->
+                    <color rgb="0.270 0.337 0.361" /> <!-- silver -->
+                    <color rgb="0.385 0.01 0.01" /> <!-- red -->
+                    <color rgb="0.010 0.082 0.250" /> <!-- blue -->
+                    <color rgb="0.011 0.018 0.014" /> <!-- black -->
+                </colors>
+				<sounds>
+					<motor filename="$data/sounds/vehicles/engine/npc/npc_car_02_loop.wav"     indoor="0.50" outdoor="0.8" indoorLowpassGain="0.50" outdoorLowpassGain="1.00" range="40" innerRange="5" pitchOffset="1" pitchScale="0.0" pitchMin="0.75" pitchMax="1.0" />
+					<honk filename="$data/sounds/vehicles/engine/npc/npc_car_horn_02_loop.wav" indoor="0.50" outdoor="1.0" indoorLowpassGain="0.50" outdoorLowpassGain="1.00" range="45" innerRange="8" />
+				</sounds>
+            </assets>
+        </vehicle>
+        <vehicle topSpeed="0.0129" accel="0.0000030" probability="0.15" probabilityParked="0.2">
+            <assets filename="cars/vehicle04/vehicle04.i3d" filenameParked="cars/vehicle04/vehicle04.i3d" triggerIndex="7" lightsIndex="4" driverIndex="8">
+                <wheels>
+                    <wheel yRotNode="0" xRotNode="0" radius="0.57" distToRotCenter="2.6" />
+                    <wheel yRotNode="1" xRotNode="1" radius="0.57" distToRotCenter="2.6" />
+                    <wheel yRotNode="2" xRotNode="2" radius="0.57" distToRotCenter="0" />
+                    <wheel yRotNode="3" xRotNode="3" radius="0.57" distToRotCenter="0" />
+                </wheels>
+                <lights>
+                    <light index="4" lowProfile="4|0" highProfile="4|1" decoration="12|0" intensity="20"/>
+                    <brake decoration="6|0" intensity="75"/>
+                    <turnLeft decoration="5|0" intensity="50"/>
+                    <turnRight decoration="5|1" intensity="50"/>
+                </lights>
+                <colors index="9" indexParked="9" minDirt="0" maxDirt="0.3">
+                    <color rgb="0.97 0.97 0.97" /> <!-- white -->
+                    <color rgb="0.815 0.863 0.863" /> <!-- silver -->
+                    <color rgb="0.070 0.086 0.090" /> <!-- silver -->
+                    <color rgb="0.102 0.159 0.168" /> <!-- silver -->
+                    <color rgb="0.445 0.502 0.450" /> <!-- silver -->
+                    <color rgb="0.270 0.337 0.361" /> <!-- silver -->
+                    <color rgb="0.385 0.01 0.01" /> <!-- red -->
+                    <color rgb="0.010 0.082 0.250" /> <!-- blue -->
+                    <color rgb="0.011 0.018 0.014" /> <!-- black -->
+                </colors>
+				<sounds>
+					<motor filename="$data/sounds/vehicles/engine/npc/npc_car_01_loop.wav"     indoor="0.50" outdoor="0.8" indoorLowpassGain="0.50" outdoorLowpassGain="1.00" range="40" innerRange="5" pitchOffset="1" pitchScale="0.0" pitchMin="0.75" pitchMax="1.0" />
+					<honk filename="$data/sounds/vehicles/engine/npc/npc_car_horn_01_loop.wav" indoor="0.50" outdoor="1.0" indoorLowpassGain="0.50" outdoorLowpassGain="1.00" range="45" innerRange="8" />
+				</sounds>
+            </assets>
+        </vehicle>
+        <vehicle topSpeed="0.0129" accel="0.0000030" probability="0.1" probabilityParked="0.2">
+            <assets filename="cars/vehicle05/vehicle05.i3d" filenameParked="cars/vehicle05/vehicle05.i3d" triggerIndex="7" lightsIndex="4" driverIndex="8">
+                <wheels>
+                    <wheel yRotNode="0" xRotNode="0" radius="0.57" distToRotCenter="2.6" />
+                    <wheel yRotNode="1" xRotNode="1" radius="0.57" distToRotCenter="2.6" />
+                    <wheel yRotNode="2" xRotNode="2" radius="0.57" distToRotCenter="0" />
+                    <wheel yRotNode="3" xRotNode="3" radius="0.57" distToRotCenter="0" />
+                </wheels>
+                <lights>
+                    <light index="4" lowProfile="4|0" highProfile="4|1" decoration="12|0" intensity="20"/>
+                    <brake decoration="6|0" intensity="75"/>
+                    <turnLeft decoration="5|0" intensity="50"/>
+                    <turnRight decoration="5|1" intensity="50"/>
+                </lights>
+                <colors index="9" indexParked="9" minDirt="0" maxDirt="0.3">
+                    <color rgb="0.97 0.97 0.97" /> <!-- white -->
+                    <color rgb="0.815 0.863 0.863" /> <!-- silver -->
+                    <color rgb="0.070 0.086 0.090" /> <!-- silver -->
+                    <color rgb="0.102 0.159 0.168" /> <!-- silver -->
+                    <color rgb="0.445 0.502 0.450" /> <!-- silver -->
+                    <color rgb="0.270 0.337 0.361" /> <!-- silver -->
+                    <color rgb="0.385 0.01 0.01" /> <!-- red -->
+                    <color rgb="0.010 0.082 0.250" /> <!-- blue -->
+                    <color rgb="0.011 0.018 0.014" /> <!-- black -->
+                </colors>
+				<sounds>
+					<motor filename="$data/sounds/vehicles/engine/npc/npc_car_01_loop.wav"     indoor="0.50" outdoor="0.8" indoorLowpassGain="0.50" outdoorLowpassGain="1.00" range="40" innerRange="5" pitchOffset="1" pitchScale="0.0" pitchMin="0.75" pitchMax="1.0" />
+					<honk filename="$data/sounds/vehicles/engine/npc/npc_car_horn_01_loop.wav" indoor="0.50" outdoor="1.0" indoorLowpassGain="0.50" outdoorLowpassGain="1.00" range="45" innerRange="8" />
+				</sounds>
+            </assets>
+        </vehicle>        
+        <vehicle topSpeed="0.0129" accel="0.0000030" probability="0.1" probabilityParked="0.1">
+            <assets filename="cars/vehicle06/vehicle06.i3d" filenameParked="cars/vehicle06/vehicle06.i3d" triggerIndex="7" lightsIndex="4" driverIndex="8">
+                <wheels>
+                    <wheel yRotNode="0" xRotNode="0" radius="0.330" distToRotCenter="3.25" />
+                    <wheel yRotNode="1" xRotNode="1" radius="0.330" distToRotCenter="3.25" />
+                    <wheel yRotNode="2" xRotNode="2" radius="0.330" distToRotCenter="0" />
+                    <wheel yRotNode="3" xRotNode="3" radius="0.330" distToRotCenter="0" />
+                </wheels>
+                <lights>
+                    <light index="4" lowProfile="4|0" highProfile="4|1" decoration="4|3" intensity="20"/>
+                    <brake decoration="6|0" intensity="75"/>
+                    <turnLeft decoration="5|1" intensity="50"/>
+                    <turnRight decoration="5|0" intensity="50"/>
+                </lights>
+                <colors index="9" indexParked="9" minDirt="0" maxDirt="0.3">
+                    <color rgb="0.97 0.97 0.97" /> <!-- white -->
+                    <color rgb="0.815 0.863 0.863" /> <!-- silver -->
+                    <color rgb="0.070 0.086 0.090" /> <!-- silver -->
+                    <color rgb="0.102 0.159 0.168" /> <!-- silver -->
+                    <color rgb="0.445 0.502 0.450" /> <!-- silver -->
+                    <color rgb="0.270 0.337 0.361" /> <!-- silver -->
+                    <color rgb="0.385 0.01 0.01" /> <!-- red -->
+                    <color rgb="0.010 0.082 0.250" /> <!-- blue -->
+                    <color rgb="0.011 0.018 0.014" /> <!-- black -->
+                </colors>
+				<sounds>
+					<motor filename="$data/sounds/vehicles/engine/npc/npc_car_03_loop.wav"     indoor="0.50" outdoor="1.0" indoorLowpassGain="0.50" outdoorLowpassGain="1.00" range="40" innerRange="5" pitchOffset="1" pitchScale="0.0" pitchMin="0.75" pitchMax="1.0" />
+					<honk filename="$data/sounds/vehicles/engine/npc/npc_car_horn_03_loop.wav" indoor="0.50" outdoor="1.0" indoorLowpassGain="0.50" outdoorLowpassGain="1.00" range="45" innerRange="8" />
+				</sounds>
+            </assets>
+        </vehicle>
+        <vehicle topSpeed="0.0129" accel="0.0000030" probability="0.065">
+            <assets filename="cars/cementTruck/cementTruck.i3d" triggerIndex="7" lightsIndex="4" driverIndex="8">
+                <wheels>
+                    <wheel yRotNode="0" xRotNode="0" radius="0.57" distToRotCenter="5" />
+                    <wheel yRotNode="1" xRotNode="1" radius="0.57" distToRotCenter="5" />
+                    <wheel yRotNode="2" xRotNode="2" radius="0.57" distToRotCenter="0" />
+                    <wheel yRotNode="3" xRotNode="3" radius="0.57" distToRotCenter="0" />
+                    <wheel yRotNode="10" xRotNode="10" radius="0.57" distToRotCenter="0" />
+                    <wheel yRotNode="11" xRotNode="11" radius="0.57" distToRotCenter="0" />
+                    <wheel yRotNode="12|0" xRotNode="12|0" radius="5" distToRotCenter="0" />
+                </wheels>
+                <lights>
+                    <light index="4" lowProfile="4|0" highProfile="4|1" decoration="12|0" intensity="20"/>
+                    <brake decoration="6|0" intensity="75"/>
+                    <turnLeft decoration="5|0" intensity="50"/>
+                    <turnRight decoration="5|1" intensity="50"/>
+                </lights>
+                <colors index="9" indexParked="9" minDirt="0" maxDirt="0.3">
+                    <color rgb="0.97 0.97 0.97" /> <!-- white -->
+                    <color rgb="0.815 0.863 0.863" /> <!-- silver -->
+                    <color rgb="0.070 0.086 0.090" /> <!-- silver -->
+                    <color rgb="0.102 0.159 0.168" /> <!-- silver -->
+                    <color rgb="0.445 0.502 0.450" /> <!-- silver -->
+                    <color rgb="0.270 0.337 0.361" /> <!-- silver -->
+                    <color rgb="0.385 0.01 0.01" /> <!-- red -->
+                    <color rgb="0.010 0.082 0.250" /> <!-- blue -->
+                    <color rgb="0.011 0.018 0.014" /> <!-- black -->
+                </colors>
+				<sounds>
+					<motor filename="$data/sounds/vehicles/engine/npc/cement_truck_loop.wav"     indoor="0.50" outdoor="1.0" indoorLowpassGain="0.50" outdoorLowpassGain="1.00" range="65" innerRange="8" pitchOffset="1" pitchScale="0.0" pitchMin="0.75" pitchMax="1.0" />
+					<honk filename="$data/sounds/vehicles/engine/npc/cement_truck_horn_loop.wav" indoor="0.50" outdoor="1.0" indoorLowpassGain="0.50" outdoorLowpassGain="1.00" range="65" innerRange="10" />
+				</sounds>
+            </assets>
+        </vehicle>
+        <vehicle topSpeed="0.0129" accel="0.0000030" probability="0.04">
+            <assets filename="cars/tipperTruck/tipperTruck.i3d" triggerIndex="7" lightsIndex="4" driverIndex="8">
+                <wheels>
+                    <wheel yRotNode="0" xRotNode="0" radius="0.57" distToRotCenter="5" />
+                    <wheel yRotNode="1" xRotNode="1" radius="0.57" distToRotCenter="5" />
+                    <wheel yRotNode="2" xRotNode="2" radius="0.57" distToRotCenter="0" />
+                    <wheel yRotNode="3" xRotNode="3" radius="0.57" distToRotCenter="0" />
+                </wheels>
+                <lights>
+                    <light index="4" lowProfile="4|0" highProfile="4|1" decoration="12|0" intensity="20"/>
+                    <brake decoration="6|0" intensity="75"/>
+                    <turnLeft decoration="5|0" intensity="50"/>
+                    <turnRight decoration="5|1" intensity="50"/>
+                </lights>
+                <colors index="9" indexParked="9" minDirt="0" maxDirt="0.3">
+                    <color rgb="0.97 0.97 0.97" /> <!-- white -->
+                    <color rgb="0.815 0.863 0.863" /> <!-- silver -->
+                    <color rgb="0.070 0.086 0.090" /> <!-- silver -->
+                    <color rgb="0.102 0.159 0.168" /> <!-- silver -->
+                    <color rgb="0.445 0.502 0.450" /> <!-- silver -->
+                    <color rgb="0.270 0.337 0.361" /> <!-- silver -->
+                    <color rgb="0.385 0.01 0.01" /> <!-- red -->
+                    <color rgb="0.010 0.082 0.250" /> <!-- blue -->
+                    <color rgb="0.011 0.018 0.014" /> <!-- black -->
+                </colors>
+				<sounds>
+					<motor filename="$data/sounds/vehicles/engine/npc/cement_truck_loop.wav"     indoor="0.50" outdoor="1.0" indoorLowpassGain="0.50" outdoorLowpassGain="1.00" range="65" innerRange="8" pitchOffset="1" pitchScale="0.0" pitchMin="0.75" pitchMax="1.0" />
+					<honk filename="$data/sounds/vehicles/engine/npc/cement_truck_horn_loop.wav" indoor="0.50" outdoor="1.0" indoorLowpassGain="0.50" outdoorLowpassGain="1.00" range="65" innerRange="10" />
+				</sounds>
+            </assets>
+        </vehicle>
+    </vehicles>
+</trafficSystem>

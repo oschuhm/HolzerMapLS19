@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="vehicle02" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="16" filename="$data/shared/clearPlastic_diffuse.png"/>
+    <File fileId="8" filename="$data/shared/default_normal.png"/>
+    <File fileId="15" filename="$data/shared/window_diffuse.png"/>
+    <File fileId="9" filename="$data/shared/window_specular.png"/>
+    <File fileId="10" filename="../driver_diffuse.png"/>
+    <File fileId="11" filename="../driver_normal.png"/>
+    <File fileId="12" filename="../driver_specular.png"/>
+    <File fileId="2" filename="$data/vehicles/cars/vehicle02/vehicle02Wheel_normal.png"/>
+    <File fileId="3" filename="$data/vehicles/cars/vehicle02/vehicle02Wheel_specular.png"/>
+    <File fileId="13" filename="$data/vehicles/cars/vehicle02/vehicle02_normal.png"/>
+    <File fileId="14" filename="$data/vehicles/cars/vehicle02/vehicle02_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="4" diffuseColor="0.498039 0.498039 0.498039 1">
+    </Material>
+    <Material name="clearPlastic_mat" materialId="6" alphaBlending="true" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="16"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="1 1 1 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="lightControl" value="0 0 0 0"/>
+      <CustomParameter name="blinkOffset" value="0 0 1 0"/>
+    </Material>
+    <Material name="vehicle02Wheel_mat" materialId="9" diffuseColor="0.498039 0.498039 0.498039 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="window_mat1" materialId="8" diffuseColor="0.498039 0.498039 0.498039 1" alphaBlending="true" customShaderId="4" customShaderVariation="staticLight">
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="1 1 1 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="lightControl" value="0 0 0 0"/>
+      <CustomParameter name="blinkOffset" value="0 0 1 0"/>
+    </Material>
+    <Material name="vehicle02_mat" materialId="7" diffuseColor="0.498039 0.498039 0.498039 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="14"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="1 1 1 33"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="driver_mat" materialId="10">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+    </Material>
+    <Material name="window_mat" materialId="5" alphaBlending="true" customShaderId="4" customShaderVariation="Window">
+      <Texture fileId="15"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="vehicle02.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="vehicle02" kinematic="true" compound="true" collisionMask="2105442" clipDistance="350" nodeId="26" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true">
+      <Shape shapeId="2" name="wheelFrontLeft" translation="0.769525 0.33377 2.88974" clipDistance="300" nodeId="27" materialIds="9" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="3" name="wheelFrontRight" translation="-0.769525 0.33377 2.88974" clipDistance="300" nodeId="28" materialIds="9" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="4" name="wheelBackLeft" translation="0.769525 0.33377 -0.0173328" clipDistance="300" nodeId="29" materialIds="9" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="5" name="wheelBackRight" translation="-0.769525 0.33377 -0.0173328" clipDistance="300" nodeId="30" materialIds="9" castsShadows="true" receiveShadows="true"/>
+      <TransformGroup name="lights" translation="-2.66454e-15 -0.0238404 0.102491" rotation="0 180 0" nodeId="31">
+        <Light name="frontLightLow" translation="-1.25587e-16 0.648185 -3.57584" rotation="-15 0 0" clipDistance="75" nodeId="32" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" decayRate="1" range="20" coneAngle="80" dropOff="3"/>
+        <Light name="frontLightHigh" translation="0.644064 0.648185 -3.57276" rotation="-15 -8 0" clipDistance="75" nodeId="33" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" decayRate="1" range="25" coneAngle="70" dropOff="3">
+          <Light name="frontLightHigh1" translation="-1.18832 -0.0432248 0.161317" rotation="-6.61746e-15 16 1.03398e-14" clipDistance="50" nodeId="34" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" decayRate="1" range="25" coneAngle="70" dropOff="3"/>
+        </Light>
+        <Light name="backLights" translation="-0.802011 0.929716 1.10829" rotation="165 0 180" clipDistance="75" nodeId="35" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" decayRate="1" range="5" coneAngle="110" dropOff="3">
+          <Light name="backLights1" translation="-1.60401 2.84217e-16 0" rotation="0 5.6498e-30 -2.8249e-30" clipDistance="50" nodeId="36" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" decayRate="1" range="5" coneAngle="110" dropOff="3"/>
+        </Light>
+        <Shape shapeId="6" name="frontlightStatic" translation="9.75038e-16 0.575545 -2.85875" rotation="0 180 0" clipDistance="350" nodeId="37" materialIds="8" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+      </TransformGroup>
+      <TransformGroup name="turnlights" translation="-2.66454e-15 -0.0238404 0.102491" rotation="0 180 0" nodeId="38">
+        <Shape shapeId="7" name="turnlightRightStatic" translation="0.72909 0.877207 -1.09482" rotation="0 180 0" clipDistance="350" nodeId="39" materialIds="8" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="8" name="turnlightLeftStatic" translation="-0.72909 0.877285 -1.09472" rotation="0 180 0" clipDistance="350" nodeId="40" materialIds="8" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+      </TransformGroup>
+      <TransformGroup name="brakelight" nodeId="41">
+        <Shape shapeId="9" name="backlightStatic1" translation="0 0.916177 -0.78244" clipDistance="350" nodeId="42" materialIds="8" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+      </TransformGroup>
+      <Shape shapeId="10" name="trafficCollisionTrigger" translation="2.28882e-07 1.80141 4" kinematic="true" compound="true" trigger="true" collisionMask="34611200" nodeId="43" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="11" name="driver" translation="0.379056 0.853052 1.72587" visibility="false" clipDistance="100" nodeId="44" materialIds="10" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="12" name="exterior" clipDistance="300" nodeId="45" materialIds="7" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="13" name="windows" clipDistance="200" nodeId="46" materialIds="5" castsShadows="true" receiveShadows="true"/>
+      </Shape>
+      <TransformGroup name="visuals" nodeId="47">
+        <Shape shapeId="14" name="lightsGlassStatic" translation="0 0.681085 1.31331" clipDistance="35" nodeId="48" materialIds="6" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+</i3D>

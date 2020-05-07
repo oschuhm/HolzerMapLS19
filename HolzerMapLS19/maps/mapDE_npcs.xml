@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map>
+    <npcs>
+        <npc name="NPC_DE_01" title="Markus Bogner (Boarhof)"    category="middle"  imageFilename="$dataS2/character/humans/npc/npc09_diffuse.png" />
+        <npc name="NPC_DE_02" title="Max Merritt (Buchberghof)"   category="middle"  imageFilename="$dataS2/character/humans/npc/npc07_diffuse.png" />
+        <npc name="NPC_DE_03" title="Lisi Bichler (Schwaogahof)"        category="female"  imageFilename="$dataS2/character/humans/npc/npc18_diffuse.png" />
+        <npc name="NPC_DE_04" title="Staatliches Forstamt"       category="old"    imageFilename="$dataS2/character/humans/npc/npc12_diffuse.png" />
+		<npc name="NPC_DE_05" title="Josef Berghammer (Unterreiterhof)"  category="young"  imageFilename="$dataS2/character/humans/npc/npc02_diffuse.png" />
+		<npc name="NPC_DE_06" title="Hansi Schwarzenböck (Gundischhof)"  category="young"  imageFilename="$dataS2/character/humans/npc/npc10_diffuse.png" />
+		<npc name="NPC_DE_07" title="Hansi Fichtner (Graberhof)"  category="young"  imageFilename="$dataS2/character/humans/npc/npc27_diffuse.png" />
+		<npc name="NPC_DE_08" title="Alois Fichtner (Oberreiterhof)"  category="young"  imageFilename="$dataS2/character/humans/npc/npc30_diffuse.png" />
+		<npc name="NPC_DE_09" title="Agrargenossenschaft Bayerisches Oberland"  category="old"    imageFilename="$dataS2/character/humans/npc/npc19_diffuse.png" />
+		<npc name="NPC_DE_20" title="Gemeinde Bad Wiessee"   category="female" imageFilename="$dataS2/character/humans/npc/npc44_diffuse.png" />
+    </npcs>
+</map>

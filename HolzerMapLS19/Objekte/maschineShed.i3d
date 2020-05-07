@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Maschinenunterstand" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="14" filename="$data/shared/default_normal.dds"/>
+    <File fileId="13" filename="$data/shared/window_diffuse.dds"/>
+    <File fileId="15" filename="$data/shared/window_specular.dds"/>
+    <File fileId="10" filename="../maps/textures/lightAddon_diffuse.dds"/>
+    <File fileId="11" filename="../maps/textures/lightAddon_normal.dds"/>
+    <File fileId="12" filename="../maps/textures/lightAddon_specular.dds"/>
+    <File fileId="1" filename="../maps/textures/shelter_diffuse.dds"/>
+    <File fileId="5" filename="../maps/textures/shelter_mask.dds"/>
+    <File fileId="2" filename="../maps/textures/shelter_normal.dds"/>
+    <File fileId="3" filename="../maps/textures/shelter_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="coll_mat" materialId="7" diffuseColor="0.498039 0.498039 0.498039 0">
+    </Material>
+    <Material name="lightSet_mat" materialId="5">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+    </Material>
+    <Material name="mashineShelter_mat" materialId="4" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+    </Material>
+    <Material name="window_mat" materialId="8" alphaBlending="true">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+    </Material>
+    <Material name="lightIllum" materialId="6" emissiveColor="0.498039 0.498039 0.498039 1" specularColor="0.498039 1 0.498039">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="maschineShed.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="machine_Shelter" nodeId="19">
+      <Shape shapeId="1" name="machineShed_vis" translation="0 3.03188 -0.27674" static="true" density="0.0001" clipDistance="500" nodeId="20" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="lightAddon_vis" translation="0 2.67371 2.16144" static="true" density="0.0001" clipDistance="300" nodeId="21" materialIds="5" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="3" name="window" translation="0 2.42157 -4.75804" static="true" clipDistance="300" nodeId="22" materialIds="8" castsShadows="true" receiveShadows="true"/>
+      <TransformGroup name="lights" translation="0 2.07516 2.34604" nodeId="23">
+        <Shape shapeId="4" name="trigger" translation="0 -1.0472 0.653963" static="true" trigger="true" collisionMask="3145728" density="0.0001" clipDistance="300" nodeId="24" materialIds="7" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="5" name="trigger1" translation="11.3444 0 0" static="true" trigger="true" collisionMask="3145728" density="0.0001" clipDistance="300" nodeId="25" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <TransformGroup name="lightSwitch1" translation="-11.6986 -0.881975 0.861251" nodeId="26">
+          <Shape shapeId="6" name="lightSwitch" clipDistance="300" nodeId="27" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="lightSwitch2" translation="11.6986 -0.881975 0.861251" nodeId="28">
+          <Shape shapeId="7" name="lightSwitch" clipDistance="300" nodeId="29" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="illum" translation="-0.00833252 2.01244 -1.1772" nodeId="30">
+          <Shape shapeId="8" name="glass" translation="1.11022e-18 0.00858781 5.68434e-16" clipDistance="300" nodeId="31" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Light name="spotLight1" translation="-7.99167 1.19007 -1.52588e-07" rotation="90 0 180" clipDistance="100" nodeId="32" type="spot" color="0.8 0.8 0.8" emitDiffuse="true" emitSpecular="true" decayRate="1" range="12" coneAngle="150" dropOff="3"/>
+          <Light name="spotLight2" translation="0.00833252 1.19007 -1.52588e-07" rotation="90 0 180" clipDistance="100" nodeId="33" type="spot" color="0.8 0.8 0.8" emitDiffuse="true" emitSpecular="true" decayRate="1" range="12" coneAngle="150" dropOff="3"/>
+          <Light name="spotLight3" translation="8.00833 1.19007 -1.52588e-07" rotation="90 0 180" clipDistance="100" nodeId="34" type="spot" color="0.8 0.8 0.8" emitDiffuse="true" emitSpecular="true" decayRate="1" range="12" coneAngle="150" dropOff="3"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="clearArea" translation="0 -0.1 0" nodeId="35">
+        <TransformGroup name="start" translation="-12 0.1 5" nodeId="36"/>
+        <TransformGroup name="width" translation="-12 0.1 -5.68586" nodeId="37"/>
+        <TransformGroup name="height" translation="12.2188 0.1 5" nodeId="38"/>
+      </TransformGroup>
+      <Shape shapeId="9" name="tipCollusion" translation="12.175 0 -4.20102" static="true" collisionMask="524288" density="0.0001" clipDistance="1" nodeId="39" materialIds="7" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

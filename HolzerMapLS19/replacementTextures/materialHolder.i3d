@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="materialHolder" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+	<!-- Shader -->
+    <File fileId="2" filename="$data/shaders/treeBranchShader.xml"/>
+	<File fileId="600" filename="$data/shaders/treeTrunkShader.xml"/>
+	<File fileId="900" filename="$data/shaders/treeBillboardShader.xml"/>
+
+	
+	<!-- autumn -->
+    <File fileId="3" filename="autumn/treeBranch_diffuse.dds"/>
+	<File fileId="41" filename="autumn/ivy01_autumn.diffuse.dds"/>
+	
+	<!-- spring -->
+    <File fileId="1" filename="spring/treeBranch_diffuse.dds"/>
+	
+	
+	<!-- summer -->
+    <File fileId="5" filename="summer/treeBranch_diffuse.dds"/>
+	
+	<!-- winter -->
+    <File fileId="4" filename="winter/treeBranch_diffuse.dds"/>
+	<File fileId="40" filename="winter/ivy01_winter.diffuse.dds"/>
+	<File fileId="400" filename="winter/spruceTrunkWinter_diffuse.png"/>
+	<File fileId="700" filename="winter/spruce4LODWinter_diffuse.png"/>
+	<File fileId="1000" filename="winter/spruce3LODWinter_diffuse.png"/>
+	<File fileId="1200" filename="winter/spruce2LODWinter_diffuse.png"/>
+	<File fileId="100" filename="winter/spruceBranchWinter_diffuse.dds"/>
+	<File fileId="1400" filename="winter/spruce1LODWinter_diffuse.png"/>
+	<File fileId="1001" filename="winter/pineBranchWinter_diffuse.dds"/>
+	<File fileId="4000" filename="winter/pineTrunkWinter_diffuse.png"/>
+	<File fileId="7000" filename="winter/pine4LODWinter_diffuse.png"/>
+	<File fileId="10000" filename="winter/pine3LODWinter_diffuse.png"/>
+	<File fileId="12000" filename="winter/pine2LODWinter_diffuse.png"/>
+	<File fileId="14000" filename="winter/pine6LODWinter_diffuse.png"/>
+
+	
+	
+	<!-- any -->
+	<File fileId="6" filename="summer/treeBranch_normal.dds"/>
+	<File fileId="1484" filename="$data/maps/textures/european/ivy01_diffuse.dds"/>
+    <File fileId="1485" filename="$data/maps/textures/european/ivy01_normal.png"/>
+    <File fileId="1486" filename="$data/maps/textures/european/ivy01_specular.png"/>
+	<File fileId="200" filename="$data/maps/trees/spruceBranch_normal.png"/>
+	<File fileId="500" filename="$data/maps/trees/spruceTrunk_normal.png"/>
+	<File fileId="800" filename="$data/maps/trees/spruce4LOD_normal.png"/>
+	<File fileId="1100" filename="$data/maps/trees/spruce3LOD_normal.png"/>
+	<File fileId="1300" filename="$data/maps/trees/spruce2LOD_normal.png"/>
+	<File fileId="1500" filename="$data/maps/trees/spruce1LOD_normal.png"/>
+	<File fileId="2000" filename="$data/maps/trees/pineBranch_normal.png"/>
+	<File fileId="5000" filename="$data/maps/trees/pineTrunk_normal.png"/>
+	<File fileId="8000" filename="$data/maps/trees/pine4LOD_normal.png"/>
+	<File fileId="11000" filename="$data/maps/trees/pine3LOD_normal.png"/>
+	<File fileId="13000" filename="$data/maps/trees/pine2LOD_normal.png"/>
+	<File fileId="15000" filename="$data/maps/trees/pine6LOD_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <!-- autumn -->
+	<Material name="treeBranch_mat" materialId="5" customShaderId="2" customShaderVariation="FORCE_SECONDUV">
+      <Texture fileId="3"/>
+      <Normalmap fileId="6" />
+      <CustomParameter name="directionAndFrequency" value="0.06 0 0 1.2" />
+      <CustomParameter name="speed" value="1 0 0 0" />
+    </Material>
+	<Material name="bushes_mat" materialId="50" customShaderId="2" customShaderVariation="FORCE_SECONDUV">
+      <Texture fileId="3"/>
+      <CustomParameter name="directionAndFrequency" value="0.06 0 0 1.2" />
+      <CustomParameter name="speed" value="1 0 0 0" />
+    </Material>
+	<Material name="treeBranch_mat1" materialId="500" customShaderId="2" customShaderVariation="FORCE_SECONDUV">
+      <Texture fileId="3"/>
+      <Normalmap fileId="6" />
+      <CustomParameter name="directionAndFrequency" value="0.06 0 0 1.2" />
+      <CustomParameter name="speed" value="1 0 0 0" />
+    </Material>
+	<Material name="phong1" materialId="314000">
+      <Texture fileId="41"/>
+      <Normalmap fileId="1485"/>
+      <Glossmap fileId="1486"/>
+    </Material>
+    
+	<!-- winter -->
+    <Material name="treeBranch_mat" materialId="4" customShaderId="2" customShaderVariation="FORCE_SECONDUV">
+      <Texture fileId="4"/>
+      <Normalmap fileId="6" />
+      <CustomParameter name="directionAndFrequency" value="0.06 0 0 1.2" />
+      <CustomParameter name="speed" value="1 0 0 0" />
+    </Material>
+	<Material name="bushes_mat" materialId="40" customShaderId="2" customShaderVariation="FORCE_SECONDUV">
+      <Texture fileId="4"/>
+      <CustomParameter name="directionAndFrequency" value="0.06 0 0 1.2" />
+      <CustomParameter name="speed" value="1 0 0 0" />
+	</Material>
+	<Material name="treeBranch_mat1" materialId="400" customShaderId="2" customShaderVariation="FORCE_SECONDUV">
+      <Texture fileId="4"/>
+      <Normalmap fileId="6" />
+      <CustomParameter name="directionAndFrequency" value="0.06 0 0 1.2" />
+      <CustomParameter name="speed" value="1 0 0 0" />
+    </Material>
+	<Material name="phong1" materialId="31400">
+      <Texture fileId="40"/>
+      <Normalmap fileId="1485"/>
+      <Glossmap fileId="1486"/>
+    </Material>
+	
+	<Material name="spruceBranch_mat" materialId="120" customShaderId="2">
+      <Texture fileId="100"/>
+      <Normalmap fileId="200"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+    </Material>
+	<Material name="spruceTrunk_mat" materialId="140" customShaderId="600">
+      <Texture fileId="400"/>
+      <Normalmap fileId="500"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+    </Material>
+	<Material name="spruce4LOD_mat" materialId="150" customShaderId="900" customShaderVariation="billboard180">
+      <Texture fileId="700"/>
+      <Normalmap fileId="800"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+    </Material>
+	<Material name="spruce3LOD_mat" materialId="110" customShaderId="900" customShaderVariation="billboard180">
+      <Texture fileId="1000"/>
+      <Normalmap fileId="1100"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+    </Material>
+	<Material name="spruce2LOD_mat" materialId="100" customShaderId="900" customShaderVariation="billboard180">
+      <Texture fileId="1200"/>
+      <Normalmap fileId="1300"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+    </Material>
+	<Material name="spruce1LOD_mat" materialId="180" customShaderId="900" customShaderVariation="billboard180">
+      <Texture fileId="1400"/>
+      <Normalmap fileId="1500"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+    </Material>
+	
+	<Material name="pineBranch_mat" materialId="1200" customShaderId="2">
+      <Texture fileId="1001"/>
+      <Normalmap fileId="2000"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+    </Material>
+	<Material name="pineTrunk_mat" materialId="1400" customShaderId="600">
+      <Texture fileId="4000"/>
+      <Normalmap fileId="5000"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+    </Material>
+	<Material name="pine4LOD_mat" materialId="1500" customShaderId="900" customShaderVariation="billboard180">
+      <Texture fileId="7000"/>
+      <Normalmap fileId="8000"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+    </Material>
+	<Material name="pine3LOD_mat" materialId="1100" customShaderId="900" customShaderVariation="billboard180">
+      <Texture fileId="10000"/>
+      <Normalmap fileId="11000"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+    </Material>
+	<Material name="pine2LOD_mat" materialId="1000" customShaderId="900" customShaderVariation="billboard180">
+      <Texture fileId="12000"/>
+      <Normalmap fileId="13000"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+    </Material>
+	<Material name="pine6LOD_mat" materialId="1800" customShaderId="900" customShaderVariation="billboard180">
+      <Texture fileId="14000"/>
+      <Normalmap fileId="15000"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+    </Material>
+    
+	
+	<!-- summer -->
+    <Material name="treeBranch_mat" materialId="8" customShaderId="2" customShaderVariation="FORCE_SECONDUV">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6" />
+      <CustomParameter name="directionAndFrequency" value="0.06 0 0 1.2" />
+      <CustomParameter name="speed" value="1 0 0 0" />
+    </Material>
+	<Material name="bushes_mat" materialId="80" customShaderId="2" customShaderVariation="FORCE_SECONDUV">
+      <Texture fileId="5"/>
+      <CustomParameter name="directionAndFrequency" value="0.06 0 0 1.2" />
+      <CustomParameter name="speed" value="1 0 0 0" />
+    </Material>
+	<Material name="treeBranch_mat1" materialId="800" customShaderId="2" customShaderVariation="FORCE_SECONDUV">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6" />
+      <CustomParameter name="directionAndFrequency" value="0.06 0 0 1.2" />
+      <CustomParameter name="speed" value="1 0 0 0" />
+    </Material>
+	<Material name="phong1" materialId="314">
+      <Texture fileId="1484"/>
+      <Normalmap fileId="1485"/>
+      <Glossmap fileId="1486"/>
+    </Material>
+	
+	<!-- spring -->
+    <Material name="treeBranch_mat" materialId="6" customShaderId="2" customShaderVariation="FORCE_SECONDUV">
+      <Texture fileId="1"/>
+      <Normalmap fileId="6" />
+      <CustomParameter name="directionAndFrequency" value="0.06 0 0 1.2" />
+      <CustomParameter name="speed" value="1 0 0 0" />
+    </Material>
+	<Material name="bushes_mat" materialId="60" customShaderId="2" customShaderVariation="FORCE_SECONDUV">
+      <Texture fileId="1"/>
+      <CustomParameter name="directionAndFrequency" value="0.06 0 0 1.2" />
+      <CustomParameter name="speed" value="1 0 0 0" />
+    </Material>
+	<Material name="treeBranch_mat1" materialId="600" customShaderId="2" customShaderVariation="FORCE_SECONDUV">
+      <Texture fileId="1"/>
+      <Normalmap fileId="6" />
+      <CustomParameter name="directionAndFrequency" value="0.06 0 0 1.2" />
+      <CustomParameter name="speed" value="1 0 0 0" />
+    </Material>
+	<Material name="phong1" materialId="3140">
+      <Texture fileId="1484"/>
+      <Normalmap fileId="1485"/>
+      <Glossmap fileId="1486"/>
+    </Material>
+	
+	<!-- Clone-able simple mat for holding vanilla materials -->
+	<Material name="material_holder_mat" materialId="7" diffuseColor="0 0 0 1">
+	</Material>
+	
+  </Materials>
+
+
+  <Shapes externalShapesFile="materialHolder.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <!-- spring -->
+	<Shape shapeId="1" name="treeBranch_spring" visibility="false" nodeId="1" materialIds="6" distanceBlending="false" castsShadows="true" receiveShadows="true" />
+	<Shape shapeId="1" name="bushes_spring" visibility="false" nodeId="1" materialIds="60" distanceBlending="false" castsShadows="true" receiveShadows="true" />
+	<Shape shapeId="1" name="treeBranch1_spring" visibility="false" nodeId="1" materialIds="600" distanceBlending="false" castsShadows="true" receiveShadows="true" />
+	<Shape shapeId="1" name="Efeu_spring" visibility="false" nodeId="1484" materialIds="3140" distanceBlending="false" castsShadows="true" receiveShadows="true" />
+	
+	<!-- summer -->
+	<Shape shapeId="1" name="treeBranch_summer" visibility="false" nodeId="6" materialIds="8" distanceBlending="false" castsShadows="true" receiveShadows="true" />
+	<Shape shapeId="1" name="bushes_summer" visibility="false" nodeId="6" materialIds="80" distanceBlending="false" castsShadows="true" receiveShadows="true" />
+	<Shape shapeId="1" name="treeBranch1_summer" visibility="false" nodeId="6" materialIds="800" distanceBlending="false" castsShadows="true" receiveShadows="true" />
+	<Shape shapeId="1" name="Efeu_summer" visibility="false" nodeId="1484" materialIds="314" distanceBlending="false" castsShadows="true" receiveShadows="true" />
+	
+	<!-- autumn -->
+	<Shape shapeId="1" name="treeBranch_autumn" visibility="false" nodeId="3" materialIds="5" distanceBlending="false" castsShadows="true" receiveShadows="true" />
+	<Shape shapeId="1" name="bushes_autumn" visibility="false" nodeId="3" materialIds="50" distanceBlending="false" castsShadows="true" receiveShadows="true" />
+	<Shape shapeId="1" name="treeBranch1_autumn" visibility="false" nodeId="3" materialIds="500" distanceBlending="false" castsShadows="true" receiveShadows="true" />
+	<Shape shapeId="1" name="Efeu_autumn" visibility="false" nodeId="41" materialIds="314000" distanceBlending="false" castsShadows="true" receiveShadows="true" />
+	
+	<!-- winter -->
+	<Shape shapeId="1" name="treeBranch_winter" visibility="false" nodeId="4" materialIds="4" distanceBlending="false" castsShadows="true" receiveShadows="true" />
+	<Shape shapeId="1" name="bushes_winter" visibility="false" nodeId="4" materialIds="40" distanceBlending="false" castsShadows="true" receiveShadows="true" />
+	<Shape shapeId="1" name="treeBranch1_winter" visibility="false" nodeId="4" materialIds="400" distanceBlending="false" castsShadows="true" receiveShadows="true" />
+	<Shape shapeId="1" name="Efeu_winter" visibility="false" nodeId="40" materialIds="31400" distanceBlending="false" castsShadows="true" receiveShadows="true" />
+	
+	<Shape shapeId="1" name="spruceBranchWinter" visibility="false" nodeId="410" materialIds="120"/>
+    <Shape shapeId="1" name="spruceLOD0Winter" visibility="false" nodeId="420" materialIds="140"/>
+    <Shape shapeId="1" name="spruce5LOD1Winter" visibility="false" nodeId="430" materialIds="150"/>
+    <Shape shapeId="1" name="spruce4LOD1Winter" visibility="false" nodeId="440" materialIds="150"/>
+    <Shape shapeId="1" name="spruce3LOD1Winter" visibility="false" nodeId="450" materialIds="110"/>
+    <Shape shapeId="1" name="spruce2LOD1Winter" visibility="false" nodeId="460" materialIds="100"/>
+    <Shape shapeId="1" name="spruce1LOD1Winter" visibility="false" nodeId="470" materialIds="180"/>
+	
+	<Shape shapeId="1" name="pineBranchWinter" visibility="false" nodeId="4100" materialIds="1200"/>
+    <Shape shapeId="1" name="pineLOD0Winter" visibility="false" nodeId="4200" materialIds="1400"/>
+    <Shape shapeId="1" name="pine5LOD1Winter" visibility="false" nodeId="4300" materialIds="1500"/>
+    <Shape shapeId="1" name="pine4LOD1Winter" visibility="false" nodeId="4400" materialIds="1500"/>
+    <Shape shapeId="1" name="pine3LOD1Winter" visibility="false" nodeId="4500" materialIds="1100"/>
+    <Shape shapeId="1" name="pine2LOD1Winter" visibility="false" nodeId="4600" materialIds="1000"/>
+    <Shape shapeId="1" name="pine6LOD1Winter" visibility="false" nodeId="4700" materialIds="1800"/>
+	
+	<!-- Clone-able simple mat for holding vanilla materials -->
+    <Shape shapeId="1" name="cache_material_holder" visibility="false" nodeId="19" materialIds="7" distanceBlending="false"/>
+  </Scene>
+
+</i3D>

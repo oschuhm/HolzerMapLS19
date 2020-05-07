@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+    <Material name="UnnamedMaterial" materialId="4" diffuseColor="1 1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sleeptrigger.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="sleeptrigger2" rotation="0 0 4.69999e-06" nodeId="7">
+      <TransformGroup name="spawnPoint" translation="0 0.1 -4" nodeId="8"/>
+      <Shape shapeId="1" name="sleepTrigger" scale="9.8 5 16" static="true" trigger="true" nodeId="9" materialIds="4" nonRenderable="true" distanceBlending="false"/>
+      <Camera name="sleepCamera" translation="0 15 -20" rotation="145 0 -180" nodeId="10" fov="60" nearClip="0.1" farClip="10000" orthographicHeight="1"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

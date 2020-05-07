@@ -1,0 +1,1137 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="effect_materialHolder" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.2.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="26" filename="$data/fillPlanes/chaff_normal.png"/>
+    <File fileId="15" filename="$data/fillPlanes/grass_normal.png"/>
+    <File fileId="27" filename="$data/fillPlanes/hay_normal.dds"/>
+    <File fileId="2" filename="$data/particleSystems/fx_grain_normal.png"/>
+    <File fileId="24" filename="$data/shaders/cultivatorSoilShader.xml"/>
+    <File fileId="17" filename="$data/shaders/grainSmokeShader.xml"/>
+    <File fileId="3" filename="$data/shaders/grainUnloadingShader.xml"/>
+    <File fileId="23" filename="$data/shaders/morphTargetShader.xml"/>
+    <File fileId="19" filename="$data/shaders/pipeUnloadingShader.xml"/>
+    <File fileId="21" filename="$data/shaders/windrowUnloadingShader.xml"/>
+    <File fileId="22" filename="../fillPlanes/tipOnGround/clover_windrow_diffuse.dds"/>
+    <File fileId="1" filename="../fillPlanes/tipOnGround/alfalfa_diffuse.png"/>
+    <File fileId="12" filename="../fillPlanes/tipOnGround/alfalfa_fermented_diffuse.dds"/>
+    <File fileId="13" filename="../fillPlanes/tipOnGround/alfalfa_fermented_normal.dds"/>
+    <File fileId="18" filename="../fillPlanes/tipOnGround/alfalfa_normal.dds"/>
+    <File fileId="6" filename="../fillPlanes/tipOnGround/alfalfa_windrow_diffuse.png"/>
+    <File fileId="20" filename="../fillPlanes/tipOnGround/alfalfa_windrow_normal.dds"/>
+    <File fileId="8" filename="../fillPlanes/tipOnGround/clover_diffuse.png"/>
+    <File fileId="14" filename="../fillPlanes/tipOnGround/clover_fermented_diffuse.dds"/>
+    <File fileId="25" filename="../fillPlanes/tipOnGround/clover_fermented_normal.dds"/>
+    <File fileId="9" filename="../fillPlanes/tipOnGround/clover_normal.dds"/>
+    <File fileId="10" filename="../fillPlanes/tipOnGround/clover_windrow_diffuse.png"/>
+    <File fileId="7" filename="../fillPlanes/tipOnGround/dryAlfalfa_windrow_diffuse.png"/>
+    <File fileId="11" filename="../fillPlanes/tipOnGround/dryClover_windrow_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="alfalfa_mat186" materialId="18" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4.5 -2.5 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.05"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.001 0.01"/>
+    </Material>
+    <Material name="choppedmaize_mat166" materialId="4" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="14"/>
+      <Normalmap fileId="15"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4 -2.5 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.025"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.001 0.01"/>
+    </Material>
+    <Material name="clover_windrow_mat188" materialId="5" customShaderId="23" customShaderVariation="ALPHA_DISABLE">
+      <Texture fileId="10"/>
+      <Normalmap fileId="20"/>
+      <CustomParameter name="morphPosition" value="0 1 1 2"/>
+      <CustomParameter name="offsetUV" value="0 0 -100 100"/>
+      <CustomParameter name="alphaRemap" value="0 1 0 0"/>
+      <CustomParameter name="uvScale" value="2 2 1 1"/>
+      <CustomParameter name="vertexAnim" value="20 20 0.05 1"/>
+    </Material>
+    <Material name="alfalfa_windrow_mat179" materialId="6" customShaderId="23" customShaderVariation="VERTEX_ANIMATION">
+      <Texture fileId="6"/>
+      <Normalmap fileId="20"/>
+      <CustomParameter name="morphPosition" value="0 1 1 2"/>
+      <CustomParameter name="offsetUV" value="0 0 -100 100"/>
+      <CustomParameter name="alphaRemap" value="0.1 0.58 0 0"/>
+      <CustomParameter name="uvScale" value="2 2 1 1"/>
+      <CustomParameter name="vertexAnim" value="20 20 0.05 1"/>
+    </Material>
+    <Material name="clover_mat188" materialId="8" customShaderId="23" customShaderVariation="ALPHA_DISABLE">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <CustomParameter name="morphPosition" value="0 1 1 2"/>
+      <CustomParameter name="offsetUV" value="0 0 -100 100"/>
+      <CustomParameter name="alphaRemap" value="0 1 0 0"/>
+      <CustomParameter name="uvScale" value="2 2 1 1"/>
+      <CustomParameter name="vertexAnim" value="20 20 0.05 1"/>
+    </Material>
+    <Material name="clover_windrow_mat185" materialId="9" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="10"/>
+      <Normalmap fileId="9"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4.5 -2.5 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.15"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.001 0.01"/>
+    </Material>
+    <Material name="choppedmaize_mat170" materialId="12" alphaBlending="true" customShaderId="24" customShaderVariation="LEVELER">
+      <Normalmap fileId="26"/>
+      <CustomParameter name="VertxoffsetVertexdeformMotionUVscale" value="-35 1 0 6"/>
+    </Material>
+    <Material name="choppedmaize_mat166" materialId="13" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4 -2.5 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.025"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.001 0.01"/>
+    </Material>
+    <Material name="clover_mat185" materialId="15" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4.5 -2.5 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.15"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.001 0.01"/>
+    </Material>
+    <Material name="clover_windrow_mat179" materialId="7" customShaderId="23" customShaderVariation="VERTEX_ANIMATION">
+      <Texture fileId="14"/>
+      <Normalmap fileId="9"/>
+      <CustomParameter name="morphPosition" value="0 1 1 2"/>
+      <CustomParameter name="offsetUV" value="0 0 -100 100"/>
+      <CustomParameter name="alphaRemap" value="0.1 0.58 0 0"/>
+      <CustomParameter name="uvScale" value="2 2 1 1"/>
+      <CustomParameter name="vertexAnim" value="20 20 0.05 1"/>
+    </Material>
+    <Material name="smoke_choppedmaize" materialId="17" diffuseColor="0.494118 0.494118 0.494118 1" alphaBlending="true" customShaderId="17">
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="0.75 0.1 -0.3 0"/>
+      <CustomParameter name="ColorAlpha" value="0.467 0.502 0.327 2"/>
+    </Material>
+    <Material name="clover_mat189" materialId="14" alphaBlending="true" customShaderId="24" customShaderVariation="LEVELER">
+      <Texture fileId="14"/>
+      <Normalmap fileId="25"/>
+      <CustomParameter name="VertxoffsetVertexdeformMotionUVscale" value="-35 1 0 6"/>
+    </Material>
+    <Material name="clover_mat173" materialId="16" customShaderId="21" customShaderVariation="WINDROW_CENTER">
+      <Texture fileId="22"/>
+      <Normalmap fileId="9"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="0.6 -4 1 1"/>
+      <CustomParameter name="MaskChannels" value="0.5 1 0.25 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="alphaRemap" value="0 1 0 0"/>
+    </Material>
+    <Material name="alfalfa_mat188" materialId="10" customShaderId="23" customShaderVariation="ALPHA_DISABLE">
+      <Texture fileId="1"/>
+      <Normalmap fileId="18"/>
+      <CustomParameter name="morphPosition" value="0 1 1 2"/>
+      <CustomParameter name="offsetUV" value="0 0 -100 100"/>
+      <CustomParameter name="alphaRemap" value="0 1 0 0"/>
+      <CustomParameter name="uvScale" value="2 2 1 1"/>
+      <CustomParameter name="vertexAnim" value="20 20 0.05 1"/>
+    </Material>
+    <Material name="dryAlfalfa_windrow_mat" materialId="11" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="7"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4.5 -2.5 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.025"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.001 0.01"/>
+    </Material>
+    <Material name="clover_windrow_mat179" materialId="39" customShaderId="23" customShaderVariation="VERTEX_ANIMATION">
+      <Texture fileId="10"/>
+      <Normalmap fileId="9"/>
+      <CustomParameter name="morphPosition" value="0 1 1 2"/>
+      <CustomParameter name="offsetUV" value="0 0 -100 100"/>
+      <CustomParameter name="alphaRemap" value="0.1 0.58 0 0"/>
+      <CustomParameter name="uvScale" value="2 2 1 1"/>
+      <CustomParameter name="vertexAnim" value="20 20 0.05 1"/>
+    </Material>
+    <Material name="clover_windrow_mat186" materialId="60" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="10"/>
+      <Normalmap fileId="9"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4.5 -2.5 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.05"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.001 0.01"/>
+    </Material>
+    <Material name="alfalfa_windrow_mat185" materialId="34" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="6"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4.5 -2.5 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.15"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.001 0.01"/>
+    </Material>
+    <Material name="clover_windrow_mat190" materialId="61" customShaderId="19" customShaderVariation="BEND_PARABOLA">
+      <Texture fileId="10"/>
+      <Normalmap fileId="20"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="uvScaleSpeedFreqAmp" value="1.5 6 3 0.1"/>
+      <CustomParameter name="shapeScaleSpread" value="0.4 0.2 1 0"/>
+      <CustomParameter name="controlPoint" value="10 0.25 0 0"/>
+      <CustomParameter name="alphaRemap" value="0.25 1 0 0"/>
+    </Material>
+    <Material name="clover_windrow_mat188" materialId="28" customShaderId="23" customShaderVariation="ALPHA_DISABLE">
+      <Normalmap fileId="20"/>
+      <CustomParameter name="morphPosition" value="0 1 1 2"/>
+      <CustomParameter name="offsetUV" value="0 0 -100 100"/>
+      <CustomParameter name="alphaRemap" value="0 1 0 0"/>
+      <CustomParameter name="uvScale" value="2 2 1 1"/>
+      <CustomParameter name="vertexAnim" value="20 20 0.05 1"/>
+    </Material>
+    <Material name="alfalfa_windrow_mat187" materialId="52" customShaderId="19">
+      <Texture fileId="6"/>
+      <Normalmap fileId="20"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="uvScaleSpeedFreqAmp" value="1.5 6 3 0.1"/>
+      <CustomParameter name="shapeScaleSpread" value="0.4 0.2 1 0"/>
+      <CustomParameter name="controlPoint" value="10 0.25 0 0"/>
+      <CustomParameter name="alphaRemap" value="0.25 1 0 0"/>
+    </Material>
+    <Material name="alfalfa_mat173" materialId="58" customShaderId="21" customShaderVariation="WINDROW_CENTER">
+      <Texture fileId="1"/>
+      <Normalmap fileId="15"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="0.6 -4 1 1"/>
+      <CustomParameter name="MaskChannels" value="0.5 1 0.25 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="alphaRemap" value="0 1 0 0"/>
+    </Material>
+    <Material name="dryAlfalfa_windrow_mat190" materialId="20" customShaderId="19" customShaderVariation="BEND_PARABOLA">
+      <Texture fileId="7"/>
+      <Normalmap fileId="20"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="uvScaleSpeedFreqAmp" value="1.5 6 3 0.1"/>
+      <CustomParameter name="shapeScaleSpread" value="0.4 0.2 1 0"/>
+      <CustomParameter name="controlPoint" value="10 0.25 0 0"/>
+      <CustomParameter name="alphaRemap" value="0.25 1 0 0"/>
+    </Material>
+    <Material name="clover_mat187" materialId="24" customShaderId="19">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="uvScaleSpeedFreqAmp" value="1.5 6 3 0.1"/>
+      <CustomParameter name="shapeScaleSpread" value="0.4 0.2 1 0"/>
+      <CustomParameter name="controlPoint" value="10 0.25 0 0"/>
+      <CustomParameter name="alphaRemap" value="0.25 1 0 0"/>
+    </Material>
+    <Material name="choppedmaize_mat170" materialId="37" alphaBlending="true" customShaderId="24" customShaderVariation="LEVELER">
+      <CustomParameter name="VertxoffsetVertexdeformMotionUVscale" value="-35 1 0 6"/>
+    </Material>
+    <Material name="clover_mat186" materialId="43" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4.5 -2.5 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.05"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.001 0.01"/>
+    </Material>
+    <Material name="clover_mat" materialId="35" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4.5 -2.5 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.025"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.001 0.01"/>
+    </Material>
+    <Material name="clover_windrow_mat189" materialId="45" alphaBlending="true" customShaderId="24" customShaderVariation="LEVELER">
+      <Texture fileId="10"/>
+      <Normalmap fileId="20"/>
+      <CustomParameter name="VertxoffsetVertexdeformMotionUVscale" value="-35 1 0 6"/>
+    </Material>
+    <Material name="alfalfa_mat187" materialId="51" customShaderId="19">
+      <Texture fileId="1"/>
+      <Normalmap fileId="18"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="uvScaleSpeedFreqAmp" value="1.5 6 3 0.1"/>
+      <CustomParameter name="shapeScaleSpread" value="0.4 0.2 1 0"/>
+      <CustomParameter name="controlPoint" value="10 0.25 0 0"/>
+      <CustomParameter name="alphaRemap" value="0.25 1 0 0"/>
+    </Material>
+    <Material name="clover_windrow_mat" materialId="44" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="10"/>
+      <Normalmap fileId="9"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4.5 -2.5 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.025"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.001 0.01"/>
+    </Material>
+    <Material name="clover_windrow_mat179" materialId="46" customShaderId="23" customShaderVariation="VERTEX_ANIMATION">
+      <Texture fileId="11"/>
+      <Normalmap fileId="9"/>
+      <CustomParameter name="morphPosition" value="0 1 1 2"/>
+      <CustomParameter name="offsetUV" value="0 0 -100 100"/>
+      <CustomParameter name="alphaRemap" value="0.1 0.58 0 0"/>
+      <CustomParameter name="uvScale" value="2 2 1 1"/>
+      <CustomParameter name="vertexAnim" value="20 20 0.05 1"/>
+    </Material>
+    <Material name="choppedmaize_mat" materialId="55" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="14"/>
+      <Normalmap fileId="9"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4 -2.5 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.15"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.001 0.01"/>
+    </Material>
+    <Material name="dryAlfalfa_windrow_mat188" materialId="26" customShaderId="23" customShaderVariation="ALPHA_DISABLE">
+      <Texture fileId="7"/>
+      <Normalmap fileId="20"/>
+      <CustomParameter name="morphPosition" value="0 1 1 2"/>
+      <CustomParameter name="offsetUV" value="0 0 -100 100"/>
+      <CustomParameter name="alphaRemap" value="0 1 0 0"/>
+      <CustomParameter name="uvScale" value="2 2 1 1"/>
+      <CustomParameter name="vertexAnim" value="20 20 0.05 1"/>
+    </Material>
+    <Material name="clover_windrow_mat187" materialId="32" customShaderId="19">
+      <Normalmap fileId="20"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="uvScaleSpeedFreqAmp" value="1.5 6 3 0.1"/>
+      <CustomParameter name="shapeScaleSpread" value="0.4 0.2 1 0"/>
+      <CustomParameter name="controlPoint" value="10 0.25 0 0"/>
+      <CustomParameter name="alphaRemap" value="0.25 1 0 0"/>
+    </Material>
+    <Material name="alfalfa_windrow_mat188" materialId="40" customShaderId="23" customShaderVariation="ALPHA_DISABLE">
+      <Texture fileId="6"/>
+      <Normalmap fileId="20"/>
+      <CustomParameter name="morphPosition" value="0 1 1 2"/>
+      <CustomParameter name="offsetUV" value="0 0 -100 100"/>
+      <CustomParameter name="alphaRemap" value="0 1 0 0"/>
+      <CustomParameter name="uvScale" value="2 2 1 1"/>
+      <CustomParameter name="vertexAnim" value="20 20 0.05 1"/>
+    </Material>
+    <Material name="choppedmaize_mat" materialId="31" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4 -2.5 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.15"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.001 0.01"/>
+    </Material>
+    <Material name="smoke_wheat" materialId="21" diffuseColor="0.494118 0.494118 0.494118 1" alphaBlending="true" customShaderId="17">
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="0.75 0.1 -0.3 0"/>
+      <CustomParameter name="ColorAlpha" value="0.904 0.752 0.489 2"/>
+    </Material>
+    <Material name="clover_windrow_mat185" materialId="29" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="11"/>
+      <Normalmap fileId="9"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4.5 -2.5 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.15"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.001 0.01"/>
+    </Material>
+    <Material name="dryAlfalfa_windrow_mat186" materialId="41" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="7"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4.5 -2.5 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.05"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.001 0.01"/>
+    </Material>
+    <Material name="clover_mat190" materialId="48" customShaderId="19" customShaderVariation="BEND_PARABOLA">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="uvScaleSpeedFreqAmp" value="1.5 6 3 0.1"/>
+      <CustomParameter name="shapeScaleSpread" value="0.4 0.2 1 0"/>
+      <CustomParameter name="controlPoint" value="10 0.25 0 0"/>
+      <CustomParameter name="alphaRemap" value="0.25 1 0 0"/>
+    </Material>
+    <Material name="alfalfa_mat185" materialId="53" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4.5 -2.5 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.15"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.001 0.01"/>
+    </Material>
+    <Material name="alfalfa_mat" materialId="38" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4.5 -2.5 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.025"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.001 0.01"/>
+    </Material>
+    <Material name="alfalfa_windrow_mat190" materialId="47" customShaderId="19" customShaderVariation="BEND_PARABOLA">
+      <Texture fileId="6"/>
+      <Normalmap fileId="20"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="uvScaleSpeedFreqAmp" value="1.5 6 3 0.1"/>
+      <CustomParameter name="shapeScaleSpread" value="0.4 0.2 1 0"/>
+      <CustomParameter name="controlPoint" value="10 0.25 0 0"/>
+      <CustomParameter name="alphaRemap" value="0.25 1 0 0"/>
+    </Material>
+    <Material name="dryAlfalfa_windrow_mat185" materialId="56" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="7"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4.5 -2.5 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.15"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.001 0.01"/>
+    </Material>
+    <Material name="alfalfa_windrow_mat189" materialId="23" alphaBlending="true" customShaderId="24" customShaderVariation="LEVELER">
+      <Texture fileId="6"/>
+      <Normalmap fileId="20"/>
+      <CustomParameter name="VertxoffsetVertexdeformMotionUVscale" value="-35 1 0 6"/>
+    </Material>
+    <Material name="dryAlfalfa_windrow_mat189" materialId="19" alphaBlending="true" customShaderId="24" customShaderVariation="LEVELER">
+      <Texture fileId="7"/>
+      <Normalmap fileId="20"/>
+      <CustomParameter name="VertxoffsetVertexdeformMotionUVscale" value="-35 1 0 6"/>
+    </Material>
+    <Material name="clover_windrow_mat186" materialId="25" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="11"/>
+      <Normalmap fileId="9"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4.5 -2.5 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.05"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.001 0.01"/>
+    </Material>
+    <Material name="clover_windrow_mat" materialId="27" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="11"/>
+      <Normalmap fileId="9"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4.5 -2.5 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.025"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.001 0.01"/>
+    </Material>
+    <Material name="dryAlfalfa_windrow_mat179" materialId="49" customShaderId="23" customShaderVariation="VERTEX_ANIMATION">
+      <Texture fileId="7"/>
+      <Normalmap fileId="27"/>
+      <CustomParameter name="morphPosition" value="0 1 1 2"/>
+      <CustomParameter name="offsetUV" value="0 0 -100 100"/>
+      <CustomParameter name="alphaRemap" value="0.1 0.58 0 0"/>
+      <CustomParameter name="uvScale" value="2 2 1 1"/>
+      <CustomParameter name="vertexAnim" value="20 20 0.05 1"/>
+    </Material>
+    <Material name="choppedmaize_mat167" materialId="50" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4 -2.5 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.05"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.001 0.01"/>
+    </Material>
+    <Material name="alfalfa_mat189" materialId="42" alphaBlending="true" customShaderId="24" customShaderVariation="LEVELER">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <CustomParameter name="VertxoffsetVertexdeformMotionUVscale" value="-35 1 0 6"/>
+    </Material>
+    <Material name="dryAlfalfa_windrow_mat187" materialId="22" customShaderId="19">
+      <Texture fileId="7"/>
+      <Normalmap fileId="20"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="uvScaleSpeedFreqAmp" value="1.5 6 3 0.1"/>
+      <CustomParameter name="shapeScaleSpread" value="0.4 0.2 1 0"/>
+      <CustomParameter name="controlPoint" value="10 0.25 0 0"/>
+      <CustomParameter name="alphaRemap" value="0.25 1 0 0"/>
+    </Material>
+    <Material name="clover_windrow_mat190" materialId="33" customShaderId="19" customShaderVariation="BEND_PARABOLA">
+      <Normalmap fileId="20"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="uvScaleSpeedFreqAmp" value="1.5 6 3 0.1"/>
+      <CustomParameter name="shapeScaleSpread" value="0.4 0.2 1 0"/>
+      <CustomParameter name="controlPoint" value="10 0.25 0 0"/>
+      <CustomParameter name="alphaRemap" value="0.25 1 0 0"/>
+    </Material>
+    <Material name="alfalfa_windrow_mat186" materialId="36" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="6"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4.5 -2.5 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.05"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.001 0.01"/>
+    </Material>
+    <Material name="choppedmaize_mat167" materialId="54" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="14"/>
+      <Normalmap fileId="15"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4 -2.5 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.05"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.001 0.01"/>
+    </Material>
+    <Material name="alfalfa_mat190" materialId="57" customShaderId="19" customShaderVariation="BEND_PARABOLA">
+      <Texture fileId="1"/>
+      <Normalmap fileId="18"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="uvScaleSpeedFreqAmp" value="1.5 6 3 0.1"/>
+      <CustomParameter name="shapeScaleSpread" value="0.4 0.2 1 0"/>
+      <CustomParameter name="controlPoint" value="10 0.25 0 0"/>
+      <CustomParameter name="alphaRemap" value="0.25 1 0 0"/>
+    </Material>
+    <Material name="alfalfa_windrow_mat" materialId="59" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="6"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4.5 -2.5 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.025"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.001 0.01"/>
+    </Material>
+    <Material name="clover_windrow_mat187" materialId="30" customShaderId="19">
+      <Texture fileId="10"/>
+      <Normalmap fileId="20"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="uvScaleSpeedFreqAmp" value="1.5 6 3 0.1"/>
+      <CustomParameter name="shapeScaleSpread" value="0.4 0.2 1 0"/>
+      <CustomParameter name="controlPoint" value="10 0.25 0 0"/>
+      <CustomParameter name="alphaRemap" value="0.25 1 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="effect_materialHolder.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="unloading" clipDistance="10" nodeId="69">
+      <TransformGroup name="alfalfa" clipDistance="10" nodeId="70">
+        <Shape shapeId="1" name="alfalfa0_025_materialHolder" clipDistance="10" nodeId="71" materialIds="38" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="alfalfa0_05_materialHolder" clipDistance="10" nodeId="72" materialIds="18" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="alfalfa0_15_materialHolder" clipDistance="10" nodeId="73" materialIds="53" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="alfalfa_windrow" clipDistance="10" nodeId="74">
+        <Shape shapeId="1" name="alfalfa_windrow0_025_materialHolder" clipDistance="10" nodeId="75" materialIds="59" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="alfalfa_windrow0_05_materialHolder" clipDistance="10" nodeId="76" materialIds="36" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="alfalfa_windrow0_15_materialHolder" clipDistance="10" nodeId="77" materialIds="34" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="dryAlfalfa_windrow" clipDistance="10" nodeId="78">
+        <Shape shapeId="1" name="dryAlfalfa_windrow0_025_materialHolder" clipDistance="10" nodeId="79" materialIds="11" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="dryAlfalfa_windrow0_05_materialHolder" clipDistance="10" nodeId="80" materialIds="41" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="dryAlfalfa_windrow0_15_materialHolder" clipDistance="10" nodeId="81" materialIds="56" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="clover" clipDistance="10" nodeId="82">
+        <Shape shapeId="1" name="clover0_025_materialHolder" clipDistance="10" nodeId="83" materialIds="35" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="clover0_05_materialHolder" clipDistance="10" nodeId="84" materialIds="43" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="clover0_15_materialHolder" clipDistance="10" nodeId="85" materialIds="15" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="clover_windrow" clipDistance="10" nodeId="86">
+        <Shape shapeId="1" name="clover_windrow0_025_materialHolder" clipDistance="10" nodeId="87" materialIds="44" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="clover_windrow0_05_materialHolder" clipDistance="10" nodeId="88" materialIds="60" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="clover_windrow0_15_materialHolder" clipDistance="10" nodeId="89" materialIds="9" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="dryClover_windrow" clipDistance="10" nodeId="90">
+        <Shape shapeId="1" name="dryClover_windrow0_025_materialHolder" clipDistance="10" nodeId="91" materialIds="27" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="dryClover_windrow0_05_materialHolder" clipDistance="10" nodeId="92" materialIds="25" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="dryClover_windrow0_15_materialHolder" clipDistance="10" nodeId="93" materialIds="29" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="alfalfa_fermented" clipDistance="10" nodeId="94">
+        <Shape shapeId="1" name="alfalfa_fermented0_025_materialHolder" clipDistance="10" nodeId="95" materialIds="13" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="alfalfa_fermented0_05_materialHolder" clipDistance="10" nodeId="96" materialIds="50" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="alfalfa_fermented0_15_materialHolder" clipDistance="10" nodeId="97" materialIds="31" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="clover_fermented" clipDistance="10" nodeId="98">
+        <Shape shapeId="1" name="clover_fermented0_025_materialHolder" clipDistance="10" nodeId="99" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="cloverfermented0_05_materialHolder" clipDistance="10" nodeId="100" materialIds="54" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="clover_fermented0_15_materialHolder" clipDistance="10" nodeId="101" materialIds="55" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="smoke" clipDistance="10" nodeId="102">
+      <TransformGroup name="alfalfa" clipDistance="10" nodeId="103">
+        <Shape shapeId="2" name="alfalfa_materialHolder" clipDistance="10" nodeId="104" materialIds="21" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="alfalfa_windrow" clipDistance="10" nodeId="105">
+        <Shape shapeId="2" name="alfalfa_windrow_materialHolder" clipDistance="10" nodeId="106" materialIds="21" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="dryAlfalfa_windrow" clipDistance="10" nodeId="107">
+        <Shape shapeId="2" name="dryAlfalfa_windrow_materialHolder" clipDistance="10" nodeId="108" materialIds="21" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="clover" clipDistance="10" nodeId="109">
+        <Shape shapeId="2" name="clover_materialHolder" clipDistance="10" nodeId="110" materialIds="21" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="clover_windrow" clipDistance="10" nodeId="111">
+        <Shape shapeId="2" name="clover_windrow_materialHolder" clipDistance="10" nodeId="112" materialIds="21" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="dryClover_windrow" clipDistance="10" nodeId="113">
+        <Shape shapeId="2" name="clover_windrow_materialHolder" clipDistance="10" nodeId="114" materialIds="21" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="alfalfa_fermented" clipDistance="10" nodeId="115">
+        <Shape shapeId="2" name="grass_fermented_materialHolder" clipDistance="10" nodeId="116" materialIds="17" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="clover_fermented" clipDistance="10" nodeId="117">
+        <Shape shapeId="2" name="choppedmaize_fermented_materialHolder" clipDistance="10" nodeId="118" materialIds="17" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="straw" clipDistance="10" nodeId="119"/>
+    <TransformGroup name="chopper" clipDistance="10" nodeId="120"/>
+    <TransformGroup name="soil" clipDistance="10" nodeId="121"/>
+    <TransformGroup name="sprayer" clipDistance="10" nodeId="122"/>
+    <TransformGroup name="spreader" clipDistance="10" nodeId="123"/>
+    <TransformGroup name="pipe" clipDistance="10" nodeId="124">
+      <TransformGroup name="alfalfa" nodeId="125">
+        <Shape shapeId="3" name="alfalfa_1_materialHolder" clipDistance="10" nodeId="126" materialIds="51" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="alfalfa_2_materialHolder" clipDistance="10" nodeId="127" materialIds="57" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="alfalfa_windrow" nodeId="128">
+        <Shape shapeId="3" name="alfalfa_windrow_1_materialHolder" clipDistance="10" nodeId="129" materialIds="52" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="alfalfa_windrow_2_materialHolder" clipDistance="10" nodeId="130" materialIds="47" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="dryAlfalfa_windrow" nodeId="131">
+        <Shape shapeId="3" name="dryAlfalfa_windrow_1_materialHolder" clipDistance="10" nodeId="132" materialIds="22" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="dryAlfalfa_windrow_2_materialHolder" clipDistance="10" nodeId="133" materialIds="20" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="clover" nodeId="134">
+        <Shape shapeId="3" name="clover_1_materialHolder" clipDistance="10" nodeId="135" materialIds="24" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="clover_2_materialHolder" clipDistance="10" nodeId="136" materialIds="48" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="clover_windrow" nodeId="137">
+        <Shape shapeId="3" name="clover_windrow_1_materialHolder" clipDistance="10" nodeId="138" materialIds="30" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="clover_windrow_2_materialHolder" clipDistance="10" nodeId="139" materialIds="61" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="dryClover_windrow" nodeId="140">
+        <Shape shapeId="3" name="dryClover_windrow_1_materialHolder" clipDistance="10" nodeId="141" materialIds="32" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="clover_windrow_2_materialHolder" clipDistance="10" nodeId="142" materialIds="33" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="alfalfa_fermented" clipDistance="10" nodeId="143">
+        <Shape shapeId="1" name="grass_fermented0_025_materialHolder" clipDistance="10" nodeId="144" materialIds="13" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="grasSilage0_05_materialHolder" clipDistance="10" nodeId="145" materialIds="50" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="clover_fermented" clipDistance="10" nodeId="146">
+        <Shape shapeId="1" name="choppedmaize_fermented0_025_materialHolder" clipDistance="10" nodeId="147" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="choppedmaize0_05_materialHolder" clipDistance="10" nodeId="148" materialIds="54" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="mower" clipDistance="10" nodeId="149">
+      <TransformGroup name="alfalfa" clipDistance="10" nodeId="150">
+        <Shape shapeId="4" name="alfalfa_materialHolder" clipDistance="10" nodeId="151" materialIds="58" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="clover" clipDistance="10" nodeId="152">
+        <Shape shapeId="4" name="clover_materialHolder" clipDistance="10" nodeId="153" materialIds="16" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="belt" clipDistance="10" nodeId="154">
+      <TransformGroup name="alfalfa" clipDistance="10" nodeId="155">
+        <Shape shapeId="5" name="alfalfa0_materialHolder" clipDistance="10" nodeId="156" materialIds="10" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="alfalfa_windrow" clipDistance="10" nodeId="157">
+        <Shape shapeId="5" name="alfalfa_windrow0_materialHolder" clipDistance="10" nodeId="158" materialIds="40" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="dryAlfalfa_windrow" clipDistance="10" nodeId="159">
+        <Shape shapeId="5" name="dryAlfalfa_windrow0_materialHolder" clipDistance="10" nodeId="160" materialIds="26" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="clover" clipDistance="10" nodeId="161">
+        <Shape shapeId="5" name="clover0_materialHolder" clipDistance="10" nodeId="162" materialIds="8" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="clover_windrow" clipDistance="10" nodeId="163">
+        <Shape shapeId="5" name="clover_windrow0_materialHolder" clipDistance="10" nodeId="164" materialIds="5" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="dryClover_windrow" clipDistance="10" nodeId="165">
+        <Shape shapeId="5" name="dryClover_windrow0_materialHolder" clipDistance="10" nodeId="166" materialIds="28" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="alfalfa_fermented" clipDistance="10" nodeId="167">
+        <Shape shapeId="1" name="grass_fermented0_025_materialHolder" clipDistance="10" nodeId="168" materialIds="13" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="clover_fermented" clipDistance="10" nodeId="169">
+        <Shape shapeId="1" name="choppedmaize_fermented0_025_materialHolder" clipDistance="10" nodeId="170" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="leveler" nodeId="171">
+      <Shape shapeId="3" name="alfalfa" clipDistance="10" nodeId="172" materialIds="42" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="3" name="alfalfa_windrow" clipDistance="10" nodeId="173" materialIds="23" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="3" name="dryAlfalfa_windrow" clipDistance="10" nodeId="174" materialIds="19" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="3" name="alfalfa_fermented" clipDistance="10" nodeId="175" materialIds="42" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="3" name="clover" clipDistance="10" nodeId="176" materialIds="14" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="3" name="clover_windrow" clipDistance="10" nodeId="177" materialIds="45" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="3" name="alfalfa_fermented" clipDistance="10" nodeId="178" materialIds="37" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="3" name="clover_fermented" clipDistance="10" nodeId="179" materialIds="12" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="washer" nodeId="180"/>
+    <TransformGroup name="pickup" clipDistance="10" nodeId="181">
+      <TransformGroup name="alfalfa_windrow" clipDistance="10" nodeId="182">
+        <Shape shapeId="6" name="alfalfa_windrow_materialHolder" clipDistance="10" nodeId="183" materialIds="6" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="dryAlfalfa_windrow" clipDistance="10" nodeId="184">
+        <Shape shapeId="6" name="dryAlfalfa_windrow_materialHolder" clipDistance="10" nodeId="185" materialIds="49" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="clover_windrow" clipDistance="10" nodeId="186">
+        <Shape shapeId="6" name="clover_windrow_materialHolder" clipDistance="10" nodeId="187" materialIds="39" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="dryClover_windrow" clipDistance="10" nodeId="188">
+        <Shape shapeId="6" name="dryClover_windrow_materialHolder" clipDistance="10" nodeId="189" materialIds="46" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="alfalfa_fermented" clipDistance="10" nodeId="190">
+        <Shape shapeId="1" name="alfalfa_fermented0_025_materialHolder" clipDistance="10" nodeId="191" materialIds="13" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="clover_fermented" clipDistance="10" nodeId="192">
+        <Shape shapeId="6" name="clover_fermented_materialHolder" clipDistance="10" nodeId="193" materialIds="7" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="71">
+      <Attribute name="fillType" type="string" value="alfalfa"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="72">
+      <Attribute name="fillType" type="string" value="alfalfa"/>
+      <Attribute name="materialIndex" type="string" value="2"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="73">
+      <Attribute name="fillType" type="string" value="alfalfa"/>
+      <Attribute name="materialIndex" type="string" value="3"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="75">
+      <Attribute name="fillType" type="string" value="alfalfa_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="76">
+      <Attribute name="fillType" type="string" value="alfalfa_windrow"/>
+      <Attribute name="materialIndex" type="string" value="2"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="77">
+      <Attribute name="fillType" type="string" value="alfalfa_windrow"/>
+      <Attribute name="materialIndex" type="string" value="3"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="79">
+      <Attribute name="fillType" type="string" value="dryAlfalfa_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="80">
+      <Attribute name="fillType" type="string" value="dryAlfalfa_windrow"/>
+      <Attribute name="materialIndex" type="string" value="2"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="81">
+      <Attribute name="fillType" type="string" value="dryAlfalfa_windrow"/>
+      <Attribute name="materialIndex" type="string" value="3"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="83">
+      <Attribute name="fillType" type="string" value="clover"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="84">
+      <Attribute name="fillType" type="string" value="clover"/>
+      <Attribute name="materialIndex" type="string" value="2"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="85">
+      <Attribute name="fillType" type="string" value="clover"/>
+      <Attribute name="materialIndex" type="string" value="3"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="87">
+      <Attribute name="fillType" type="string" value="clover_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="88">
+      <Attribute name="fillType" type="string" value="clover_windrow"/>
+      <Attribute name="materialIndex" type="string" value="2"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="89">
+      <Attribute name="fillType" type="string" value="clover_windrow"/>
+      <Attribute name="materialIndex" type="string" value="3"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="91">
+      <Attribute name="fillType" type="string" value="dryClover_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="92">
+      <Attribute name="fillType" type="string" value="dryClover_windrow"/>
+      <Attribute name="materialIndex" type="string" value="2"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="93">
+      <Attribute name="fillType" type="string" value="dryClover_windrow"/>
+      <Attribute name="materialIndex" type="string" value="3"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="95">
+      <Attribute name="fillType" type="string" value="alfalfa_fermented"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="96">
+      <Attribute name="fillType" type="string" value="alfalfa_fermented"/>
+      <Attribute name="materialIndex" type="string" value="2"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="97">
+      <Attribute name="fillType" type="string" value="alfalfa_fermented"/>
+      <Attribute name="materialIndex" type="string" value="3"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="99">
+      <Attribute name="fillType" type="string" value="clover_fermented"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="100">
+      <Attribute name="fillType" type="string" value="clover_fermented"/>
+      <Attribute name="materialIndex" type="string" value="2"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="101">
+      <Attribute name="fillType" type="string" value="clover_fermented"/>
+      <Attribute name="materialIndex" type="string" value="3"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="104">
+      <Attribute name="fillType" type="string" value="alfalfa"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="smoke"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="106">
+      <Attribute name="fillType" type="string" value="alfalfa_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="smoke"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="108">
+      <Attribute name="fillType" type="string" value="dryAlfalfa_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="smoke"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="110">
+      <Attribute name="fillType" type="string" value="clover"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="smoke"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="112">
+      <Attribute name="fillType" type="string" value="clover_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="smoke"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="114">
+      <Attribute name="fillType" type="string" value="clover_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="smoke"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="116">
+      <Attribute name="fillType" type="string" value="alfalfa_fermented"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="smoke"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="118">
+      <Attribute name="fillType" type="string" value="clover_fermented"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="smoke"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="126">
+      <Attribute name="fillType" type="string" value="alfalfa"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="PIPE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="127">
+      <Attribute name="fillType" type="string" value="alfalfa"/>
+      <Attribute name="materialIndex" type="string" value="2"/>
+      <Attribute name="materialType" type="string" value="PIPE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="129">
+      <Attribute name="fillType" type="string" value="alfalfa_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="PIPE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="130">
+      <Attribute name="fillType" type="string" value="alfalfa_windrow"/>
+      <Attribute name="materialIndex" type="string" value="2"/>
+      <Attribute name="materialType" type="string" value="PIPE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="132">
+      <Attribute name="fillType" type="string" value="dryAlfalfa_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="PIPE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="133">
+      <Attribute name="fillType" type="string" value="dryAlfalfa_windrow"/>
+      <Attribute name="materialIndex" type="string" value="2"/>
+      <Attribute name="materialType" type="string" value="PIPE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="135">
+      <Attribute name="fillType" type="string" value="clover"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="PIPE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="136">
+      <Attribute name="fillType" type="string" value="clover"/>
+      <Attribute name="materialIndex" type="string" value="2"/>
+      <Attribute name="materialType" type="string" value="PIPE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="138">
+      <Attribute name="fillType" type="string" value="clover_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="PIPE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="139">
+      <Attribute name="fillType" type="string" value="clover_windrow"/>
+      <Attribute name="materialIndex" type="string" value="2"/>
+      <Attribute name="materialType" type="string" value="PIPE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="141">
+      <Attribute name="fillType" type="string" value="dryClover_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="PIPE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="142">
+      <Attribute name="fillType" type="string" value="clover_windrow"/>
+      <Attribute name="materialIndex" type="string" value="2"/>
+      <Attribute name="materialType" type="string" value="PIPE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="144">
+      <Attribute name="fillType" type="string" value="alfalfa_fermented"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="pipe"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="145">
+      <Attribute name="fillType" type="string" value="alfalfa_fermented"/>
+      <Attribute name="materialIndex" type="string" value="2"/>
+      <Attribute name="materialType" type="string" value="pipe"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="147">
+      <Attribute name="fillType" type="string" value="clover_fermented"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="pipe"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="148">
+      <Attribute name="fillType" type="string" value="clover_fermented"/>
+      <Attribute name="materialIndex" type="string" value="2"/>
+      <Attribute name="materialType" type="string" value="pipe"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="151">
+      <Attribute name="fillType" type="string" value="alfalfa_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="MOWER"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="153">
+      <Attribute name="fillType" type="string" value="clover_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="MOWER"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="156">
+      <Attribute name="fillType" type="string" value="alfalfa"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="belt"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="158">
+      <Attribute name="fillType" type="string" value="alfalfa_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="belt"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="160">
+      <Attribute name="fillType" type="string" value="dryAlfalfa_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="belt"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="162">
+      <Attribute name="fillType" type="string" value="clover"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="belt"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="164">
+      <Attribute name="fillType" type="string" value="clover_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="belt"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="166">
+      <Attribute name="fillType" type="string" value="dryClover_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="belt"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="168">
+      <Attribute name="fillType" type="string" value="alfalfa_fermented"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="belt"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="170">
+      <Attribute name="fillType" type="string" value="clover_fermented"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="belt"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="172">
+      <Attribute name="fillType" type="string" value="alfalfa"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="LEVELER"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="173">
+      <Attribute name="fillType" type="string" value="alfalfa_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="LEVELER"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="174">
+      <Attribute name="fillType" type="string" value="dryAlfalfa_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="LEVELER"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="175">
+      <Attribute name="fillType" type="string" value="alfalfa_fermented"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="LEVELER"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="176">
+      <Attribute name="fillType" type="string" value="clover"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="LEVELER"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="177">
+      <Attribute name="fillType" type="string" value="clover_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="LEVELER"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="178">
+      <Attribute name="fillType" type="string" value="alfalfa_fermented"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="LEVELER"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="179">
+      <Attribute name="fillType" type="string" value="clover_fermented"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="LEVELER"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="183">
+      <Attribute name="fillType" type="string" value="alfalfa_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="pickup"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="185">
+      <Attribute name="fillType" type="string" value="dryAlfalfa_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="pickup"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="187">
+      <Attribute name="fillType" type="string" value="clover_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="pickup"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="189">
+      <Attribute name="fillType" type="string" value="dryClover_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="pickup"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="191">
+      <Attribute name="fillType" type="string" value="alfalfa_fermented"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="pickup"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="193">
+      <Attribute name="fillType" type="string" value="clover_windrow"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="pickup"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

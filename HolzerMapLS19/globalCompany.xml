@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<globalCompany>	
+   
+    <farmStarter>
+        <farm header="HolzerMapLS19_startfarm_1_header" description="HolzerMapLS19_startfarm_1_description" preview="GC/startFarm1.dds" preview2="GC/startFarm1.dds">
+            <items>defaultItems1.xml</items>
+            <vehicles>vehicles1.xml</vehicles>
+            <money1>200000</money1>
+            <money2>1000000</money2>
+            <farmlands>
+                <farmland>1</farmland>
+            </farmlands>
+        </farm>
+        <farm header="HolzerMapLS19_startfarm_2_header" description="HolzerMapLS19_startfarm_2_description" preview="GC/startFarm2.dds" preview2="GC/startFarm2.dds">
+            <items>defaultItems2.xml</items>
+            <vehicles>vehicles2.xml</vehicles>
+            <money1>200000</money1>
+            <money2>1000000</money2>
+            <farmlands>
+                <farmland>20</farmland>
+                <farmland>24</farmland>
+            </farmlands>
+        </farm>
+		<farm header="HolzerMapLS19_startfarm_3_header" description="HolzerMapLS19_startfarm_3_description" preview="GC/startFarm3.dds" preview2="GC/startFarm3.dds">
+            <items>defaultItems3.xml</items>
+            <vehicles>vehicles3.xml</vehicles>
+            <money1>200000</money1>
+            <money2>1000000</money2>
+            <farmlands>
+                <farmland>35</farmland>
+            </farmlands>
+        </farm>
+		<farm header="HolzerMapLS19_startfarm_4_header" description="HolzerMapLS19_startfarm_4_description" preview="GC/startFarm4.dds" preview2="GC/startFarm4.dds">
+            <items>defaultItems4.xml</items>
+            <vehicles>vehicles4.xml</vehicles>
+            <money1>200000</money1>
+            <money2>1000000</money2>
+            <farmlands>
+                <farmland>31</farmland>
+            </farmlands>
+        </farm>
+		<farm header="HolzerMapLS19_startfarm_5_header" description="HolzerMapLS19_startfarm_5_description" preview="GC/startFarm5.dds" preview2="GC/startFarm5.dds">
+            <items>defaultItems5.xml</items>
+            <vehicles>vehicles5.xml</vehicles>
+            <money1>200000</money1>
+            <money2>1000000</money2>
+            <farmlands>
+                <farmland>25</farmland>
+            </farmlands>
+        </farm>
+		<farm header="HolzerMapLS19_startfarm_6_header" description="HolzerMapLS19_startfarm_6_description" preview="GC/startFarm6.dds" preview2="GC/startFarm6.dds">
+            <items>defaultItems6.xml</items>
+            <vehicles>vehicles6.xml</vehicles>
+            <money1>200000</money1>
+            <money2>1000000</money2>
+            <farmlands>
+                <farmland>12</farmland>
+            </farmlands>
+        </farm>
+		<farm header="HolzerMapLS19_startfarm_7_header" description="HolzerMapLS19_startfarm_7_description" preview="GC/startFarm7.dds" preview2="GC/startFarm7.dds">
+            <items>defaultItems7.xml</items>
+            <vehicles>vehicles7.xml</vehicles>
+            <money1>2000000</money1>
+            <money2>2000000</money2>
+            <farmlands>
+                <farmland>5</farmland>
+				<farmland>6</farmland>
+            </farmlands>
+        </farm>
+              
+    </farmStarter>
+</globalCompany>

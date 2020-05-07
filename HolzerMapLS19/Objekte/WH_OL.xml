@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable>
+    <storeData>
+        <name>Getreidesilo Oberreiter</name>
+           <functions>
+            <function>Dies ist ein Bauernhaus aus der Gegend des Tegernsee's. Es Besitzt ein Integriertes Silo-System für Getreide</function>
+        </functions>
+        <specs>
+            <capacity>480000</capacity>
+            <fillTypes>wheat barley canola maize oat sugarCane sunflower soybean seeds</fillTypes>
+        </specs>
+        <image>Objekte/store_OR.png</image>
+        <price>229000</price>
+		<canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>Lizard</brand>
+        <species>placeable</species>
+        <category>sheds</category>
+        <vertexBufferMemoryUsage>352244</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>30594</indexBufferMemoryUsage>
+        <textureMemoryUsage>4543912</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <placeableType>silo</placeableType>
+    <filename>Objekte/WH_OL_Haupt.i3d</filename>
+    <placement testSizeX="31.5" testSizeZ="16" sizeX="31.5" sizeZ="16" useRandomYRotation="false" useManualYRotation="true" />
+	
+	<loadingStation stationName="$l10n_station_farmSilo" appearsOnPDA="false" storageRadius="50" fillSoundIdentifier="fillSound01">
+        <loadTrigger triggerNode="0|1|0|0|0" fillLitersPerSecond="2000" dischargeNode="0|1|0|0|1">
+            <effectNode effectClass="PipeEffect" effectNode="0|1|0|0|2|0" materialType="pipe" materialTypeId="1" fadeTime="0.5" maxBending="0" controlPoint="3.75 0 0 0"/>
+            <effectNode                          effectNode="0|1|0|0|2|1" materialType="smoke"     materialTypeId="1" fadeTime="0.5" />
+        </loadTrigger>
+    </loadingStation>
+
+    <unloadingStation stationName="$l10n_station_farmSilo" appearsOnPDA="false" storageRadius="50">
+        <unloadTrigger exactFillRootNode="0|0|0|0|0" />
+    </unloadingStation>
+	
+    <storages>
+        <storage node="0|2" fillTypes="wheat barley canola maize oat sugarCane sunflower soybean seeds" capacityPerFillType="200000"/>
+    </storages>
+		
+    <hotspots>
+        <hotspot name="Farm silo" fullName="Getreidesilo Oberreiter" imageName="SELLING_POINT" hidable="true" linkNode="0|3" category="CATEGORY_TRIGGERS"/>
+    </hotspots>
+	
+	<animatedObjects>
+	<!--Rolltore-->
+        <animatedObject saveId="openRollTorGross_rechts" >
+            <animation duration="2">
+                <part node="1|3|0">
+					<keyFrame time="0" translation="11.03 4.44 0.16" />
+					<keyFrame time="1.0" translation="11.03 4.44 4.44"/>
+				</part>
+            </animation>
+            <controls triggerNode="1|3|7" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="maps/sounds/LargeGate_5sec.ogg" loops="0" linkNode="1|3|0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.ogg" linkNode="1|3|0" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.ogg" linkNode="1|3|0" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="openRollTorGross_links" >
+            <animation duration="2">
+                <part node="1|3|10">
+					<keyFrame time="0" translation="-11.03 4.44 0.16" />
+					<keyFrame time="1.0" translation="-11.03 4.44 4.44"/>
+				</part>
+            </animation>
+            <controls triggerNode="1|3|9" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="maps/sounds/LargeGate_5sec.ogg" loops="0" linkNode="1|3|10" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.ogg" linkNode="1|3|10" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.ogg" linkNode="1|3|10" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="openRollTor_rechts" >
+            <animation duration="2">
+                <part node="1|3|1">
+					<keyFrame time="0" translation="11.03 4.44 -4.8" />
+					<keyFrame time="1.0" translation="11.03 4.44 -8.8"/>
+				</part>
+            </animation>
+            <controls triggerNode="1|3|8" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="maps/sounds/LargeGate_5sec.ogg" loops="0" linkNode="1|3|1" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.ogg" linkNode="1|3|1" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.ogg" linkNode="1|3|1" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="openRollTor_links" >
+            <animation duration="2">
+                <part node="1|3|12">
+					<keyFrame time="0" translation="-11.03 4.44 -4" />
+					<keyFrame time="1.0" translation="-11.03 4.44 -8.2"/>
+				</part>
+            </animation>
+            <controls triggerNode="1|3|11" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="maps/sounds/LargeGate_5sec.ogg" loops="0" linkNode="1|3|12" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.ogg" linkNode="1|3|12" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.ogg" linkNode="1|3|12" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<!--Tueren-->
+		<animatedObject saveId="Tuerhuhnerstall" >
+            <animation duration="1.4">
+				<part node="1|3|44">
+					<keyFrame time="0" rotation="0 -90 0" />
+					<keyFrame time="0.28" rotation="0 -90 0" />
+					<keyFrame time="1" rotation="0 -220 0"/>
+				</part>
+				<part node="1|3|44|1">
+					<keyFrame time="0" rotation="0 0 0" />
+					<keyFrame time="0.14" rotation="0 33 0" />
+					<keyFrame time="0.28" rotation="0 0 0"/>
+				</part>
+            </animation>
+            <controls triggerNode="1|3|45" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="maps/sounds/LittleDoor_2sec.ogg" loops="0" linkNode="1|3|44" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.ogg" linkNode="1|3|44" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.ogg" linkNode="1|3|44" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="TuerRechtsVorne" >
+            <animation duration="1.8">
+				<part node="1|3|6">
+					<keyFrame time="0" rotation="0 -180 0" />
+					<keyFrame time="0.28" rotation="0 -180 0" />
+					<keyFrame time="1" rotation="0 -40 0"/>
+				</part>
+				<part node="1|3|6|0">
+					<keyFrame time="0" rotation="180 0 180" />
+					<keyFrame time="0.14" rotation="140 0 180" />
+					<keyFrame time="0.28" rotation="180 0 180"/>
+				</part>
+            </animation>
+            <controls triggerNode="1|3|15" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="maps/sounds/LittleDoor_2sec.ogg" loops="0" linkNode="1|3|6" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.ogg" linkNode="1|3|6" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.ogg" linkNode="1|3|6" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="TuerRechtsHinten" >
+            <animation duration="1.8">
+				<part node="1|3|27">
+					<keyFrame time="0" rotation="0 180 0" />
+					<keyFrame time="0.14" rotation="0 180 0" />
+					<keyFrame time="0.28" rotation="0 77 0"/>
+				</part>
+				<part node="1|3|27|0">
+					<keyFrame time="0" rotation="0 0 180" />
+					<keyFrame time="0.28" rotation="0 44 180" />
+					<keyFrame time="1" rotation="0 0 180"/>
+				</part>
+            </animation>
+            <controls triggerNode="1|3|23" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="maps/sounds/LittleDoor_2sec.ogg" loops="0" linkNode="1|3|6" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.ogg" linkNode="1|3|6" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.ogg" linkNode="1|3|6" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="TuerLinksHinten" >
+            <animation duration="1.8">
+				<part node="1|3|26">
+					<keyFrame time="0" rotation="0 0 0" />
+					<keyFrame time="0.28" rotation="0 0 0" />
+					<keyFrame time="1" rotation="0 160 0"/>
+				</part>
+				<part node="1|3|26|0">
+					<keyFrame time="0" rotation="180 0 180" />
+					<keyFrame time="0.14" rotation="140 0 180" />
+					<keyFrame time="0.28" rotation="180 0 180"/>
+				</part>
+            </animation>
+            <controls triggerNode="1|3|24" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="maps/sounds/LittleDoor_2sec.ogg" loops="0" linkNode="1|3|26" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.ogg" linkNode="1|3|26" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.ogg" linkNode="1|3|26" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="TuerLinksVorne" >
+            <animation duration="1.8">
+				<part node="1|3|28">
+					<keyFrame time="0" rotation="0 0 0" />
+					<keyFrame time="0.28" rotation="0 0 0" />
+					<keyFrame time="1" rotation="0 -110 0"/>
+				</part>
+				<part node="1|3|28|0">
+					<keyFrame time="0" rotation="0 0 180" />
+					<keyFrame time="0.28" rotation="44 0 180" />
+					<keyFrame time="1" rotation="0 0 180"/>
+				</part>
+            </animation>
+            <controls triggerNode="1|3|25" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="maps/sounds/LittleDoor_2sec.ogg" loops="0" linkNode="1|3|28" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.ogg" linkNode="1|3|28" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.ogg" linkNode="1|3|28" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="hausTuer" >
+            <animation duration="1.5">
+				<part node="1|3|32">
+					<keyFrame time="0" rotation="0 0 0" />
+					<keyFrame time="1" rotation="0 -122.347 0"/>
+				</part>
+            </animation>
+            <controls triggerNode="1|3|33" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="maps/sounds/LittleDoor_2sec.ogg" loops="0" linkNode="1|3|34" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.ogg" linkNode="1|3|34" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.ogg" linkNode="1|3|34" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="huehnerStallLinks" >
+            <animation duration="1.4">
+				<part node="1|3|35">
+					<keyFrame time="0" rotation="0 0 0" />
+					<keyFrame time="0.28" rotation="0 0 0" />
+					<keyFrame time="1" rotation="0 -142.347 0"/>
+				</part>
+				<part node="1|3|35|0">
+					<keyFrame time="0" rotation="0 0 0" />
+					<keyFrame time="0.28" rotation="40 0 0"/>
+					<keyFrame time="1" rotation="40 0 0"/>
+				</part>
+            </animation>
+            <controls triggerNode="1|3|36" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="maps/sounds/LittleDoor_2sec.ogg" loops="0" linkNode="1|3|36" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.ogg" linkNode="1|3|36" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.ogg" linkNode="1|3|36" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="huehnerStallRechts" >
+            <animation duration="1.4">
+				<part node="1|3|34">
+					<keyFrame time="0" rotation="0 0 0" />
+					<keyFrame time="1" rotation="0 120.347 0"/>
+				</part>
+            </animation>
+            <controls triggerNode="1|3|37" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="maps/sounds/LittleDoor_2sec.ogg" loops="0" linkNode="1|3|35" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.ogg" linkNode="1|3|35" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.ogg" linkNode="1|3|35" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<!--KuhstallTor_Rechts-->
+		<animatedObject saveId="TuerKuhstallRechtsRechtsOben" >
+            <animation duration="1.8">
+				<part node="1|3|4">
+					<keyFrame time="0" rotation="0 -180 0" />
+					<keyFrame time="0.2" rotation="0 -180 0" />
+					<keyFrame time="0.95" rotation="0 -10.5 0"/>
+				</part>
+				<!-- <part node="1|3|4|0">
+					<keyFrame time="0" translation="-0.005 -1.112 -1.254" rotation="0 -22.976 0" />
+					<keyFrame time="0.2" translation="-0.005 -1.000 -1.254" rotation="0 -72.142 0" />
+					<keyFrame time="0.95" translation="-0.005 -1.000 -1.254" rotation="0 -72.142 0" />
+					<keyFrame time="1" translation="-0.005 -1.112 -1.254" rotation="0 -22.976 0" />
+				</part> -->
+            </animation>
+            <controls triggerNode="1|3|21" posAction="ACTIVATE_HANDTOOL" posText="action_openDoorTop" negText="action_closeDoorTop" />
+            <sounds>
+                <moving file="maps/sounds/LittleDoor_2sec.ogg" loops="0" linkNode="1|3|4" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.ogg" linkNode="1|3|4" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.ogg" linkNode="1|3|4" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="TuerKuhstallRechtsRechts" >
+            <animation duration="1.8">
+				<part node="1|3|5">
+					<keyFrame time="0" rotation="0 -180 0" />
+					<keyFrame time="0.28" rotation="0 -180 0" />
+					<keyFrame time="1" rotation="0 -18 0"/>
+				</part>
+				<part node="1|3|5|0">
+					<keyFrame time="0" translation="0.037 0.025 -1.254" rotation="0 50 0" />
+					<keyFrame time="0.28" translation="0.037 0.1 -1.254" rotation="0 10 0" />
+				</part>
+            </animation>
+            <controls triggerNode="1|3|16" posAction="ACTIVATE_HANDTOOL" posText="action_openDoorBottom" negText="action_closeDoorBottom" />
+            <sounds>
+                <moving file="maps/sounds/LittleDoor_2sec.ogg" loops="0" linkNode="1|3|5" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.ogg" linkNode="1|3|5" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.ogg" linkNode="1|3|5" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="TuerKuhstallRechtsLinksOben" >
+            <animation duration="1.8">
+				<part node="1|3|2">
+					<keyFrame time="0" rotation="-180 0 -180" />
+					<keyFrame time="0.2" rotation="-180 0 -180" />
+					<keyFrame time="0.95" rotation="-180 170 -180"/>
+				</part>
+				<!-- <part node="1|3|2|0">
+					<keyFrame time="0" translation="-0.005 -1.112 -1.254" rotation="0 -22.976 0" />
+					<keyFrame time="0.2" translation="-0.005 -1.000 -1.254" rotation="0 -72.142 0" />
+					<keyFrame time="0.95" translation="-0.005 -1.000 -1.254" rotation="0 -72.142 0" />
+					<keyFrame time="1" translation="-0.005 -1.112 -1.254" rotation="0 -22.976 0" />
+				</part> -->
+            </animation>
+            <controls triggerNode="1|3|22" posAction="ACTIVATE_HANDTOOL" posText="action_openDoorTop" negText="action_closeDoorTop" />
+            <sounds>
+                <moving file="maps/sounds/LittleDoor_2sec.ogg" loops="0" linkNode="1|3|2" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.ogg" linkNode="1|3|2" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.ogg" linkNode="1|3|2" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="TuerKuhstallRechtsLinks" >
+            <animation duration="1.8">
+				<part node="1|3|3">
+					<keyFrame time="0" rotation="0 0 0" />
+					<keyFrame time="0.28" rotation="0 0 0" />
+					<keyFrame time="1" rotation="0 -160 0"/>
+				</part>
+				<part node="1|3|3|0">
+					<keyFrame time="0" rotation="0 0 0" />
+					<keyFrame time="0.14" rotation="0 -40 0" />
+					<keyFrame time="0.28" rotation="0 0 0" />
+				</part>
+            </animation>
+            <controls triggerNode="1|3|41" posAction="ACTIVATE_HANDTOOL" posText="action_openDoorBottom" negText="action_closeDoorBottom" />
+            <sounds>
+                <moving file="maps/sounds/LittleDoor_2sec.ogg" loops="0" linkNode="1|3|3" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.ogg" linkNode="1|3|3" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.ogg" linkNode="1|3|3" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<!--KuhstallTor_Links-->
+		<animatedObject saveId="TuerKuhstallLinksRechtsOben" >
+            <animation duration="1.8">
+				<part node="1|3|30">
+					<keyFrame time="0" rotation="0 0 0" />
+					<keyFrame time="0.2" rotation="0 0 0" />
+					<keyFrame time="0.95" rotation="0 175 0"/>
+				</part>
+				<!-- <part node="1|3|30|0">
+					<keyFrame time="0" translation="-0.005 -1.112 -1.254" rotation="0 -22.976 0" />
+					<keyFrame time="0.2" translation="-0.005 -1.000 -1.254" rotation="0 -72.142 0" />
+					<keyFrame time="0.95" translation="-0.005 -1.000 -1.254" rotation="0 -72.142 0" />
+					<keyFrame time="1" translation="-0.005 -1.112 -1.254" rotation="0 -22.976 0" />
+				</part> -->
+            </animation>
+            <controls triggerNode="1|3|20" posAction="ACTIVATE_HANDTOOL" posText="action_openDoorTop" negText="action_closeDoorTop" />
+            <sounds>
+                <moving file="maps/sounds/LittleDoor_2sec.ogg" loops="0" linkNode="1|3|31" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.ogg" linkNode="1|3|31" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.ogg" linkNode="1|3|31" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="TuerKuhstallLinksRechts" >
+            <animation duration="1.8">
+				<part node="1|3|29">
+					<keyFrame time="0" rotation="0 0 0" />
+					<keyFrame time="0.28" rotation="0 0 0" />
+					<keyFrame time="1" rotation="0 170 0"/>
+				</part>
+				<part node="1|3|29|0">
+					<keyFrame time="0" translation="0.037 0.025 -1.254" rotation="0 50 0" />
+					<keyFrame time="0.28" translation="0.037 0.1 -1.254" rotation="0 10 0" />
+				</part>
+            </animation>
+            <controls triggerNode="1|3|40" posAction="ACTIVATE_HANDTOOL" posText="action_openDoorBottom" negText="action_closeDoorBottom" />
+            <sounds>
+                <moving file="maps/sounds/LittleDoor_2sec.ogg" loops="0" linkNode="1|3|30" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.ogg" linkNode="1|3|30" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.ogg" linkNode="1|3|30" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="TuerKuhstallLinksLinksOben" >
+            <animation duration="1.8">
+				<part node="1|3|31">
+					<keyFrame time="0" rotation="0 0 0" />
+					<keyFrame time="0.2" rotation="0 0 0" />
+					<keyFrame time="0.95" rotation="0 -170 0"/>
+				</part>
+				<!-- <part node="1|3|31|0">
+					<keyFrame time="0" translation="-0.005 -1.112 -1.254" rotation="0 -22.976 0" />
+					<keyFrame time="0.2" translation="-0.005 -1.000 -1.254" rotation="0 -72.142 0" />
+					<keyFrame time="0.95" translation="-0.005 -1.000 -1.254" rotation="0 -72.142 0" />
+					<keyFrame time="1" translation="-0.005 -1.112 -1.254" rotation="0 -22.976 0" />
+				</part> -->
+            </animation>
+            <controls triggerNode="1|3|38" posAction="ACTIVATE_HANDTOOL" posText="action_openDoorTop" negText="action_closeDoorTop" />
+            <sounds>
+                <moving file="maps/sounds/LittleDoor_2sec.ogg" loops="0" linkNode="1|3|32" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.ogg" linkNode="1|3|32" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.ogg" linkNode="1|3|32" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="TuerKuhstallLinksLinks" >
+            <animation duration="1.8">
+				<part node="1|3|42">
+					<keyFrame time="0" rotation="0 0 0" />
+					<keyFrame time="0.28" rotation="0 0 0" />
+					<keyFrame time="1" rotation="0 -160 0"/>
+				</part>
+				<part node="1|3|42|0">
+					<keyFrame time="0" rotation="0 0 0" />
+					<keyFrame time="0.14" rotation="-30 0 0" />
+					<keyFrame time="0.28" rotation="0 0 0" />
+				</part>
+            </animation>
+            <controls triggerNode="1|3|39" posAction="ACTIVATE_HANDTOOL" posText="action_openDoorBottom" negText="action_closeDoorBottom" />
+            <sounds>
+                <moving file="maps/sounds/LittleDoor_2sec.ogg" loops="0" linkNode="1|3|42" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.ogg" linkNode="1|3|42" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.ogg" linkNode="1|3|42" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<!--Sonstiges-->
+		<animatedObject saveId="Treppe" >
+            <animation duration="2.5">
+				<part node="1|3|14">
+					<keyFrame time="0" rotation="0 0 -33" />
+					<keyFrame time="1.0" rotation="0 0 0"/>
+				</part>
+            </animation>
+            <controls triggerNode="1|3|13" posAction="ACTIVATE_HANDTOOL" posText="action_downStair" negText="action_upStair" />
+            <sounds>
+                <moving file="maps/sounds/creakDoor_4sec.ogg" loops="0" linkNode="1|3|14" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.ogg" linkNode="1|3|14" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.ogg" linkNode="1|3|14" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+		</animatedObject>
+		<animatedObject saveId="BeiserSchrank" >
+            <animation duration="1.5">
+				<part node="1|3|43|0">
+					<keyFrame time="0" rotation="0 0 90" />
+					<keyFrame time="0.2" rotation="0 0 0"/>
+				</part>
+				<part node="1|3|43|0">
+					<keyFrame time="0.2" rotation="0 0 0" />
+					<keyFrame time="0.6" rotation="0 127.261 0"/>
+				</part>
+				<part node="1|3|43|1">
+					<keyFrame time="0.6" rotation="0 0 0" />
+					<keyFrame time="1.0" rotation="0 -127.261 0"/>
+				</part>
+            </animation>
+            <controls triggerNode="1|3|43|4" posAction="ACTIVATE_HANDTOOL" posText="action_downStair" negText="action_upStair" />
+            <sounds>
+                <moving file="maps/sounds/creakDoor_4sec.ogg" loops="0" linkNode="1|3|43|1" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.ogg" linkNode="1|3|43|1" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.ogg" linkNode="1|3|43|1" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+		</animatedObject>
+		<animatedObject saveId="Getreide aussen" >
+            <animation duration="10">
+				<part node="1|1|0">
+					<keyFrame time="0" translation="12.568 -0.04 22.092" rotation="0 180 0"/>
+					<keyFrame time="0.5" translation="14.793 -0.04 20.077" rotation="0 90 0"/>
+					<keyFrame time="0.8" translation="17.408 -0.04 20.077" rotation="0 90 0"/>
+				</part>
+				<part node="1|1|3">
+					<keyFrame time="0" translation="12.073 0.294 24.238" rotation="180 0 0"/>
+					<keyFrame time="0.8" translation="12.073 0.294 24.238" rotation="180 0 0"/>
+					<keyFrame time="1" translation="12.439 0.294 20.077" rotation="180 90 0"/>
+				</part>
+				<part node="1|1|0|6">
+					<keyFrame time="0" translation="0 -60 0"/>
+					<keyFrame time="0.9" translation="0 -60 0"/>
+					<keyFrame time="1" translation="0 0 0"/>
+				</part>
+				<part node="1|1|0|4">
+					<keyFrame time="0" rotation="180 0 -90"/>
+					<keyFrame time="0.2" rotation="180 200 -90"/>
+					<keyFrame time="0.4" rotation="180 400 -90"/>
+					<keyFrame time="0.6" rotation="180 600 -90"/>
+					<keyFrame time="0.8" rotation="180 800 -90"/>
+				</part>
+				<part node="1|1|0|5">
+					<keyFrame time="0" rotation="180 0 -90"/>
+					<keyFrame time="0.2" rotation="180 200 -90"/>
+					<keyFrame time="0.4" rotation="180 400 -90"/>
+					<keyFrame time="0.6" rotation="180 600 -90"/>
+					<keyFrame time="0.8" rotation="180 800 -90"/>
+				</part>
+				<part node="1|1|0|3|0">
+					<keyFrame time="0" visibility="false"/>
+					<keyFrame time="0.9" visibility="false"/>
+					<keyFrame time="1" visibility="true"/>
+				</part>
+            </animation>
+            <controls triggerNode="1|3|18" posAction="ACTIVATE_HANDTOOL" posText="action_openGrain" negText="action_closeGrain" />
+            <sounds>
+                <moving file="maps/sounds/gatesoundSlidingDoor_5sec.ogg" loops="0" linkNode="1|1|0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.ogg" linkNode="1|1|0" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.ogg" linkNode="1|1|0" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="Getreide innen" >
+            <animation duration="6">
+				<part node="1|1|2">
+					<keyFrame time="0.1" translation="-2.861 8.772 16.716"/>
+					<keyFrame time="1" translation="-0.595 8.772 18.982"/>
+				</part>
+				<part node="1|1|2|1">
+					<keyFrame time="0" visibility="true" />
+					<keyFrame time="0.05" visibility="false" />
+				</part>
+            </animation>
+            <controls triggerNode="1|3|19" posAction="ACTIVATE_HANDTOOL" posText="action_switchGrain" negText="action_switchBackGrain" />
+            <sounds>
+                <moving file="maps/sounds/gatesoundSlidingDoor_5sec.ogg" loops="0" linkNode="1|1|2" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.ogg" linkNode="1|1|2" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.ogg" linkNode="1|1|2" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<!--Licht-->
+		<animatedObject saveId="TMSFloodLampOR">	<!-- FloodLamp -->
+			<animation duration="0.25">
+				<part node="1|3|17|0|0|1">	<!-- rotate the switch -->
+					<keyFrame time="0.00" rotation="0 0 7.5" />
+					<keyFrame time="1.00" rotation="0 0 -7.5" />
+				</part>
+				<part node="1|3|17|0|0|1|1">	<!-- small light on lightswitch-->
+					<keyFrame time="0.50" visibility="false" />
+					<keyFrame time="0.50" visibility="true" />
+				</part>
+				<part node="1|3|17|0|1|0|0|1">	<!-- activate the lamp -->
+					<keyFrame time="0.50" visibility="false" />
+					<keyFrame time="0.50" visibility="true" />
+				</part>
+				<part node="1|3|17|0|2|0|0|1">	<!-- activate the lamp 2 -->
+					<keyFrame time="0.50" visibility="false" />
+					<keyFrame time="0.50" visibility="true" />
+				</part>
+				<part node="1|3|17|0|3|0|0|1">	<!-- activate the lamp 3 -->
+					<keyFrame time="0.50" visibility="false" />
+					<keyFrame time="0.50" visibility="true" />
+				</part>
+				<part node="1|3|17|0|4|0|0|1">	<!-- activate the lamp 4 -->
+					<keyFrame time="0.50" visibility="false" />
+					<keyFrame time="0.50" visibility="true" />
+				</part>
+			</animation>
+			<controls triggerNode="1|3|17|0|0|0" posAction="ACTIVATE_HANDTOOL" posText="input_LIGHTSWITCH_CLICK" negText="input_LIGHTSWITCH_CLICK" />
+			<sounds>
+				<moving file="maps/sounds/switch_1sec.ogg" loops="0" linkNode="1|3|17|0|0|1" volume="0.40" radius="25" innerRadius="3" fadeOut="0.25"/>
+			</sounds>
+		</animatedObject>
+		<!-- Lightswitch with turn lever -->
+		<animatedObject saveId="lightSwitch90Pos1OR1">	<!-- Neonroehre -->
+			<animation duration="0.25">
+				 <part node="1|3|17|3|1|0"> <!--index of Lever of the Lightswitch-->
+                <keyFrame time="0.00" rotation="0 0 0" />
+                <keyFrame time="1" rotation="90 0 0" />
+            </part>
+			<part node="1|3|17|3|2|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="1|3|17|3|3|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			</animation>
+			<controls triggerNode="1|3|17|3|0" posAction="ACTIVATE_HANDTOOL" posText="input_LIGHTSWITCH_CLICK" negText="input_LIGHTSWITCH_CLICK" />
+			<sounds>
+				<moving file="maps/sounds/OldSwitch07_1sec.ogg" loops="0" linkNode="1|3|17|3|1|0" volume="0.40" radius="25" innerRadius="3" fadeOut="0.25"/>
+			</sounds>
+		</animatedObject>
+		<!-- Lightswitch with turn lever2 -->
+		<animatedObject saveId="lightSwitch90Pos1OR2">	<!-- Neonroehre -->
+			<animation duration="0.25">
+				 <part node="1|3|17|1|1|0"> <!--index of Lever of the Lightswitch-->
+                <keyFrame time="0.00" rotation="0 0 0" />
+                <keyFrame time="1" rotation="90 0 0" />
+            </part>
+			<part node="1|3|17|1|2|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="1|3|17|1|3|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			</animation>
+			<controls triggerNode="1|3|17|1|0" posAction="ACTIVATE_HANDTOOL" posText="input_LIGHTSWITCH_CLICK" negText="input_LIGHTSWITCH_CLICK" />
+			<sounds>
+				<moving file="maps/sounds/OldSwitch07_1sec.ogg" loops="0" linkNode="1|3|17|1|1|0" volume="0.40" radius="25" innerRadius="3" fadeOut="0.25"/>
+			</sounds>
+		</animatedObject>
+		<!-- Lightswitch with turn lever3 -->
+		<animatedObject saveId="lightSwitch90Pos1OR2">	<!-- Neonroehre -->
+			<animation duration="0.25">
+				 <part node="1|3|17|2|1|0"> <!--index of Lever of the Lightswitch-->
+                <keyFrame time="0.00" rotation="0 0 0" />
+                <keyFrame time="1" rotation="90 0 0" />
+            </part>
+			<part node="1|3|17|2|2|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="1|3|17|2|3|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			</animation>
+			<controls triggerNode="1|3|17|2|0" posAction="ACTIVATE_HANDTOOL" posText="input_LIGHTSWITCH_CLICK" negText="input_LIGHTSWITCH_CLICK" />
+			<sounds>
+				<moving file="maps/sounds/OldSwitch07_1sec.ogg" loops="0" linkNode="1|3|17|2|1|0" volume="0.40" radius="25" innerRadius="3" fadeOut="0.25"/>
+			</sounds>
+		</animatedObject>
+    </animatedObjects>
+	
+	<farmhouse spawnNode="0|4|0">
+        <sleeping triggerNode="0|4|1" cameraNode="0|4|2"/>
+    </farmhouse>
+	
+	<dayNightObjects>
+        <dayNightObject node="1|4|7|0" visibleDay="false" visibleNight="true" />
+		<dayNightObject node="1|4|7|1" visibleDay="false" visibleNight="true" />
+		<dayNightObject node="1|4|7|2" visibleDay="false" visibleNight="true" />
+		<dayNightObject node="1|4|7|3" visibleDay="false" visibleNight="true" />
+		<dayNightObject node="1|4|7|5" visibleDay="false" visibleNight="true" />
+		<dayNightObject node="1|4|7|6" visibleDay="false" visibleNight="true" />
+		<dayNightObject node="1|4|7|7" visibleDay="true" visibleNight="false" />
+    </dayNightObjects>
+	
+    <clearAreas>
+        <clearArea startNode="2|0" widthNode="2|0|0" heightNode="2|0|1"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="5" maxSlope="30" maxEdgeAngle="20" >
+        <levelAreas>
+            <levelArea startNode="2|0" widthNode="2|0|0" heightNode="2|0|1" groundType="dirt"/>
+        </levelAreas>
+    </leveling>
+	
+	<seasons>
+        <maskAreas>
+            
+        </maskAreas>
+    </seasons>
+</placeable>

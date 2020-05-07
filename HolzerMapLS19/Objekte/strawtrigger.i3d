@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="AHSml_general" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="$data/placeables/animalHusbandry/strawAlpha_diffuse.png"/>
+    <File fileId="2" filename="$data/placeables/animalHusbandry/straw_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="9" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="strawPlane_mat" materialId="13">
+      <Texture fileId="2"/>
+    </Material>
+    <Material name="strawPlaneAlpha_mat" materialId="15">
+      <Texture fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="strawtrigger.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="strawTrigger" translation="6.02428 0 -10.9943" rotation="-4.17388e-07 -45 3.0456e-07" static="true" trigger="true" collisionMask="8388608" nodeId="234" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true">
+      <Shape shapeId="2" name="exactFillRootNode" translation="0 0.502824 -4.44871" kinematic="true" trigger="true" collisionMask="1073741824" nodeId="235" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <TransformGroup name="strawPlanes" translation="-2.33878 0 4.64829" nodeId="236">
+        <Shape shapeId="3" name="strawPlane02" translation="3.15782 6.57432e-09 -7.36539" rotation="-3.09416e-05 89.5739 -3.09405e-05" scale="0.621058 1 0.5" clipDistance="300" nodeId="237" materialIds="13" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="4" name="strawPlane02Alpha" clipDistance="300" nodeId="238" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+      <Shape shapeId="5" name="baleTrigger" translation="0 0 -13.0425" static="true" trigger="true" collisionMask="16777216" nodeId="239" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+    </Shape>
+  </Scene>
+
+</i3D>

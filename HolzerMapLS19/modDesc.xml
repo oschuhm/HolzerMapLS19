@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="40">
+    <author>Stefan Ludwig</author>
+    <version>1.4</version>
+    <title>
+        <en>Holzer Map</en>
+        <de>Holzer Map</de>
+    </title>
+    <description>
+        <en>Welcome in Holz at Tegernsee</en>
+        <de>Willkommen in Holz am Tegernsee</de>
+    </description>
+    <iconFilename>icon.png</iconFilename>
+    <multiplayer supported="true"/>
+	
+	<storeItems>
+		<storeItem xmlFilename="Objekte/farmHouse.xml" />
+		<storeItem xmlFilename="Objekte/farmHouse1.xml" />
+		<storeItem xmlFilename="Objekte/sleeptrigger.xml" />
+		<storeItem xmlFilename="Objekte/PferdestallBoarhof.xml" />
+		<storeItem xmlFilename="Objekte/SchafeBoarhof.xml" />
+		<storeItem xmlFilename="Objekte/PferdeBoarhof.xml" />
+		<storeItem xmlFilename="Objekte/KueheSchwoagahof.xml" />
+		<storeItem xmlFilename="Objekte/KueheGundischhof.xml" />
+		<storeItem xmlFilename="Objekte/HuehnerGundischhof.xml" />
+		<storeItem xmlFilename="Objekte/SchafeGundischhof.xml" />
+		<storeItem xmlFilename="Objekte/KueheGraberhof.xml" />
+		<storeItem xmlFilename="Objekte/KueheOberreiter.xml" />
+		<storeItem xmlFilename="Objekte/HalleOberreiter.xml" />
+		<storeItem xmlFilename="Objekte/Schuppen.xml" />
+		<storeItem xmlFilename="Objekte/KueheUnterreiterhof.xml" />
+		<storeItem xmlFilename="Objekte/KueheUnterreiterWeide.xml" />
+		<storeItem xmlFilename="Sellpoints/sellingStationWood.xml" />
+		<storeItem xmlFilename="Sellpoints/sellingStationWoodChips.xml" />
+		<storeItem xmlFilename="Sellpoints/sellingStationWood2.xml" />
+		<storeItem xmlFilename="Objekte/Schuppen2.xml" />
+		<storeItem xmlFilename="Objekte/WH_OL.xml" />
+		<storeItem xmlFilename="Objekte/HuehnerOberreiter.xml" />
+		<storeItem xmlFilename="Objekte/SchweineOberreiter.xml" />
+		<storeItem xmlFilename="Objekte/KueheUnterreiterBergwiese.xml" />
+		<storeItem xmlFilename="Objekte/maschineShelter.xml" />
+		<storeItem xmlFilename="Objekte/chickenCoop.xml" />
+		<storeItem xmlFilename="vehicles/SW_4014/kuhnSW4014.xml"/>
+        <storeItem xmlFilename="vehicles/FBP_3135/kuhnFBP3135.xml"/> 
+		<storeItem xmlFilename="vehicles/Grimme_Carrot/SE260.xml"/> 
+		<storeItem xmlFilename="vehicles/Grimme_Onion/SE260.xml"/> 
+    </storeItems>
+	
+	<l10n>
+		<text name="action_lightSwitchON">
+            <en>Lights on</en>
+            <de>Licht an</de>
+        </text>	
+        <text name="action_lightSwitchOFF">
+            <en>Lights off</en>
+            <de>Licht aus</de>
+        </text>
+		<text name="action_downStair"> <en><![CDATA[move Down this Stairs ]]></en> <de><![CDATA[Treppe nach unten bewegen]]></de> </text>
+        <text name="action_upStair"> <en><![CDATA[move Up this Stairs ]]></en> <de><![CDATA[Treppe nach oben bewegen]]></de> </text>
+        <text name="action_openGrain"> <en><![CDATA[Install your Graindevice]]></en> <de><![CDATA[Getreidegebläse aufbauen]]></de> </text>
+        <text name="action_closeGrain"> <en><![CDATA[Deinstall your Graindevice]]></en> <de><![CDATA[Getreidegeblaese abbauen]]></de> </text>
+        <text name="action_switchGrain"> <en><![CDATA[Switch your Grain Container]]></en> <de><![CDATA[Kornbunker wechseln]]></de> </text>
+        <text name="action_switchBackGrain"> <en><![CDATA[Switch back your Grain Container]]></en> <de><![CDATA[Kornbunker zurück wechseln]]></de> </text>
+        <text name="action_openDoorBottom"> <en><![CDATA[Open the Gate below]]></en> <de><![CDATA[Untere Tür öffnen]]></de> </text>
+        <text name="action_closeDoorBottom"> <en><![CDATA[Close the Gate below]]></en> <de><![CDATA[Untere Tür schließen]]></de> </text>
+        <text name="action_openDoorTop"> <en><![CDATA[Open the upper Gate]]></en> <de><![CDATA[Obere Tür öffnen]]></de> </text>
+        <text name="action_closeDoorTop"> <en><![CDATA[Close the upper Gate]]></en> <de><![CDATA[Obere Tür schließen]]></de> </text>
+	</l10n>
+	
+	<extraSourceFiles>
+		<!-- <sourceFile filename="scripts/setAnimalCapacity.lua" /> -->
+		<sourceFile filename="scripts/animalLimitIncreaser.lua" />
+		<sourceFile filename="scripts/EnhancedWeighStation.lua" />
+		<sourceFile filename="scripts/clipDistanceControl.lua"/>
+		<sourceFile filename="scripts/GC_Checker.lua" />
+	</extraSourceFiles>
+	
+	<globalCompany minimumVersion="1.4.1.0" />
+    
+	<maps>
+        <map id="SampleModMap" className="ModMap" filename="scripts/ModMap.lua" configFilename="maps/mapDE.xml" defaultVehiclesXMLFilename="defaultVehicles.xml" defaultItemsXMLFilename="defaultItems.xml">
+            <title>
+                <en>Holzer Map</en>
+                <de>Holzer Map</de>
+            </title>
+            <description>
+                <en>Welcome in Holz at Tegernsee</en>
+                <de>Willkommen in Holz am Tegernsee</de>
+            </description>
+            <iconFilename>map_preview.png</iconFilename>
+        </map>
+    </maps>
+</modDesc>

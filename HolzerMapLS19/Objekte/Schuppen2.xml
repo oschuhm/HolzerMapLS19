@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable>
+    <storeData>
+        <name>
+			<en>SCS_UNTERSTAND_TEST_A5</en>
+        </name>
+        <image>store_SCS_UNTERSTAND_TEST_A5.dds</image>
+        <price>5000</price>
+		<canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+		<canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <lifetime>1000</lifetime>
+        <functions>
+            <function>$l10n_function_decoration</function>
+        </functions>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <species>placeable</species>
+        <category>sheds</category>
+        <vertexBufferMemoryUsage>59452</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>7032</indexBufferMemoryUsage>
+        <textureMemoryUsage>11884056</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+    <placeableType>placeable</placeableType>
+    <filename>Objekte/Schuppen2.i3d</filename>
+    <placement testSizeX="0.1" testSizeZ="0.1" sizeX="0.1" sizeZ="0.1" useRandomYRotation="false" useManualYRotation="true"/>
+    <tipOcclusionUpdateArea sizeX="9" sizeZ="6"/>
+	
+	<clearAreas>
+        <clearArea startNode="9|0" widthNode="9|0|0" heightNode="9|0|1"/>
+    </clearAreas>
+    <leveling requireLeveling="true" maxSmoothDistance="8" maxSlope="30" maxEdgeAngle="30">
+        <levelAreas>
+        </levelAreas>
+    </leveling>
+ <animatedObjects>
+        <animatedObject saveId="SCS_Doors_U4_01" >
+            <animation duration="3.5">
+                <part node="4">
+                    <keyFrame time="0.0" translation="5.439 2.189 -4.495"/>
+                    <keyFrame time="1.0" translation="5.439 2.189 0.199"/>
+                </part>
+                <part node="3">
+                    <keyFrame time="0.0" translation="5.519 2.189 -7.145"/>
+                    <keyFrame time="1.0" translation="5.519 2.189 -1.338"/>
+                </part>
+            </animation>
+            <controls triggerNode="10" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="$data/sounds/prefab/gate/gate_loop.wav" loops="0" linkNode="10" volume="0.8" radius="25" innerRadius="3" fadeOu="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.wav" linkNode="10" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.wav" linkNode="10" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>	
+  </animatedObjects>	
+
+<seasons>
+        <maskAreas>
+            <!-- empty list so there is no masking -->
+        </maskAreas>
+    </seasons>  
+  
+</placeable>

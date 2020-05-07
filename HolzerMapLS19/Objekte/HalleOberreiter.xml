@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable>
+    <storeData>
+        <name>
+			<en>SCS_UNTERSTAND_TEST_A2</en>
+        </name>
+        <image>store_2.dds</image>
+        <price>25000</price>
+		<canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <functions>
+            <function>$l10n_function_decoration</function>
+        </functions>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+                <species>placeable</species>
+        <category>sheds</category>
+        <vertexBufferMemoryUsage>355700</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>31026</indexBufferMemoryUsage>
+        <textureMemoryUsage>5942096</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+    <placeableType>placeable</placeableType>
+    <filename>Objekte/HalleOberreiter.i3d</filename>
+    <placement testSizeX="0.1" testSizeZ="0.1" sizeX="0.1" sizeZ="0.1" useRandomYRotation="false" useManualYRotation="true"/>
+    <tipOcclusionUpdateArea sizeX="40" sizeZ="30" />
+
+<!--ClearArea-->	
+   <clearAreas>
+        <clearArea startNode="1|0" widthNode="1|0|0" heightNode="1|0|1"/>
+    </clearAreas>
+<!--Leveling-->
+    <leveling requireLeveling="true" maxSmoothDistance="5" maxSlope="30" maxEdgeAngle="20" >
+        <levelAreas>
+            <levelArea startNode="6|0" widthNode="6|0|0" heightNode="6|0|1" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+<!--DayNightLight-->
+ 	<dayNightObjects>
+        <dayNightObject node="7|10|0|0" intensityDay="0" intensityNight="1" />
+        <dayNightObject node="7|10|0|1" visibleDay="false" visibleNight="true" />
+		
+        <dayNightObject node="7|18|0|0" intensityDay="0" intensityNight="1" />
+        <dayNightObject node="7|18|0|1" visibleDay="false" visibleNight="true" />
+        <dayNightObject node="7|19|0|0" intensityDay="0" intensityNight="1" />
+        <dayNightObject node="7|19|0|1" visibleDay="false" visibleNight="true" />
+
+    </dayNightObjects>
+ <!--Animations-->
+ <animatedObjects>
+
+
+		 <!--Animations-->
+        <animatedObject saveId="SCS_door_01" >
+            <animation duration="4.5">
+                <part node="2|1">
+                    <keyFrame time="0.0" translation="1.321 2.699 4.217"/>
+                    <keyFrame time="1.0" translation="1.321 2.699 6.225"/>
+                </part>
+                <part node="2|2">
+                    <keyFrame time="0.0" translation="1.437 2.699 2.242"/>
+                    <keyFrame time="1.0" translation="1.437 2.699 6.326"/>
+                </part>
+                <part node="2|3">
+                    <keyFrame time="0.0" translation="1.321 2.699 0.347"/>
+                    <keyFrame time="1.0" translation="1.321 2.699 -1.554"/>
+                </part>
+            </animation>
+            <controls triggerNode="2|0" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="$data/sounds/prefab/gate/gate_loop.wav" loops="0" linkNode="2|0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.wav" linkNode="2|0" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.wav" linkNode="2|0" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		
+		 <!--Animations-->
+        <animatedObject saveId="SCS_door_02" >
+            <animation duration="4.5">
+                <part node="3|1">
+                    <keyFrame time="0.0" translation="1.321 2.374 -4.686"/>
+                    <keyFrame time="1.0" translation="1.321 2.374 -12.297"/>
+                </part>
+                <part node="3|2">
+                    <keyFrame time="0.0" translation="1.228 2.374 -8.498"/>
+                    <keyFrame time="1.0" translation="1.228 2.374 -12.307"/>
+                </part>
+            </animation>
+            <controls triggerNode="3|0" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="$data/sounds/prefab/gate/gate_loop.wav" loops="0" linkNode="3|0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.wav" linkNode="3|0" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.wav" linkNode="3|0" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		 <!--Animations-->
+         <animatedObject saveId="SCS_door_03" >
+            <animation duration="4.5">
+                <part node="4|1">
+                    <keyFrame time="0.0" translation="1.126 2.6 -5.577"/>
+                    <keyFrame time="1.0" translation="1.126 2.6 -3.357"/>
+                </part>
+                <part node="4|2">
+                    <keyFrame time="0.0" translation="1.14 2.615 -8.006"/>
+                    <keyFrame time="1.0" translation="1.14 2.615 -10.536"/>
+                </part>
+            </animation>
+            <controls triggerNode="4|0" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="$data/sounds/prefab/gate/gate_loop.wav" loops="0" linkNode="4|0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.wav" linkNode="4|0" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.wav" linkNode="4|0" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		 <!--Animations-->
+        <animatedObject saveId="SCS_door_04" >
+            <animation duration="4.5">
+                <part node="5|1">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 90 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="5|0" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="$data/sounds/prefab/gate/gate_loop.wav" loops="0" linkNode="5|0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.wav" linkNode="5|0" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.wav" linkNode="5|0" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+
+    </animatedObjects>	
+	
+	<seasons>
+        <maskAreas>
+            <!-- empty list so there is no masking -->
+        </maskAreas>
+    </seasons>
+</placeable>

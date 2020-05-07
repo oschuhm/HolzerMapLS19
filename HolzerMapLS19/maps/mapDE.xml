@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map width="2048" height="2048" imageFilename="maps/pda_map_H.png">
+    <filename>maps/mapDE.i3d</filename>
+    <shop filename="$data/store/ui/shop.xml" />
+    <colorGrading filename="maps/map_colorGrading.xml" />
+    <storeItems filename="$data/maps/mapDE_storeItems.xml" />
+    <sounds filename="maps/mapDE_sound.xml" />
+    <environment filename="maps/map_environment.xml" />
+    <wildlife filename="$dataS/character/wildlifeSpawner.xml" />
+    <helpline filename="$dataS/helpLine.xml" />
+    <gameplayHints filename="$dataS/gameplayHints.xml" />
+    <husbandryAnimals filename="maps/husbandryAnimals.xml" />
+    <animalNames filename="$dataS/character/animalNames.xml" />
+    <husbandryFood filename="maps/husbandryFoodDefinition.xml" />
+    <transportMissions filename="maps/mapDE_transportMissions.xml" />
+    <missionVehicles filename="$dataS/missionVehicles.xml" />
+    <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+    <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+    <textureMemoryUsage>0</textureMemoryUsage>
+    <culling xzOffset="100" />
+    <densityMap revision="1" />
+    <terrainLodTexture revision="1" />
+    <splitShapes revision="1" />
+    <tipCollision revision="1" />
+
+    <hotspots>
+        <hotspot name="Shop" fullName="$l10n_map_shop" imageUVs="264 8 240 240" xMapPos="396" zMapPos="936" blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_TRIGGERS"/>
+    </hotspots>
+
+    <additionalFiles>
+        <additionalFile filename="$data/shared/materialHolders/tensionBeltMaterialHolder.i3d" />
+        <additionalFile filename="$data/shared/materialHolders/tireTrackMaterialHolder.i3d" />
+        <additionalFile filename="$data/shared/materialHolders/glowEffectMaterialHolder.i3d" />
+        <additionalFile filename="$data/shared/mapTargetMarker.i3d" />
+        <additionalFile filename="$data/particleSystems/particle_materialHolder.i3d" />
+        <additionalFile filename="$data/particleSystems/effect_materialHolder.i3d" />
+        <additionalFile filename="$data/particleSystems/cutterEffect_materialHolder.i3d" />
+        <additionalFile filename="$data/fillPlanes/fillPlane_materialHolder.i3d" />
+		<additionalFile filename="maps/particleSystems/particle_materialHolder.i3d" />
+        <additionalFile filename="maps/particleSystems/effect_materialHolder.i3d" />
+        <additionalFile filename="maps/particleSystems/cutterEffect_materialHolder.i3d" />
+        <additionalFile filename="maps/fillPlanes/fillPlane_materialHolder.i3d" />
+		<additionalFile filename="maps/fillPlanes/fillPlane_materialHolder_onion.i3d" />
+		<additionalFile filename="maps/particleSystems/particle_materialHolder_onion.i3d" />
+        <additionalFile filename="maps/particleSystems/effect_materialHolder_onion.i3d" />
+		<additionalFile filename="maps/fillPlanes/fillPlane_incarase_grass.i3d" /> 							<!-- MateriealHolder fillPlane Vermehrungsgras -->
+		<additionalFile filename="maps/particleSystems/cutterEffect_materialHolder_incarase_grass.i3d" /> 	<!-- MateriealHolder Schneidwerke Vermehrungsgras -->
+		<additionalFile filename="maps/particleSystems/effect_materialHolder_incarase_grass.i3d" /> 			<!-- MateriealHolder Effecte Vermehrungsgras -->
+		<additionalFile filename="maps/particleSystems/particle_materialHolder_incarase_grass.i3d" /> 		<!-- MateriealHolder Particle Vermehrungsgras -->
+    </additionalFiles>
+
+    <groundTypeMappings>
+        <!-- Base -->
+        <groundTypeMapping type="dirt"         layer="ROUGHDIRT" />
+        <!-- Standard -->
+        <groundTypeMapping type="asphalt"      layer="ASPHALT" />
+        <groundTypeMapping type="gravel"       layer="GRAVEL" />
+        <groundTypeMapping type="grass"        layer="GRASS" paintableFoliageId="1" />
+        <groundTypeMapping type="grassRough"   layer="GRASSROUGH" paintableFoliageId="1"/>
+		<groundTypeMapping type="grass1"          layer="GRASS1" paintableFoliageId="2" />
+        <groundTypeMapping type="grass2"          layer="GRASS2" paintableFoliageId="3" />
+        <groundTypeMapping type="grass3"          layer="GRASS3" paintableFoliageId="4" />
+        <groundTypeMapping type="grass4"          layer="GRASS4" paintableFoliageId="5" />
+        <groundTypeMapping type="sand"         layer="SANDWET" />
+        <groundTypeMapping type="animalMud"    layer="ANIMALMUD" />
+        <groundTypeMapping type="concrete"     layer="CONCRETE" />
+        <groundTypeMapping type="plates"       layer="PLATE" />
+        <groundTypeMapping type="cobblestones" layer="CONCRETE" />
+        <groundTypeMapping type="flagstones"   layer="CONCRETE" />
+        <!-- Special -->
+        <groundTypeMapping type="forestGround" layer="FORESTLEAVES" />
+		<groundTypeMapping type="forestGround1" layer="FORESTLEAVES1" paintableFoliageId="6"/>
+		<groundTypeMapping type="forestGround2" layer="FORESTLEAVES2" paintableFoliageId="7"/>
+        <groundTypeMapping type="rock"         layer="MOUNTAINROCK" />
+    </groundTypeMappings>
+	
+	<paintableFoliages>
+		<paintableFoliage id="1" layerName="grass" firstDensityMapChannel="0" numDensityMapChannels="4" value="2" />
+		<paintableFoliage id="2" layerName="bush01" firstDensityMapChannel="0" numDensityMapChannels="4" value="1"  />
+        <paintableFoliage id="3" layerName="bush01" firstDensityMapChannel="0" numDensityMapChannels="4" value="2"  />
+        <paintableFoliage id="4" layerName="bush01" firstDensityMapChannel="0" numDensityMapChannels="4" value="3"  />
+        <paintableFoliage id="5" layerName="bush01" firstDensityMapChannel="0" numDensityMapChannels="4" value="4"  />
+		<paintableFoliage id="6" layerName="forestGrass" firstDensityMapChannel="0" numDensityMapChannels="4" value="1"  />
+		<paintableFoliage id="7" layerName="forestGrass1" firstDensityMapChannel="0" numDensityMapChannels="4" value="1"  />
+	</paintableFoliages>
+	
+	
+	
+    <fillTypes filename="maps/maps_fillTypes.xml" /> 
+    <!-- <sprayTypes filename="$data/maps/maps_sprayTypes.xml" /> -->
+    <fruitTypes filename="maps/maps_fruitTypes.xml" /> 
+    <baleTypes filename="maps/maps_baleTypes.xml" /> 
+    <!-- <treeTypes filename="$data/maps/maps_treeTypes.xml" /> -->
+    <densityMapHeightTypes filename="maps/maps_densityMapHeightTypes.xml" />
+    <npcs filename="maps/mapDE_npcs.xml" />
+    <!-- <helpers filename="$data/maps/maps_helpers.xml" /> -->
+    <farmlands filename="maps/mapDE_farmlands.xml" />
+	
+	<seasons>
+        <mask filename="maps/mapDE/seasonsMask.grle" /> <!-- point to the mask file -->
+		<missions>
+			<mission name="Kaeserei" type="snow" rewardScale="1" npcName="NPC_20" location="Käserei" text="Die Käserei bittet darum ihr Grundstück von Schnee zu befreien, damit die Milchfahrer ohne Probleme abladen können." />
+			<mission name="Haendler" type="snow" rewardScale="1" npcName="NPC_20" location="Maschinenhändler" text="Der Landmaschinenhändler möchte das Du seinen Platz frei räumst damit er dort die Maschinen seiner Kunden abstellen kann." />
+			<mission name="Saegewerk" type="snow" rewardScale="1" npcName="NPC_20" location="Sägewerk" text="Das Sägewerk bittet um Räumung des Firmengeländes, damit die Kunden ihre Baumstämme gefahrlos abladen können." />
+			<mission name="Viehhaendler" type="snow" rewardScale="1" npcName="NPC_9" location="Viehhändler" text="Der Viehhändler fragt an ob ihm jemand seinen Hof frei räumt, da sein Frontladerschlepper gerade in der Werkstatt ist." />
+		</missions>
+    </seasons>
+
+</map>

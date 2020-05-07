@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="AHSml_general" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.2.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="13" filename="$data/shaders/streamShader.xml"/>
+    <File fileId="10" filename="fakeWater_diffuse.png"/>
+    <File fileId="11" filename="fakeWater_normal.png"/>
+    <File fileId="12" filename="fakeWater_specular.png"/>
+    <File fileId="1" filename="galvanizedMetal_diffuse.png"/>
+    <File fileId="2" filename="galvanizedMetal_specular.png"/>
+    <File fileId="4" filename="waterTrough_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="galvanizedMetal_mat" materialId="5" customShaderId="3">
+      <Texture fileId="1"/>
+      <Glossmap fileId="2"/>
+      <Custommap name="mMaskMap" fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="9" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="fakeWater_mat" materialId="13" alphaBlending="true" customShaderId="13">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+      <CustomParameter name="directions" value="0.005 0 0.05 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="waterTrough.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="waterTrough" translation="14.5 0 1" rotation="-0 90 0" static="true" clipDistance="400" nodeId="82" materialIds="5" castsShadows="true" receiveShadows="true">
+      <Shape shapeId="2" name="waterTroughTrigger" translation="2.53834e-16 2.16927e-15 1.25" static="true" trigger="true" collisionMask="8388608" nodeId="83" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <Shape shapeId="3" name="exactFillRootNode" translation="2.84217e-16 0 0" kinematic="true" trigger="true" collisionMask="1073741824" nodeId="84" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      </Shape>
+      <Shape shapeId="4" name="waterPlane" translation="0 0.06 0" clipDistance="200" nodeId="85" materialIds="13" receiveShadows="true"/>
+    </Shape>
+  </Scene>
+
+</i3D>

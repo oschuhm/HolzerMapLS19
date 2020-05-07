@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+        
+    <globalCompany>
+    
+	<hotspots>
+        <hotspot name="Grastrocknung" fullName="Grastrocknung" imageName="SELLING_POINT" hidable="false" linkNode="7" category="CATEGORY_TRIGGERS" />
+    </hotspots>
+	<productionFactories>
+        <productionFactory indexName="HeutrocknungUnterreiter" saveId="globalCompany_HeutrocknungUnterreiter">
+            <guiInformation title="HolzerMapLS19_FactoryName" imageFilename="GC/store_HeutrocknungUnterreiter.dds" description="HolzerMapLS19_Description"/>
+			
+            <operation updateDelayMinutes="10" showInGlobalGUI="true" />
+			
+            <registerLoadingTriggers>
+				<loadingTrigger name="LoadingTrigger" triggerNode="trigger" fillLitersPerSecond="1000" autoStart="true">
+					<dischargeInfo dischargeNode="dischargeNode" />
+					<sounds fillSoundIdentifier="fillSound01" />
+					
+					<effectNode effectNode="grain" materialType="unloading" materialTypeId="3" fadeTime="0.5" />
+					<effectNode effectNode="smoke" materialType="smoke"    materialTypeId="1" fadeTime="0.5" />
+				</loadingTrigger>
+			</registerLoadingTriggers>
+			
+			<registerUnloadingTriggers>
+				<unloadingTrigger name="UnloadingTrigger_1" exactFillRootNode="exactFillRootNode_1" />
+				<unloadingTrigger name="UnloadingTrigger_2" exactFillRootNode="exactFillRootNode_2" />
+			</registerUnloadingTriggers>
+
+            <registerInputProducts headerTitle="HolzerMapLS19_HeaderInput">
+                <inputProduct name="IP_GRASS" capacity="500000" title="HolzerMapLS19_Input1">
+                    <fillTypes>
+                        <fillType name="grass_windrow" />
+						<fillType name="alfalfa_windrow" />
+						<fillType name="clover_windrow" />
+                    </fillTypes>
+					
+					<purchase useSellPointPrice="grass_windrow" purchaseMultiplier="1.0"/> <!-- Use the highest sell point price for silage with no multiplier. Seems fair :-)-->
+					
+                    <inputMethods>
+                        <unloadingTrigger name="UnloadingTrigger_1" />
+                    </inputMethods>	
+					
+					
+					<digitalDisplays>
+						<display displayType="LEVEL" numbers="IN_Display_1" emptyNumberColor="1 0 0 1" numberColor="1 1 0 1" fullNumberColor="0 1 0 1"/>
+					</digitalDisplays>
+                </inputProduct>
+				<inputProduct name="IP_WOODCHIPS" capacity="10000" title="HolzerMapLS19_Input2">
+                    <fillTypes>
+                        <fillType name="woodChips" />
+						<fillType name="strawPellets" />
+                    </fillTypes>
+					
+					<purchase useSellPointPrice="woodChips" purchaseMultiplier="1.0"/> <!-- Use the highest sell point price for silage with no multiplier. Seems fair :-)-->
+					
+                    <inputMethods>
+                        <unloadingTrigger name="UnloadingTrigger_2" />
+                    </inputMethods>	
+					
+					
+					<digitalDisplays>
+						<display displayType="LEVEL" numbers="IN_Display_2" emptyNumberColor="1 0 0 1" numberColor="1 1 0 1" fullNumberColor="0 1 0 1"/>
+					</digitalDisplays>
+                </inputProduct>				
+            </registerInputProducts>
+
+            <registerOutputProducts headerTitle="HolzerMapLS19_HeaderOutput">				
+                <outputProduct name="OP_Hay" fillType="dryGrass_windrow" capacity="500000">
+                    <outputMethods>
+						<loadingTrigger name="LoadingTrigger" />
+					</outputMethods>
+					<digitalDisplays>
+						<display displayType="LEVEL" numbers="OP_Display" emptyNumberColor="0 1 0 1" numberColor="1 1 0 1" fullNumberColor="1 0 0 1"/>
+					</digitalDisplays>
+                </outputProduct>
+            </registerOutputProducts>	
+
+            <productLines>
+                <productLine autoLineStart="true" outputPerHour="2000" title="HolzerMapLS19_shopItem_GrastrocknungSmall" showInGUI="true">
+                    <inputs>
+                        <inputProduct name="IP_GRASS" percent="100" />
+						<inputProduct name="IP_WOODCHIPS" percent="3" />
+                    </inputs>
+                    <outputs>
+                        <outputProduct name="OP_Hay" />
+                    </outputs>
+                    <playerTrigger playerTriggerNode="playerTrigger" showPopupUI="true"/> 
+					<operatingParts>						
+						<sounds>
+							<sound geSoundNode="audio"/>
+						</sounds>
+						
+					</operatingParts>
+	            </productLine>
+            </productLines>            			
+        
+            <i3dMappings>
+                <i3dMapping id="dischargeNode" node="0|0|0|1" />
+                <i3dMapping id="smoke" node="0|0|0|2|1" />
+                <i3dMapping id="grain" node="0|0|0|2|0" />
+                <i3dMapping id="trigger" node="0|0|0|0" />
+                <i3dMapping id="exactFillRootNode_1" node="2|0|0" />
+				<i3dMapping id="exactFillRootNode_2" node="2|1|0" />
+                <i3dMapping id="IN_Display_1" node="2|0|1" />
+				<i3dMapping id="IN_Display_2" node="2|1|1" />
+                <i3dMapping id="OP_Display" node="9" />
+                <i3dMapping id="playerTrigger" node="8" />
+				<i3dMapping id="audio" node="11" />
+			</i3dMappings>
+        </productionFactory>
+    </productionFactories>
+	
+    
+	
+</globalCompany>

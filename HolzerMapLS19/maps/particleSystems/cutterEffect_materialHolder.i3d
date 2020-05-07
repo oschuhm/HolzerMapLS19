@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="cutterEffect_materialHolder" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/shaders/cuttersShader.xml"/>
+    <File fileId="1" filename="../foliage/alfalfa_diffuse.png"/>
+    <File fileId="3" filename="../foliage/clover_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="clover_mat" materialId="11" customShaderId="2" customShaderVariation="MESH_ROTATION">
+      <Texture fileId="3"/>
+      <CustomParameter name="scrollPosition" value="0 1 -10 10"/>
+      <CustomParameter name="lengthAndRadius" value="0 0 -0.25 0.25"/>
+    </Material>
+    <Material name="alfalfa_mat1" materialId="5" customShaderId="2" customShaderVariation="MESH_SCROLLING">
+      <Texture fileId="1"/>
+      <CustomParameter name="scrollPosition" value="0 1 -10 10"/>
+      <CustomParameter name="lengthAndRadius" value="4.3 1 1 1"/>
+    </Material>
+    <Material name="clover_mat1" materialId="10" customShaderId="2" customShaderVariation="MESH_SCROLLING">
+      <Texture fileId="3"/>
+      <CustomParameter name="scrollPosition" value="0 1 -10 10"/>
+      <CustomParameter name="lengthAndRadius" value="4.3 1 1 1"/>
+    </Material>
+    <Material name="alfalfa_mat" materialId="6" customShaderId="2" customShaderVariation="MESH_ROTATION">
+      <Texture fileId="1"/>
+      <CustomParameter name="scrollPosition" value="0 1 -10 10"/>
+      <CustomParameter name="lengthAndRadius" value="0 0 -0.25 0.25"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="cutterEffect_materialHolder.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="cutting" nodeId="19">
+      <TransformGroup name="shader" nodeId="20">
+        <TransformGroup name="alfalfa" nodeId="33">
+          <Shape shapeId="1" name="center" clipDistance="100" nodeId="34" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="right" translation="-1.18329e-32 1.89327e-31 3.9443e-31" clipDistance="100" nodeId="35" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="left" translation="3.9443e-33 0 0" clipDistance="100" nodeId="36" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="clover" nodeId="37">
+          <Shape shapeId="1" name="center" clipDistance="100" nodeId="38" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="right" translation="-1.18329e-32 1.89327e-31 3.9443e-31" clipDistance="100" nodeId="39" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="left" translation="3.9443e-33 0 0" clipDistance="100" nodeId="40" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="34">
+      <Attribute name="cutterEffectType" type="string" value="CENTER"/>
+      <Attribute name="fruitType" type="string" value="alfalfa"/>
+      <Attribute name="isThreshing" type="boolean" value="true"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateCutterEffect"/>
+    </UserAttribute>
+    <UserAttribute nodeId="35">
+      <Attribute name="cutterEffectType" type="string" value="RIGHT"/>
+      <Attribute name="fruitType" type="string" value="alfalfa"/>
+      <Attribute name="isThreshing" type="boolean" value="true"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateCutterEffect"/>
+    </UserAttribute>
+    <UserAttribute nodeId="36">
+      <Attribute name="cutterEffectType" type="string" value="LEFT"/>
+      <Attribute name="fruitType" type="string" value="alfalfa"/>
+      <Attribute name="isThreshing" type="boolean" value="true"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateCutterEffect"/>
+    </UserAttribute>
+    <UserAttribute nodeId="38">
+      <Attribute name="cutterEffectType" type="string" value="CENTER"/>
+      <Attribute name="fruitType" type="string" value="clover"/>
+      <Attribute name="isThreshing" type="boolean" value="true"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateCutterEffect"/>
+    </UserAttribute>
+    <UserAttribute nodeId="39">
+      <Attribute name="cutterEffectType" type="string" value="RIGHT"/>
+      <Attribute name="fruitType" type="string" value="clover"/>
+      <Attribute name="isThreshing" type="boolean" value="true"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateCutterEffect"/>
+    </UserAttribute>
+    <UserAttribute nodeId="40">
+      <Attribute name="cutterEffectType" type="string" value="LEFT"/>
+      <Attribute name="fruitType" type="string" value="clover"/>
+      <Attribute name="isThreshing" type="boolean" value="true"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateCutterEffect"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

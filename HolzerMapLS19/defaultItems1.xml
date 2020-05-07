@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<items>
+	    <item mapBoundId="Landhandel" className="SellingStationPlaceable" filename="$moddir$HolzerMapLS19/Sellpoints/sellingStationPort01.xml" position="375.323 108.14 849.127" rotation="-180 65.14 -180" /> 
+		<item mapBoundId="Käserei" className="SellingStationPlaceable" filename="$moddir$HolzerMapLS19/Sellpoints/sellingStationMilch.xml" position="229.634 125.527 956.792" rotation="0 90 0" /> 
+		<item mapBoundId="Ballenverkauf Viehhändler" className="SellingStationPlaceable" filename="$moddir$HolzerMapLS19/Sellpoints/sellingStationBales.xml" position="370.344 108.191 440.701" rotation="0 0 0" />
+		<item mapBoundId="Ballenverkauf Landhandel" className="SellingStationPlaceable" filename="$moddir$HolzerMapLS19/Sellpoints/sellingStationBalesLandhandel.xml" position="409.354 108.64 845.651" rotation="0 -65.493 0" />
+		<item mapBoundId="Wolleverkauf" className="SellingStationPlaceable" filename="$moddir$HolzerMapLS19/Sellpoints/sellingStationWool.xml" position="330.682 108.112 457.254" rotation="0 0 0" />
+		<item mapBoundId="sellingStationVehicles" className="Workshop" filename="$moddir$HolzerMapLS19/Sellpoints/sellingStationVehicles.xml" position="418.756 107.946 897.931" rotation="0 0 0" />
+		<item mapBoundId="Eierverkauf" className="SellingStationPlaceable" filename="$moddir$HolzerMapLS19/Sellpoints/sellingStationEier.xml" position="534.935 107.858 -257.044" rotation="180 68.264 180" />
+		<item mapBoundId="Heizung Unterreiter" className="WoodSellStationPlaceable" filename="$moddir$HolzerMapLS19/Sellpoints/sellingStationWood.xml" position="167.814 128.74 -248.89" rotation="0 8.306 0" />
+		<item mapBoundId="Hackschnitzelverkauf" className="SellingStationPlaceable" filename="$moddir$HolzerMapLS19/Sellpoints/sellingStationWoodChips.xml" position="537.871 108.044 852.307" rotation="0 -45 0" />
+		<item mapBoundId="Holzverkauf Sägewerk" className="WoodSellStationPlaceable" filename="$moddir$HolzerMapLS19/Sellpoints/sellingStationWood2.xml" position="499.346 108.911 853.862" rotation="0 180 0" />
+		
+		<item mapBoundId="gasStation01" className="BuyingStationPlaceable" filename="$moddir$HolzerMapLS19/Sellpoints/gasStation01.xml" position="453.93798828 108.29299927 -621.58392334" rotation="0 -15.798 0" />
+		<item mapBoundId="gasStation02" className="BuyingStationPlaceable" filename="$moddir$HolzerMapLS19/Sellpoints/gasStation02.xml" position="-239.969 125.866 -456.552" rotation="0 -23.032 0" />
+		<item mapBoundId="gasStation03" className="BuyingStationPlaceable" filename="$moddir$HolzerMapLS19/Sellpoints/gasStation03.xml" position="-15.306 125.808 -403.493" rotation="0 -34.076 0" />
+		<item mapBoundId="gasStation04" className="BuyingStationPlaceable" filename="$moddir$HolzerMapLS19/Sellpoints/gasStation04.xml" position="88.377 127.48 -106.115" rotation="0 -53.617 0" />
+		<item mapBoundId="gasStation05" className="BuyingStationPlaceable" filename="$moddir$HolzerMapLS19/Sellpoints/gasStation05.xml" position="115.129 129.208 -248.201" rotation="0 -53.617 0" />
+		<item mapBoundId="gasStation06" className="BuyingStationPlaceable" filename="$moddir$HolzerMapLS19/Sellpoints/gasStation06.xml" position="378.599 108.156 903.345" rotation="180 -31.012 -180" />
+		
+		<item mapBoundId="waterFillTriggers" className="BuyingStationPlaceable" filename="$moddir$HolzerMapLS19/Sellpoints/waterFillTriggers.xml" position="0 0 0" rotation="0 0 0" />
+		
+		<item mapBoundId="Einkauf Landhandel" className="BuyingStationPlaceable" filename="$moddir$HolzerMapLS19/Objekte/fruitSilo.xml" position="354.229 108.112 828.57" rotation="-180 -23.527 -180" />
+
+		<item className="Placeable" filename="$moddir$HolzerMapLS19/Objekte/farmHouse1.xml" position="100.968 124.025 -801.165" rotation="180 43 -180" farmId="1"/>
+		<item className="Placeable" filename="$moddir$HolzerMapLS19/Objekte/PferdestallBoarhof.xml" position="89.79 124.083 -778.569" rotation="0 0 0" farmId="1"/>
+		<item className="AnimalHusbandry" filename="$moddir$HolzerMapLS19/Objekte/SchafeBoarhof.xml" position="121.351 124 -749.794" rotation="0 -45 0" farmId="1"/>
+		<item className="AnimalHusbandry" filename="$moddir$HolzerMapLS19/Objekte/PferdeBoarhof.xml" position="48.674 123.749 -737.18" rotation="0 0 0" farmId="1"/>
+		<item className="AnimalHusbandry" filename="$moddir$HolzerMapLS19/Objekte/KueheSchwoagahof.xml" position="-280.128 125.909 -500.152" rotation="0 65.501 0" farmId="1"/>
+		<item className="AnimalHusbandry" filename="$moddir$HolzerMapLS19/Objekte/KueheGundischhof.xml" position="-63.636 124.191 -415.034" rotation="-180 35 -180" farmId="1"/>
+		<item className="AnimalHusbandry" filename="$moddir$HolzerMapLS19/Objekte/HuehnerGundischhof.xml" position="17.76 124.148 -411.016" rotation="0 55 0" farmId="1"/>
+		<item className="AnimalHusbandry" filename="$moddir$HolzerMapLS19/Objekte/SchafeGundischhof.xml" position="-46.858 124.186 -373.068" rotation="-180 0 -180" farmId="1"/>
+		<item className="AnimalHusbandry" filename="$moddir$HolzerMapLS19/Objekte/KueheGraberhof.xml" position="-87.835 136.02 -312.597" rotation="180 -74.253 -180" farmId="1"/>
+		<item className="AnimalHusbandry" filename="$moddir$HolzerMapLS19/Objekte/KueheOberreiter.xml" position="34.775 127.256 -75.73" rotation="0 76.224 0" farmId="1"/>
+		<item className="AnimalHusbandry" filename="$moddir$HolzerMapLS19/Objekte/HuehnerOberreiter.xml" position="75.92900085 127.41999817 -150.5249939" rotation="0 -53.30599976 0" farmId="1"/>
+		<item className="AnimalHusbandry" filename="$moddir$HolzerMapLS19/Objekte/SchweineOberreiter.xml" position="73.10399628 127.41899872 -132.44299316" rotation="0 -53.30599976 0" farmId="1"/>
+		<item className="SiloPlaceable" filename="$moddir$HolzerMapLS19/Objekte/WH_OL.xml" position="75.92900085 127.41999817 -150.5249939" rotation="0 -53.30599976 0" farmId="1"/>
+		<item className="Placeable" filename="$moddir$HolzerMapLS19/Objekte/HalleOberreiter.xml" position="92.182 127.415 -120.207" rotation="180 53.5 180" farmId="1"/>
+		<item className="Placeable" filename="$moddir$HolzerMapLS19/Objekte/Schuppen.xml" position="-98.605 125.92 384.667" rotation="-180 -38.783 -180" farmId="1"/>
+		<item className="AnimalHusbandry" filename="$moddir$HolzerMapLS19/Objekte/KueheUnterreiterhof.xml" position="294.425 119.674 -119.505" rotation="0 0 0" farmId="1"/>
+		<item className="AnimalHusbandry" filename="$moddir$HolzerMapLS19/Objekte/KueheUnterreiterWeide.xml" position="294.425 119.674 -119.505" rotation="0 0 0" farmId="1"/>
+		<item className="AnimalHusbandry" filename="$moddir$HolzerMapLS19/Objekte/KueheUnterreiterBergwiese.xml" position="-653.13201904 129.88299561 783.60998535" rotation="0 0 0" farmId="1"/>
+		<item className="AnimalHusbandry" filename="$moddir$HolzerMapLS19/Objekte/chickenCoop.xml" position="176.80700684 127.26499939 -280.1789856" rotation="0 -2.526 0" farmId="1"/>
+		<item className="Placeable" filename="$moddir$HolzerMapLS19/Objekte/Schuppen2.xml" position="-191.628 125.887 -442.796" rotation="-180 25.096 -180" farmId="1"/>
+		<item className="Placeable" filename="$moddir$HolzerMapLS19/Objekte/maschineShelter.xml" position="-1.523 136.58999634 -319.52160645" rotation="0 0 0" farmId="1"/>
+		<item className="FarmhousePlaceable" filename="$moddir$HolzerMapLS19/Objekte/sleeptrigger.xml" position="102.67684174 124.03500366 -795.06542969" rotation="-179.99998474 -47.31900024 -179.99998474" farmId="1"/>
+		
+		
+</items>

@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<animatedObjects>
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+<!-- SAEGEWERK SAEGEWERK SAEGEWERK SAEGEWERK SAEGEWERK SAEGEWERK SAEGEWERK SAEGEWERK SAEGEWERK SAEGEWERK SAEGEWERK SAEGEWERK SAEGEWERK SAEGEWERK SAEGEWERK SAEGEWERK SAEGEWERK SAEGEWERK SAEGEWERK  -->
+		<!-- Hoftor by Steffen30Muc - Tuer Saegewerk -->
+				<animatedObject index="SaegewerkHoftuerSteffen30Muc">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+					<sounds>
+						<moving file="maps/sounds/OpenGateDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of door-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="0.125" rotation="0 0 0" />
+							<keyFrame time="0.175" rotation="0 5 0" />
+							<keyFrame time="1" rotation="0 150 0" />
+						</part>
+						<part node="1|0"> <!--index of doorhandle-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="0.125" rotation="0 0 30" />
+							<keyFrame time="0.175" rotation="0 0 0" />
+							<keyFrame time="1" rotation="0 0 0" />
+						</part>
+					</animation>
+				</animatedObject>
+				
+		<!-- Hoftor by Steffen30Muc - Tor Saegewerk -->
+				<animatedObject index="SaegewerkHoftorSteffen30Muc">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+					<sounds>
+						<moving file="maps/sounds/OpenGateDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="8">
+						<part node="1"> <!--index of door right-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="0.0625" rotation="0 0 0" />
+							<keyFrame time="0.0875" rotation="0 0 0" />
+							<keyFrame time="0.5" rotation="0 120 0" />
+							<keyFrame time="1" rotation="0 120 0" />
+						</part>
+						<part node="1|0"> <!--index of doorhandle-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="0.0625" rotation="0 0 30" />
+							<keyFrame time="0.0875" rotation="0 0 0" />
+							<keyFrame time="0.5" rotation="0 0 0" />
+							<keyFrame time="1" rotation="0 0 0" />
+						</part>
+						<part node="2"> <!--index of door left-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="0.5" rotation="0 0 0" />
+							<keyFrame time="0.5625" rotation="0 0 0" />
+							<keyFrame time="0.5875" rotation="0 0 0" />
+							<keyFrame time="1" rotation="0 -150 0" />
+						</part>
+						<part node="2|0"> <!--index of handle-->
+							<keyFrame time="0" translation="-2.91452 -1.65504 0.00500011" rotation="0 0 0" />
+							<keyFrame time="0.5" translation="-2.91452 -1.62198 0.00500011" rotation="0 0 0" />
+							<keyFrame time="0.5625" translation="-2.91452 -1.62198 0.00500011" rotation="0 -35 0" />
+							<keyFrame time="0.5875" translation="-2.91452 -1.63481 0.00500011" rotation="0 -35 0" />
+							<keyFrame time="1" translation="-2.91452 -1.63481 0.00500011" rotation="0 -35 0" />
+						</part>
+					</animation>
+				</animatedObject>
+				
+				
+<animatedObject index="doorWeide">
+        <controls posAction="ACTIVATE_HANDTOOL" negAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+        <sounds>
+			<moving file="maps/sounds/doorsound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+		</sounds>
+		<animation initialTime="0" duration="4">
+            <part node="1">
+                <keyFrame time="0.00" translation="2.852 0.614 0.203" />
+                <keyFrame time="0.47" translation="-2.815 0.614 0.203" />
+            </part>
+            <part node="2">
+                <keyFrame time="0.53" translation="2.852 -0.228 0.203" />
+                <keyFrame time="1.00" translation="-2.815 -0.228 0.203" />
+            </part>
+        </animation>
+    </animatedObject>
+
+<animatedObject index="doorWeide2">
+        <controls posAction="ACTIVATE_HANDTOOL" negAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+        <sounds>
+			<moving file="maps/sounds/doorsound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+		</sounds>
+		<animation initialTime="0" duration="4">
+            <part node="1">
+                <keyFrame time="0.00" translation="2.852 0.614 0.203" />
+                <keyFrame time="0.47" translation="-2.815 0.614 0.203" />
+            </part>
+            <part node="2">
+                <keyFrame time="0.53" translation="2.852 -0.228 0.203" />
+                <keyFrame time="1.00" translation="-2.815 -0.228 0.203" />
+            </part>
+        </animation>
+    </animatedObject>
+	
+	<animatedObject index="doorWeide20">
+        <controls posAction="ACTIVATE_HANDTOOL" negAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+        <sounds>
+			<moving file="maps/sounds/doorsound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+		</sounds>
+		<animation initialTime="0" duration="3">
+						<part node="1"> <!--index of Door node-->
+							<keyFrame time="0" translation="0.065 -0.013 -0.022" />
+							<keyFrame time="1" translation="-5.653 -0.013 -0.022" />
+						</part>
+					</animation>
+    </animatedObject>
+	
+<animatedObject index="KuhWeidetor2">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+					<sounds>
+						<moving file="maps/sounds/OpenGateDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="3">
+						<part node="1"> <!--index of Door node-->
+							<keyFrame time="0" rotation="90 0 0" />
+							<keyFrame time="1" rotation="90 90 0" />
+						</part>
+					</animation>
+				</animatedObject>
+
+				<animatedObject index="KuhWeidetor1">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+					<sounds>
+						<moving file="maps/sounds/OpenGateDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="3">
+						<part node="1"> <!--index of Door node-->
+							<keyFrame time="0" rotation="90 0 0" />
+							<keyFrame time="1" rotation="90 90 0" />
+						</part>
+					</animation>
+				</animatedObject>
+		
+<animatedObject index="Metallschranke">
+        <controls posAction="ACTIVATE_HANDTOOL" negAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+        <sounds>
+			<moving file="maps/sounds/OpenGateDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+		</sounds>
+		<animation initialTime="0" duration="2">
+            <part node="1">
+                <keyFrame time="0.05" rotation="0 0 0" /> 
+                <keyFrame time="1.00" rotation="0 -89.156 0" />
+            </part>
+
+        </animation>
+    </animatedObject>
+	
+	<animatedObject index="Holzschranke">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+        <sounds>
+			<moving file="maps/sounds/OpenGateDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+		</sounds>
+		<animation initialTime="0" duration="2">
+            <part node="1">
+                <keyFrame time="0.05" rotation="0 0 0" /> 
+                <keyFrame time="1.00" rotation="0 0 -80" />
+            </part>
+        </animation>
+    </animatedObject>
+	
+	<animatedObject index="WindschutznetzSchafe">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+					<sounds>
+						<moving file="maps/sounds/switch01_0.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="15">
+						<part node="1|2"> <!--switch-->
+							<keyFrame time="0.00" translation="0 0 0" />
+							<keyFrame time="0.01" translation="-0.01 0 0" />
+							<keyFrame time="0.02" translation="0 0 0" />
+							<keyFrame time="0.98" translation="0 0 0" />
+							<keyFrame time="0.99" translation="-0.01 0 0" />
+							<keyFrame time="1" translation="0 0 0" />
+						</part>
+						<part node="2"> <!--sound-->
+							<keyFrame time="0.00" translation="0 -1000 0" />
+							<keyFrame time="0.01" translation="0 0 0" />
+							<keyFrame time="0.99" translation="0 0 0" />
+							<keyFrame time="1.00" translation="0 -1000 0" />
+						</part>
+						<part node="3"> <!--net-->
+							<keyFrame time="0.00" translation="-0.017 4.082 -7.024" scale="1 1 1"/>
+							<keyFrame time="1" translation="-0.017 4.575 -7.024" scale="1 0.14 1"/>
+						</part>
+					</animation>
+				</animatedObject>
+
+<animatedObject index="Tor1">
+				<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+				<sounds>
+					<moving file="maps/sounds/Door3.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+				</sounds>
+				<animation initialTime="0" duration="2">
+					<part node="1"> <!-- node -> child index links -->
+						<keyFrame time="0.05" rotation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+						<keyFrame time="1.00" rotation="0 -90 0" />
+					</part>
+					<part node="2"> <!-- node -> child index rechts -->
+						<keyFrame time="0.05" rotation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+						<keyFrame time="1.00" rotation="0 90 0" />
+					</part>
+					<!-- you can add an unlimited number of parts here -->
+				</animation>
+			</animatedObject>
+
+<animatedObject index="DorfhofDuengerlagerDoor1">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+					<sounds>
+						<moving file="maps/sounds/OpenDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of Door node-->
+							<keyFrame time="0" translation="1.929 -9.495 3.915" />
+							<keyFrame time="1" translation="5.61 -9.495 3.915" />
+						</part>
+					</animation>
+				</animatedObject>
+			
+<animatedObject index="DorfhofDuengerlagerDoor2">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+					<sounds>
+						<moving file="maps/sounds/OpenDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of Door node-->
+							<keyFrame time="0" translation="-2.8599999 -9.47200012 3.90499997" />
+							<keyFrame time="1" translation="-6.67259455 -9.47200012 3.90499997" />
+						</part>
+					</animation>
+				</animatedObject>
+				
+<animatedObject index="Tuer1">
+				<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+				<sounds>
+					<moving file="maps/sounds/Door2.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+				</sounds>
+				<animation initialTime="0" duration="1.5">
+					<part node="1"> <!-- node -> child index links -->
+						<keyFrame time="0.05" rotation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+						<keyFrame time="1.00" rotation="0 120 0" />
+					</part>
+				</animation>
+			</animatedObject>
+				
+<animatedObject index="PigPitCoverNew" saveId="hoseSystemPigPitCoverNew">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="1" posText="action_openGate" negText="action_closeGate" />
+					<sounds>
+						<moving file="maps/sounds/OpenManurePitSound.wav" loops="0" linkNode="1" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="3">
+						<part node="0"> <!--index of cover node-->
+							<keyFrame time="0" translation="0 0.5 -0.905" rotation="0 0 0" />
+							<keyFrame time="0.25" translation="0 0.513 -0.905" rotation="0 0 2.6" />
+							<keyFrame time="0.5" translation="0.5 0.528 -0.905" rotation="0 0 3.4" />
+							<keyFrame time="0.65" translation="0.69 0.538 -0.905" rotation="0 0 0" />
+							<keyFrame time="1" translation="0.98 0.484 -0.905" rotation="0 0 -6.284" />
+						</part>
+					</animation>
+				</animatedObject>
+
+<animatedObject index="doorRight">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+        <sounds>
+			<moving file="maps/sounds/OpenDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+		</sounds>
+        <animation initialTime="0" duration="4">
+            <part node="1"> <!-- node -> child index -->
+                <keyFrame time="0.05" translation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" translation="10 0 0" />
+            </part>
+            <!-- you can add an unlimited number of parts here -->
+        </animation>
+    </animatedObject>
+	
+<animatedObject index="Aussenhof1Rolltor1">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+					<sounds>
+						<moving file="maps/sounds/OpenDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="5">
+						<part node="1"> <!--index of left door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.25" translation="0 0 0" />
+							<keyFrame time="1.00" translation="0 0 -6.1" />
+						</part>
+						<part node="2"> <!--index of right door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.75" translation="0 0 -6.1" />
+							<keyFrame time="1.00" translation="0 0 -6.1" />
+						</part>
+					</animation>
+				</animatedObject>
+			<!-- Rolltor 2 -->
+				<animatedObject index="Aussenhof1Rolltor2">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+					<sounds>
+						<moving file="maps/sounds/OpenDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="5">
+						<part node="1"> <!--index of left door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.25" translation="0 0 0" />
+							<keyFrame time="1.00" translation="0 0 -6.1" />
+						</part>
+						<part node="2"> <!--index of right door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.75" translation="0 0 -6.1" />
+							<keyFrame time="1.00" translation="0 0 -6.1" />
+						</part>
+					</animation>
+				</animatedObject>
+			<!-- Rolltor 3 -->
+				<animatedObject index="Aussenhof1Rolltor3">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+					<sounds>
+						<moving file="maps/sounds/OpenDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="5">
+						<part node="1"> <!--index of left door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.25" translation="0 0 0" />
+							<keyFrame time="1.00" translation="0 0 6.1" />
+						</part>
+						<part node="2"> <!--index of right door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="0.75" translation="0 0 6.1" />
+							<keyFrame time="1.00" translation="0 0 6.1" />
+						</part>
+					</animation>
+				</animatedObject>
+				
+<animatedObject index="HofMaschinenhalleKleinRolltor1">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+					<sounds>
+						<moving file="maps/sounds/OpenDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of Door node-->
+							<Keyframe time="0" translation="-0.042 0.09 2.125"/>
+							<Keyframe time="1" translation="-0.042 0.09 -2.049"/>
+						</part>
+					</animation>
+				</animatedObject>
+				<animatedObject index="HofMaschinenhalleKleinRolltor2">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+					<sounds>
+						<moving file="maps/sounds/OpenDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of Door node-->
+							<Keyframe time="0" translation="0 0.09 2.125"/>
+							<Keyframe time="1" translation="0 0.09 6.28"/>
+						</part>
+					</animation>
+				</animatedObject>
+				<animatedObject index="HofMaschinenhalleKleinRolltor3">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+					<sounds>
+						<moving file="maps/sounds/OpenDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of Door node-->
+							<Keyframe time="0" translation="-0.042 0.09 2.125"/>
+							<Keyframe time="1" translation="-0.042 0.09 -2.043"/>
+						</part>
+					</animation>
+				</animatedObject>
+				<animatedObject index="HofMaschinenhalleKleinRolltor4">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+					<sounds>
+						<moving file="maps/sounds/OpenDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of Door node-->
+							<Keyframe time="0" translation="0 0.09 2.125"/>
+							<Keyframe time="1" translation="0 0.09 6.28"/>
+						</part>
+					</animation>
+				</animatedObject>
+
+<animatedObject index="HofMaschinenhalleKleinTuer1">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+					<sounds>
+						<moving file="maps/sounds/OpenGateDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="2">
+						<part node="1|0"> <!--index of Doorhandle node-->
+							<Keyframe time="0" rotation="0 0 0"/>
+							<Keyframe time="0.125" rotation="-30 0 0"/>
+							<Keyframe time="0.175" rotation="0 0 0"/>
+							<Keyframe time="1" rotation="0 0 0"/>
+						</part>
+						<part node="1"> <!--index of Door node-->
+							<Keyframe time="0" rotation="0 0 0"/>
+							<Keyframe time="0.125" rotation="0 0 0"/>
+							<Keyframe time="0.175" rotation="0 5 0"/>
+							<Keyframe time="1" rotation="0 95 0"/>
+						</part>
+					</animation>
+				</animatedObject>
+				<animatedObject index="HofMaschinenhalleKleinTuer2">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+					<sounds>
+						<moving file="maps/sounds/OpenGateDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="2">
+						<part node="1|0"> <!--index of Doorhandle node-->
+							<Keyframe time="0" rotation="0 0 0"/>
+							<Keyframe time="0.125" rotation="30 0 0"/>
+							<Keyframe time="0.175" rotation="0 0 0"/>
+							<Keyframe time="1" rotation="0 0 0"/>
+						</part>
+						<part node="1"> <!--index of Door node-->
+							<Keyframe time="0" rotation="0 0 0"/>
+							<Keyframe time="0.125" rotation="0 0 0"/>
+							<Keyframe time="0.175" rotation="0 5 0"/>
+							<Keyframe time="1" rotation="0 95 0"/>
+						</part>
+					</animation>
+				</animatedObject>
+
+<animatedObject index="PigPitCoverNew3" saveId="hoseSystemPigPitCoverNew3">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="1" posText="action_openGate" negText="action_closeGate" />
+					<sounds>
+						<moving file="maps/sounds/OpenManurePitSound.wav" loops="0" linkNode="1" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="3">
+						<part node="0"> <!--index of cover node-->
+							<keyFrame time="0" translation="0 0.5 -0.905" rotation="0 0 0" />
+							<keyFrame time="0.25" translation="0 0.513 -0.905" rotation="0 0 2.6" />
+							<keyFrame time="0.5" translation="0.5 0.528 -0.905" rotation="0 0 3.4" />
+							<keyFrame time="0.65" translation="0.69 0.538 -0.905" rotation="0 0 0" />
+							<keyFrame time="1" translation="0.98 0.484 -0.905" rotation="0 0 -6.284" />
+						</part>
+					</animation>
+				</animatedObject>
+				
+<animatedObject index="DorfHofSilo1">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+					<sounds>
+						<moving file="maps/sounds/OpenGateDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="3">
+						<part node="1"> <!--index of Door node-->
+							<keyFrame time="0" rotation="0 0 0" />
+							<keyFrame time="1" rotation="0 0 -105" />
+						</part>
+					</animation>
+				</animatedObject>
+				
+<animatedObject index="doorRight2">
+				<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+				<sounds>
+					<moving file="maps/sounds/doorsound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+				</sounds>
+				<animation initialTime="0" duration="4">
+					<part node="1"> <!-- node -> child index -->
+						<keyFrame time="0.05" translation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+						<keyFrame time="1.00" translation="5 0 0" />
+					</part>
+					<!-- you can add an unlimited number of parts here -->
+				</animation>
+			</animatedObject>
+			
+<animatedObject index="BGABunkerhalleLichtIndoor1">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+					<sounds>
+						<moving file="maps/sounds/switch01_0.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="0.25">
+						<part node="1|0"> <!--index of Lever of the Lightswitch-->
+							<keyFrame time="0.00" rotation="0 0 0" />
+							<keyFrame time="1" rotation="90 0 0" />
+						</part>
+						<part node="2|0"> <!--index of TG with realLights and emmisive shape-->
+							<keyFrame time="0.5" visibility="false" />
+							<keyFrame time="0.55" visibility="true" />
+						</part>
+					</animation>
+				</animatedObject>
+				
+<animatedObject index="DorfhofUnterstandLichtIndoor">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+					<sounds>
+						<moving file="maps/sounds/switch01_0.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="0.25">
+						<part node="1|0"> <!--index of Lever of the Lightswitch-->
+							<keyFrame time="0.00" rotation="0 0 0" />
+							<keyFrame time="1" rotation="90 0 0" />
+						</part>
+						<part node="2|0"> <!--index of TG with realLights and emmisive shape-->
+							<keyFrame time="0.5" visibility="false" />
+							<keyFrame time="0.55" visibility="true" />
+						</part>
+						<part node="3|0"> <!--index of Lever of the Lightswitch-->
+							<keyFrame time="0.00" rotation="0 0 0" />
+							<keyFrame time="1" rotation="90 0 0" />
+						</part>
+					</animation>
+				</animatedObject>
+
+<animatedObject index="Maschinenhalle_kleinLichtIndoor1">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+					<sounds>
+						<moving file="maps/sounds/switch01_0.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="0.25">
+						<part node="1|0"> <!--index of Lever of the Lightswitch-->
+							<keyFrame time="0.00" rotation="0 0 0" />
+							<keyFrame time="1" rotation="0 0 -8" />
+						</part>
+						<part node="2|0"> <!--index of TG with realLights and emmisive shape-->
+							<keyFrame time="0.5" visibility="false" />
+							<keyFrame time="0.55" visibility="true" />
+						</part>
+						<part node="3|0"> <!--index of Lever of the Lightswitch-->
+							<keyFrame time="0.00" rotation="0 0 0" />
+							<keyFrame time="1" rotation="0 0 -8" />
+						</part>
+						<part node="4|0"> <!--index of TG with realLights and emmisive shape-->
+							<keyFrame time="0.5" visibility="false" />
+							<keyFrame time="0.55" visibility="true" />
+						</part>
+						<part node="5|0"> <!--index of TG with realLights and emmisive shape-->
+							<keyFrame time="0.5" visibility="false" />
+							<keyFrame time="0.55" visibility="true" />
+						</part>
+					</animation>
+				</animatedObject>
+				
+<animatedObject index="Maschinenhalle_kleinLichtIndoor2">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+					<sounds>
+						<moving file="maps/sounds/switch01_0.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="0.25">
+						<part node="1|0"> <!--index of Lever of the Lightswitch-->
+							<keyFrame time="0.00" rotation="0 0 0" />
+							<keyFrame time="1" rotation="0 0 -8" />
+						</part>
+						<part node="2|0"> <!--index of TG with realLights and emmisive shape-->
+							<keyFrame time="0.5" visibility="false" />
+							<keyFrame time="0.55" visibility="true" />
+						</part>
+						<part node="3|0"> <!--index of Lever of the Lightswitch-->
+							<keyFrame time="0.00" rotation="0 0 0" />
+							<keyFrame time="1" rotation="0 0 -8" />
+						</part>
+						<part node="4|0"> <!--index of TG with realLights and emmisive shape-->
+							<keyFrame time="0.5" visibility="false" />
+							<keyFrame time="0.55" visibility="true" />
+						</part>
+						<part node="5|0"> <!--index of TG with realLights and emmisive shape-->
+							<keyFrame time="0.5" visibility="false" />
+							<keyFrame time="0.55" visibility="true" />
+						</part>
+					</animation>
+				</animatedObject>
+				
+		<animatedObject index="doorRight20">
+				<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+				<sounds>
+					<moving file="maps/sounds/doorsound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+				</sounds>
+				<animation initialTime="0" duration="4">
+					<part node="1"> <!-- node -> child index -->
+						<keyFrame time="0.05" translation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+						<keyFrame time="1.00" translation="5.5 0 0" />
+					</part>
+					<!-- you can add an unlimited number of parts here -->
+				</animation>
+			</animatedObject>
+
+				
+			</animatedObjects>

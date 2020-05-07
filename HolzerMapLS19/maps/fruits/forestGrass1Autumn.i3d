@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="forestGrass" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/foliage/forestGrassLOD_diffuse_H.png"/>
+    <File fileId="5" filename="$data/foliage/forestGrassLOD_normal_H.png"/>
+    <File fileId="1" filename="forestGrass1Autumn_diffuse.png"/>
+    <File fileId="2" filename="$data/shaders/fruitGrowthFoliageShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="forestGrassLOD_mat" materialId="5" customShaderId="2" customShaderVariation="BILLBOARD">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="forestGrass_mat" materialId="4" customShaderId="2">
+      <Texture fileId="1"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 1024 2 255"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="forestGrass1.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="LOD0" clipDistance="500" nodeId="9" materialIds="4" castsShadows="true" receiveShadows="true"/>
+    <Shape shapeId="2" name="LOD1" clipDistance="500" nodeId="10" materialIds="5" receiveShadows="true"/>
+  </Scene>
+
+</i3D>

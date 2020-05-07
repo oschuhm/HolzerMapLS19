@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="decoFoliage" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="66" filename="grassDense_bigLODwinter_diffuse_H.png"/>
+    <File fileId="67" filename="$data/foliage/grassDense_bigLOD_normal_H.png"/>
+    <File fileId="60" filename="grassDensewinter_diffuse.png"/>
+    <File fileId="64" filename="grassDense_middleLODwinter_diffuse_H.png"/>
+    <File fileId="65" filename="$data/foliage/grassDense_middleLOD_normal_H.png"/>
+    <File fileId="61" filename="$data/foliage/grassDense_normal.png"/>
+    <File fileId="62" filename="grassDense_smlLODwinter_diffuse_H.png"/>
+    <File fileId="63" filename="$data/foliage/grassDense_smlLOD_normal_H.png"/>
+    <File fileId="54" filename="grassLong01winterLOD_diffuse_H.png"/>
+    <File fileId="55" filename="$data/foliage/grassLong01LOD_normal_H.png"/>
+    <File fileId="56" filename="grassLong02winterLOD_diffuse_H.png"/>
+    <File fileId="57" filename="$data/foliage/grassLong02LOD_normal_H.png"/>
+    <File fileId="58" filename="grassLong03winterLOD_diffuse_H.png"/>
+    <File fileId="59" filename="$data/foliage/grassLong03LOD_normal_H.png"/>
+    <File fileId="53" filename="grassLong_diffuse_winter.png"/>
+    <File fileId="17" filename="weedLODwinter_ba_apera_diffuse_H.png"/>
+    <File fileId="18" filename="$data/foliage/weedLOD_ba_apera_normal_H.png"/>
+    <File fileId="19" filename="weedLODwinter_ba_chaerophyllum_diffuse_H.png"/>
+    <File fileId="20" filename="$data/foliage/weedLOD_ba_chaerophyllum_normal_H.png"/>
+    <File fileId="21" filename="weedLODwinter_ba_chenopodium_diffuse_H.png"/>
+    <File fileId="22" filename="$data/foliage/weedLOD_ba_chenopodium_normal_H.png"/>
+    <File fileId="23" filename="weedLODwinter_ba_cirsium_diffuse_H.png"/>
+    <File fileId="24" filename="$data/foliage/weedLOD_ba_cirsium_normal_H.png"/>
+    <File fileId="25" filename="weedLODwinter_ba_papaverRhoeas_diffuse_H.png"/>
+    <File fileId="26" filename="$data/foliage/weedLOD_ba_papaverRhoeas_normal_H.png"/>
+    <File fileId="27" filename="weedLODwinter_ba_rumex_diffuse_H.png"/>
+    <File fileId="28" filename="$data/foliage/weedLOD_ba_rumex_normal_H.png"/>
+    <File fileId="41" filename="$data/foliage/weedLOD_bd_apera_diffuse_H.png"/>
+    <File fileId="42" filename="$data/foliage/weedLOD_bd_apera_normal_H.png"/>
+    <File fileId="43" filename="$data/foliage/weedLOD_bd_chaerophyllum_diffuse_H.png"/>
+    <File fileId="44" filename="$data/foliage/weedLOD_bd_chaerophyllum_normal_H.png"/>
+    <File fileId="45" filename="$data/foliage/weedLOD_bd_chenopodium_diffuse_H.png"/>
+    <File fileId="46" filename="$data/foliage/weedLOD_bd_chenopodium_normal_H.png"/>
+    <File fileId="47" filename="$data/foliage/weedLOD_bd_cirsium_diffuse_H.png"/>
+    <File fileId="48" filename="$data/foliage/weedLOD_bd_cirsium_normal_H.png"/>
+    <File fileId="49" filename="$data/foliage/weedLOD_bd_papaverRhoeas_diffuse_H.png"/>
+    <File fileId="50" filename="$data/foliage/weedLOD_bd_papaverRhoeas_normal_H.png"/>
+    <File fileId="51" filename="$data/foliage/weedLOD_bd_rumex_diffuse_H.png"/>
+    <File fileId="52" filename="$data/foliage/weedLOD_bd_rumex_normal_H.png"/>
+    <File fileId="29" filename="$data/foliage/weedLOD_sd_apera_diffuse_H.png"/>
+    <File fileId="30" filename="$data/foliage/weedLOD_sd_apera_normal_H.png"/>
+    <File fileId="31" filename="$data/foliage/weedLOD_sd_chaerophyllum_diffuse_H.png"/>
+    <File fileId="32" filename="$data/foliage/weedLOD_sd_chaerophyllum_normal_H.png"/>
+    <File fileId="33" filename="$data/foliage/weedLOD_sd_chenopodium_diffuse_H.png"/>
+    <File fileId="34" filename="$data/foliage/weedLOD_sd_chenopodium_normal_H.png"/>
+    <File fileId="35" filename="$data/foliage/weedLOD_sd_cirsium_diffuse_H.png"/>
+    <File fileId="36" filename="$data/foliage/weedLOD_sd_cirsium_normal_H.png"/>
+    <File fileId="37" filename="$data/foliage/weedLOD_sd_papaverRhoeas_diffuse_H.png"/>
+    <File fileId="38" filename="$data/foliage/weedLOD_sd_papaverRhoeas_normal_H.png"/>
+    <File fileId="39" filename="$data/foliage/weedLOD_sd_rumex_diffuse_H.png"/>
+    <File fileId="40" filename="$data/foliage/weedLOD_sd_rumex_normal_H.png"/>
+    <File fileId="5" filename="$data/foliage/weedLOD_sm_apera_diffuse_H.png"/>
+    <File fileId="6" filename="$data/foliage/weedLOD_sm_apera_normal_H.png"/>
+    <File fileId="7" filename="$data/foliage/weedLOD_sm_chaerophyllum_diffuse_H.png"/>
+    <File fileId="8" filename="$data/foliage/weedLOD_sm_chaerophyllum_normal_H.png"/>
+    <File fileId="9" filename="$data/foliage/weedLOD_sm_chenopodium_diffuse_H.png"/>
+    <File fileId="10" filename="$data/foliage/weedLOD_sm_chenopodium_normal_H.png"/>
+    <File fileId="11" filename="$data/foliage/weedLOD_sm_cirsium_diffuse_H.png"/>
+    <File fileId="12" filename="$data/foliage/weedLOD_sm_cirsium_normal_H.png"/>
+    <File fileId="13" filename="$data/foliage/weedLOD_sm_papaverRhoeas_diffuse_H.png"/>
+    <File fileId="14" filename="$data/foliage/weedLOD_sm_papaverRhoeas_normal_H.png"/>
+    <File fileId="15" filename="$data/foliage/weedLOD_sm_rumex_diffuse_H.png"/>
+    <File fileId="16" filename="$data/foliage/weedLOD_sm_rumex_normal_H.png"/>
+    <File fileId="2" filename="$data/foliage/weed_normal.png"/>
+    <File fileId="3" filename="$data/shaders/fruitGrowthFoliageShader.xml"/>
+    <File fileId="1" filename="weed_diffuse_winter.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="grassLong03LOD_mat" materialId="16" customShaderId="3" customShaderVariation="COLOR_MASK_BILLBOARD">
+      <Texture fileId="58"/>
+      <Normalmap fileId="59"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="weedLOD_sm_papaverRhoeas_mat" materialId="5" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="grassDense_middleLOD_mat" materialId="6" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="64"/>
+      <Normalmap fileId="65"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.3 0.2 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="grassDense_mat" materialId="8" customShaderId="3">
+      <Texture fileId="60"/>
+      <Normalmap fileId="61"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 1024 2 255"/>
+    </Material>
+    <Material name="grassDense_smlLOD_mat" materialId="13" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="62"/>
+      <Normalmap fileId="63"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.3 0.2 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="weedLOD_ba_chaerophyllum_mat" materialId="14" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="weedLOD_sm_rumex_mat" materialId="9" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="weedLOD_sm_chaerophyllum_mat" materialId="10" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="weedLOD_sm_chenopodium_mat" materialId="4" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="weed_mat" materialId="7" customShaderId="3">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 1024 2 255"/>
+    </Material>
+    <Material name="weedLOD_ba_apera_mat" materialId="11" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="17"/>
+      <Normalmap fileId="18"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="weedLOD_sm_cirsium_mat" materialId="12" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="weedLOD_sm_apera_mat" materialId="15" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="grassLong02LOD_mat" materialId="25" customShaderId="3" customShaderVariation="COLOR_MASK_BILLBOARD">
+      <Texture fileId="56"/>
+      <Normalmap fileId="57"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="weedLOD_ba_cirsium_mat" materialId="27" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="23"/>
+      <Normalmap fileId="24"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="weedLOD_ba_rumex_mat" materialId="28" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="27"/>
+      <Normalmap fileId="28"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="weedLOD_bd_cirsium_mat" materialId="31" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="47"/>
+      <Normalmap fileId="48"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="grassLong_mat" materialId="20" customShaderId="3" customShaderVariation="COLOR_MASK">
+      <Texture fileId="53"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 1024 2 255"/>
+    </Material>
+    <Material name="weedLOD_bd_chaerophyllum_mat" materialId="34" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="43"/>
+      <Normalmap fileId="44"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="weedLOD_sd_chenopodium_mat" materialId="30" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="33"/>
+      <Normalmap fileId="34"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="weedLOD_sd_cirsium_mat" materialId="17" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="35"/>
+      <Normalmap fileId="36"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="weedLOD_sd_chaerophyllum_mat" materialId="19" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="31"/>
+      <Normalmap fileId="32"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="weedLOD_sd_rumex_mat" materialId="21" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="39"/>
+      <Normalmap fileId="40"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="weedLOD_sd_apera_mat" materialId="26" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="29"/>
+      <Normalmap fileId="30"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="weedLOD_ba_chenopodium_mat" materialId="32" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="21"/>
+      <Normalmap fileId="22"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="weedLOD_bd_rumex_mat" materialId="33" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="51"/>
+      <Normalmap fileId="52"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="grassDense_bigLOD_mat" materialId="23" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="66"/>
+      <Normalmap fileId="67"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.3 0.2 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="weedLOD_bd_apera_mat" materialId="36" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="41"/>
+      <Normalmap fileId="42"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="weedLOD_sd_papaverRhoeas_mat" materialId="22" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="37"/>
+      <Normalmap fileId="38"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="grassLong01LOD_mat" materialId="18" customShaderId="3" customShaderVariation="COLOR_MASK_BILLBOARD">
+      <Texture fileId="54"/>
+      <Normalmap fileId="55"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="weedLOD_bd_chenopodium_mat" materialId="29" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="45"/>
+      <Normalmap fileId="46"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="weedLOD_bd_papaverRhoeas_mat" materialId="24" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="49"/>
+      <Normalmap fileId="50"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+    <Material name="weedLOD_ba_papaverRhoeas_mat" materialId="35" customShaderId="3" customShaderVariation="BILLBOARD">
+      <Texture fileId="25"/>
+      <Normalmap fileId="26"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="frequencyAndScale" value="0.05 0.02 0 0"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="0 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="decoFoliagewinter.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="smallAlive" nodeId="96">
+      <TransformGroup name="apera" nodeId="97">
+        <Shape shapeId="1" name="apera_LOD0" clipDistance="500" nodeId="98" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="apera_LOD1_01_" clipDistance="500" nodeId="99" materialIds="15" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="chaerophyllum" nodeId="100">
+        <Shape shapeId="3" name="chaerophyllum_LOD0" clipDistance="500" nodeId="101" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="chaerophyllum_LOD1_02_" clipDistance="500" nodeId="102" materialIds="10" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="chenopodium" nodeId="103">
+        <Shape shapeId="5" name="chenopodium_LOD0" clipDistance="500" nodeId="104" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="6" name="chenopodium_LOD1_03_" clipDistance="500" nodeId="105" materialIds="4" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="cirsium" nodeId="106">
+        <Shape shapeId="7" name="cirsium_LOD0" clipDistance="500" nodeId="107" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="8" name="cirsium_LOD1_04_" clipDistance="500" nodeId="108" materialIds="12" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="papaverRhoeas" nodeId="109">
+        <Shape shapeId="9" name="papaverRhoeas_LOD0" clipDistance="500" nodeId="110" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="papaverRhoeas_LOD1_05_" clipDistance="500" nodeId="111" materialIds="5" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="rumex" nodeId="112">
+        <Shape shapeId="11" name="rumex_LOD0" clipDistance="500" nodeId="113" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="12" name="rumex_LOD1_06_" clipDistance="500" nodeId="114" materialIds="9" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="bigAlive" nodeId="115">
+      <TransformGroup name="apera" nodeId="116">
+        <Shape shapeId="13" name="apera_LOD0" clipDistance="500" nodeId="117" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="14" name="apera_LOD1_01_" clipDistance="500" nodeId="118" materialIds="11" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="chaerophyllum" nodeId="119">
+        <Shape shapeId="15" name="chaerophyllum_LOD0" clipDistance="500" nodeId="120" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="16" name="chaerophyllum_LOD1_02_" clipDistance="500" nodeId="121" materialIds="14" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="chenopodium" nodeId="122">
+        <Shape shapeId="17" name="chenopodium_LOD0" clipDistance="500" nodeId="123" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="16" name="chenopodium_LOD1_03_" clipDistance="500" nodeId="124" materialIds="32" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="cirsium" nodeId="125">
+        <Shape shapeId="18" name="cirsium_LOD0" clipDistance="500" nodeId="126" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="19" name="cirsium_LOD1_04_" clipDistance="500" nodeId="127" materialIds="27" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="papaverRhoeas" nodeId="128">
+        <Shape shapeId="20" name="papaverRhoeas_LOD0" clipDistance="500" nodeId="129" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="16" name="papaverRhoeas_LOD1_05_" clipDistance="500" nodeId="130" materialIds="35" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="rumex" nodeId="131">
+        <Shape shapeId="21" name="rumex_LOD0" clipDistance="500" nodeId="132" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="22" name="rumex_LOD1_06_" clipDistance="500" nodeId="133" materialIds="28" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="smallDead" nodeId="134">
+      <TransformGroup name="apera" nodeId="135">
+        <Shape shapeId="23" name="apera_LOD0" clipDistance="500" nodeId="136" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="24" name="apera_LOD1_01_" clipDistance="500" nodeId="137" materialIds="26" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="chaerophyllum" nodeId="138">
+        <Shape shapeId="25" name="chaerophyllum_LOD0" clipDistance="500" nodeId="139" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="26" name="chaerophyllum_LOD1_02_" clipDistance="500" nodeId="140" materialIds="19" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="chenopodium" nodeId="141">
+        <Shape shapeId="27" name="chenopodium_LOD0" clipDistance="500" nodeId="142" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="28" name="chenopodium_LOD1_03_" clipDistance="500" nodeId="143" materialIds="30" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="cirsium" nodeId="144">
+        <Shape shapeId="29" name="cirsium_LOD0" clipDistance="500" nodeId="145" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="30" name="cirsium_LOD1_04_" clipDistance="500" nodeId="146" materialIds="17" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="papaverRhoeas" nodeId="147">
+        <Shape shapeId="31" name="papaverRhoeas_LOD0" clipDistance="500" nodeId="148" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="32" name="papaverRhoeas_LOD1_05_" clipDistance="500" nodeId="149" materialIds="22" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="rumex" nodeId="150">
+        <Shape shapeId="33" name="rumex_LOD0" clipDistance="500" nodeId="151" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="34" name="rumex_LOD1_06_" clipDistance="500" nodeId="152" materialIds="21" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="bigDead" nodeId="153">
+      <TransformGroup name="apera" nodeId="154">
+        <Shape shapeId="35" name="apera_LOD0" clipDistance="500" nodeId="155" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="36" name="apera_LOD1_01_" clipDistance="500" nodeId="156" materialIds="36" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="chaerophyllum" nodeId="157">
+        <Shape shapeId="37" name="chaerophyllum_LOD0" clipDistance="500" nodeId="158" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="38" name="chaerophyllum_LOD1_02_" clipDistance="500" nodeId="159" materialIds="34" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="chenopodium" nodeId="160">
+        <Shape shapeId="39" name="chenopodium_LOD0" clipDistance="500" nodeId="161" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="40" name="chenopodium_LOD1_03_" clipDistance="500" nodeId="162" materialIds="29" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="cirsium" nodeId="163">
+        <Shape shapeId="41" name="cirsium_LOD0" clipDistance="500" nodeId="164" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="42" name="cirsium_LOD1_04_" clipDistance="500" nodeId="165" materialIds="31" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="papaverRhoeas" nodeId="166">
+        <Shape shapeId="43" name="papaverRhoeas_LOD0" clipDistance="500" nodeId="167" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="44" name="papaverRhoeas_LOD1_05_" clipDistance="500" nodeId="168" materialIds="24" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="rumex" nodeId="169">
+        <Shape shapeId="45" name="rumex_LOD0" clipDistance="500" nodeId="170" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="46" name="rumex_LOD1_06_" clipDistance="500" nodeId="171" materialIds="33" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="grassLong" nodeId="172">
+      <TransformGroup name="grassLongLOD1" nodeId="173">
+        <Shape shapeId="47" name="grassLong01" clipDistance="500" nodeId="174" materialIds="20" receiveShadows="true"/>
+        <Shape shapeId="48" name="grassLong02" clipDistance="500" nodeId="175" materialIds="20" receiveShadows="true"/>
+        <Shape shapeId="49" name="grassLong03" clipDistance="500" nodeId="176" materialIds="20" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="grassLongLOD2" nodeId="177">
+        <Shape shapeId="50" name="grassLong01LOD" clipDistance="500" nodeId="178" materialIds="18" receiveShadows="true"/>
+        <Shape shapeId="51" name="grassLong02LOD" clipDistance="500" nodeId="179" materialIds="25" receiveShadows="true"/>
+        <Shape shapeId="52" name="grassLong03LOD" clipDistance="500" nodeId="180" materialIds="16" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="grassDense" nodeId="181">
+      <TransformGroup name="LOD0" nodeId="182">
+        <Shape shapeId="53" name="greenSmall" clipDistance="500" nodeId="183" materialIds="8" receiveShadows="true"/>
+        <Shape shapeId="54" name="greenMiddle" translation="1.07205e-16 0 2.14409e-16" clipDistance="500" nodeId="184" materialIds="8" receiveShadows="true"/>
+        <Shape shapeId="55" name="greenBig" clipDistance="500" nodeId="185" materialIds="8" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="LOD_BB" nodeId="186">
+        <Shape shapeId="56" name="greenSmallLOD" clipDistance="20" nodeId="187" materialIds="13" receiveShadows="true"/>
+        <Shape shapeId="57" name="greenMiddleLOD" clipDistance="20" nodeId="188" materialIds="6" receiveShadows="true"/>
+        <Shape shapeId="58" name="greenBigLOD" clipDistance="20" nodeId="189" materialIds="23" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

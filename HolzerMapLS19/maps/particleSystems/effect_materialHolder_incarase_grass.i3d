@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="effect_materialHolder" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="11" filename="$data/fillPlanes/grass_diffuse.dds"/>
+    <File fileId="8" filename="$data/fillPlanes/hay_diffuse.dds"/>
+    <File fileId="9" filename="$data/fillPlanes/straw_normal.png"/>
+    <File fileId="14" filename="$data/shaders/cultivatorSoilShader.xml"/>
+    <File fileId="7" filename="$data/shaders/grainSmokeShader.xml"/>
+    <File fileId="3" filename="$data/shaders/grainUnloadingShader.xml"/>
+    <File fileId="13" filename="$data/shaders/morphTargetShader.xml"/>
+    <File fileId="12" filename="$data/shaders/pipeUnloadingShader.xml"/>
+    <File fileId="10" filename="$data/shaders/windrowUnloadingShader.xml"/>
+    <File fileId="1" filename="../fillPlanes/incarase_grass_diffuse.png"/>
+    <File fileId="2" filename="../fillPlanes/incarase_grass_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="straw_mat" materialId="5" alphaBlending="true" customShaderId="10" customShaderVariation="WINDROW_SIDE">
+      <Texture fileId="11"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="1 -3 1 1"/>
+      <CustomParameter name="MaskChannels" value="0.5 1 0.25 0"/>
+      <CustomParameter name="ColorAlpha" value="0.499 0.468 0.361 2"/>
+      <CustomParameter name="alphaRemap" value="0 1 0 0"/>
+    </Material>
+    <Material name="incarase_grass_mat" materialId="6" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="3 -2 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.025"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.0005 0.1"/>
+    </Material>
+    <Material name="incarase_grass_mat206" materialId="8" customShaderId="12">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="uvScaleSpeedFreqAmp" value="1.1 6 3 0"/>
+      <CustomParameter name="shapeScaleSpread" value="0.4 0.2 1 0"/>
+      <CustomParameter name="controlPoint" value="10 0 0 0"/>
+      <CustomParameter name="alphaRemap" value="0.25 1 0 0"/>
+    </Material>
+    <Material name="straw_mat478" materialId="9" customShaderId="10" customShaderVariation="WINDROW_CENTER">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4 -2 1 1"/>
+      <CustomParameter name="MaskChannels" value="0.5 1 0.25 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="alphaRemap" value="0.46 0.53 0 0"/>
+    </Material>
+    <Material name="incarase_grass_mat207" materialId="12" alphaBlending="true" customShaderId="14" customShaderVariation="LEVELER">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="VertxoffsetVertexdeformMotionUVscale" value="-35 1 0 5"/>
+    </Material>
+    <Material name="smoke_woodChips" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1" alphaBlending="true" customShaderId="7">
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="0.75 0.1 -0.3 0"/>
+      <CustomParameter name="ColorAlpha" value="0.26 0.177 0.099 2"/>
+    </Material>
+    <Material name="incarase_grass_mat205" materialId="4" customShaderId="13" customShaderVariation="ALPHA_DISABLE">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="morphPosition" value="0 1 1 0"/>
+      <CustomParameter name="offsetUV" value="0 0 -100 100"/>
+      <CustomParameter name="alphaRemap" value="0.2 1 0 0"/>
+      <CustomParameter name="uvScale" value="1.5 1.5 1 1"/>
+      <CustomParameter name="vertexAnim" value="20 20 0.05 1"/>
+    </Material>
+    <Material name="incarase_grass_mat208" materialId="11" customShaderId="12" customShaderVariation="BEND_PARABOLA">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="uvScaleSpeedFreqAmp" value="1.1 6 3 0"/>
+      <CustomParameter name="shapeScaleSpread" value="0.4 0.2 1 0"/>
+      <CustomParameter name="controlPoint" value="10 0 0 0"/>
+      <CustomParameter name="alphaRemap" value="0.25 1 0 0"/>
+    </Material>
+    <Material name="incarase_grass_mat204" materialId="13" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="3 -2 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.15"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.0005 0.1"/>
+    </Material>
+    <Material name="incarase_grass_mat203" materialId="10" customShaderId="3" customShaderVariation="CUSTOM_ALPHA_TEST">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="3 -2 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.05"/>
+      <CustomParameter name="alphaBlendStartEnd" value="75 80 -0.0005 0.1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="effect_materialHolder_incarase_grass.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="unloading" clipDistance="10" nodeId="20">
+      <TransformGroup name="incarase_grass" clipDistance="10" nodeId="21">
+        <Shape shapeId="1" name="incarase_grass0_025_materialHolder" clipDistance="10" nodeId="22" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="incarase_grass0_05_materialHolder" clipDistance="10" nodeId="23" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="incarase_grass0_15_materialHolder" clipDistance="10" nodeId="24" materialIds="13" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="smoke" clipDistance="10" nodeId="25">
+      <TransformGroup name="incarase_grass" clipDistance="10" nodeId="26">
+        <Shape shapeId="2" name="incarase_grass_materialHolder" clipDistance="10" nodeId="27" materialIds="7" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="straw" clipDistance="10" nodeId="28">
+      <TransformGroup name="incarase_grass" clipDistance="10" nodeId="29">
+        <Shape shapeId="3" name="incarase_grass_materialHolder" clipDistance="10" nodeId="30" materialIds="9" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="chopper" clipDistance="10" nodeId="31">
+      <TransformGroup name="incarase_grass" clipDistance="10" nodeId="32">
+        <Shape shapeId="2" name="incarase_grass_materialHolder" clipDistance="10" nodeId="33" materialIds="5" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="soil" clipDistance="10" nodeId="34"/>
+    <TransformGroup name="sprayer" clipDistance="10" nodeId="35"/>
+    <TransformGroup name="spreader" clipDistance="10" nodeId="36"/>
+    <TransformGroup name="pipe" clipDistance="10" nodeId="37">
+      <TransformGroup name="incarase_grass" nodeId="38">
+        <Shape shapeId="4" name="incarase_grass_1_materialHolder" clipDistance="10" nodeId="39" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="incarase_grass_2_materialHolder" clipDistance="10" nodeId="40" materialIds="11" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="mower" clipDistance="10" nodeId="41"/>
+    <TransformGroup name="belt" clipDistance="10" nodeId="42">
+      <TransformGroup name="incarase_grass" clipDistance="10" nodeId="43">
+        <Shape shapeId="5" name="incarase_grass0_materialHolder" clipDistance="10" nodeId="44" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="leveler" nodeId="45">
+      <Shape shapeId="4" name="incarase_grass" clipDistance="10" nodeId="46" materialIds="12" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="washer" nodeId="47"/>
+    <TransformGroup name="pickup" clipDistance="10" nodeId="48"/>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="22">
+      <Attribute name="fillType" type="string" value="incarase_grass"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="23">
+      <Attribute name="fillType" type="string" value="incarase_grass"/>
+      <Attribute name="materialIndex" type="string" value="2"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="24">
+      <Attribute name="fillType" type="string" value="incarase_grass"/>
+      <Attribute name="materialIndex" type="string" value="3"/>
+      <Attribute name="materialType" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="27">
+      <Attribute name="fillType" type="string" value="incarase_grass"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="smoke"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="30">
+      <Attribute name="fillType" type="string" value="incarase_grass"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="straw"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="33">
+      <Attribute name="fillType" type="string" value="incarase_grass"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="chopper"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="39">
+      <Attribute name="fillType" type="string" value="incarase_grass"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="PIPE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="40">
+      <Attribute name="fillType" type="string" value="incarase_grass"/>
+      <Attribute name="materialIndex" type="string" value="2"/>
+      <Attribute name="materialType" type="string" value="PIPE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="44">
+      <Attribute name="fillType" type="string" value="incarase_grass"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="belt"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="46">
+      <Attribute name="fillType" type="string" value="incarase_grass"/>
+      <Attribute name="materialIndex" type="string" value="1"/>
+      <Attribute name="materialType" type="string" value="LEVELER"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

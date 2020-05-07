@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<visuals>
+
+
+    <annotation>Copyright (c) Realismus Modding, 2019</annotation>
+
+    <materials filename="replacementTextures/materialHolder.i3d" memoryUsage="0">
+        <cache name="cache_material_holder" />
+
+        <spring>
+            <shape name="tree4m"				to="treeBranch_spring" />
+            <shape name="tree5m"				to="treeBranch_spring" />
+			<shape name="bush01"				to="bushes_spring" />
+			<shape name="bush02"				to="bushes_spring" />
+			<shape name="bush03"				to="bushes_spring" />
+			<shape name="bush04"				to="bushes_spring" />
+			<shape name="bush05"				to="bushes_spring" />
+			<shape name="plantPot03" childName="bush06" to="treeBranch1_spring" />
+			<shape name="plantPot03" childName="bush07" to="treeBranch1_spring" />
+			<shape name="planterBoxSquare" childName="bush06" to="treeBranch1_spring" />
+			<shape name="plantPot04" childName="bush06" to="treeBranch1_spring" />
+			<shape name="plantPot02" childName="tree4m" to="treeBranch_spring" />
+			<shape name="plantPot05" childName="tree4m" to="treeBranch_spring" />
+			<shape name="ivy" childName="plant01" to="Efeu_spring" />
+			<shape name="ivy" childName="plant02" to="Efeu_spring" />
+			<shape name="ivy" childName="plant03" to="Efeu_spring" />
+			<shape name="ivy" childName="plant04" to="Efeu_spring" />
+			
+			
+			
+			
+        </spring>
+
+        <summer>
+            <shape name="tree4m"				to="treeBranch_summer" />
+            <shape name="tree5m"				to="treeBranch_summer" />
+			<shape name="bush01"				to="bushes_summer" />
+			<shape name="bush02"				to="bushes_summer" />
+			<shape name="bush03"				to="bushes_summer" />
+			<shape name="bush04"				to="bushes_summer" />
+			<shape name="bush05"				to="bushes_summer" />
+			<shape name="plantPot03" childName="bush06" to="treeBranch1_summer" />
+			<shape name="plantPot03" childName="bush07" to="treeBranch1_summer" />
+			<shape name="planterBoxSquare" childName="bush06" to="treeBranch1_summer" />
+			<shape name="plantPot04" childName="bush06" to="treeBranch1_summer" />
+			<shape name="plantPot02" childName="tree4m" to="treeBranch_summer" />
+			<shape name="plantPot05" childName="tree4m" to="treeBranch_summer" />
+			<shape name="ivy" childName="plant01" to="Efeu_summer" />
+			<shape name="ivy" childName="plant02" to="Efeu_summer" />
+			<shape name="ivy" childName="plant03" to="Efeu_summer" />
+			<shape name="ivy" childName="plant04" to="Efeu_summer" />
+			
+			
+        </summer>
+
+        <autumn>
+			<shape name="tree4m"				to="treeBranch_autumn" />
+            <shape name="tree5m"				to="treeBranch_autumn" />
+			<shape name="bush01"				to="bushes_autumn" />
+			<shape name="bush02"				to="bushes_autumn" />
+			<shape name="bush03"				to="bushes_autumn" />
+			<shape name="bush04"				to="bushes_autumn" />
+			<shape name="bush05"				to="bushes_autumn" />
+			<shape name="plantPot03" childName="bush06" to="treeBranch1_autumn" />
+			<shape name="plantPot03" childName="bush07" to="treeBranch1_autumn" />
+			<shape name="planterBoxSquare" childName="bush06" to="treeBranch1_autumn" />
+			<shape name="plantPot04" childName="bush06" to="treeBranch1_autumn" />
+			<shape name="plantPot02" childName="tree4m" to="treeBranch_autumn" />
+			<shape name="plantPot05" childName="tree4m" to="treeBranch_autumn" />
+			<shape name="ivy" childName="plant01" to="Efeu_autumn" />
+			<shape name="ivy" childName="plant02" to="Efeu_autumn" />
+			<shape name="ivy" childName="plant03" to="Efeu_autumn" />
+			<shape name="ivy" childName="plant04" to="Efeu_autumn" />
+			
+			<foliage name="bush01" to="bush01autumn" />
+			<foliage name="decoFoliage" to="decoFoliageautumn" />
+			<foliage name="forestGrass" to="forestGrassAutumn" />
+			<foliage name="forestGrass1" to="forestGrass1Autumn" />
+			
+        </autumn>
+
+        <winter>
+            <shape name="tree4m"				to="treeBranch_winter" />
+            <shape name="tree5m"				to="treeBranch_winter" />
+			<shape name="bush01"				to="bushes_winter" />
+			<shape name="bush02"				to="bushes_winter" />
+			<shape name="bush03"				to="bushes_winter" />
+			<shape name="bush04"				to="bushes_winter" />
+			<shape name="bush05"				to="bushes_winter" />
+			<shape name="plantPot03" childName="bush06" to="treeBranch1_winter" />
+			<shape name="plantPot03" childName="bush07" to="treeBranch1_winter" />
+			<shape name="planterBoxSquare" childName="bush06" to="treeBranch1_winter" />
+			<shape name="plantPot04" childName="bush06" to="treeBranch1_winter" />
+			<shape name="plantPot02" childName="tree4m" to="treeBranch_winter" />
+			<shape name="plantPot05" childName="tree4m" to="treeBranch_winter" />
+			<shape name="ivy" childName="plant01" to="Efeu_winter" />
+			<shape name="ivy" childName="plant02" to="Efeu_winter" />
+			<shape name="ivy" childName="plant03" to="Efeu_winter" />
+			<shape name="ivy" childName="plant04" to="Efeu_winter" />
+			
+			
+			<shape name="spruce_stage5"		childName="attachments"	to="spruceBranchWinter" />
+            <shape name="spruce_stage5"		childName="LOD0"		to="spruceLOD0Winter" />
+            <shape name="spruce_stage5"		childName="LOD1"		to="spruce5LOD1Winter" />
+            <shape name="spruce_stage4"		childName="attachments"	to="spruceBranchWinter" />
+            <shape name="spruce_stage4"		childName="LOD0"		to="spruceLOD0Winter" />
+            <shape name="spruce_stage4"		childName="LOD1"		to="spruce4LOD1Winter" />
+            <shape name="spruce_stage3"		childName="attachments"	to="spruceBranchWinter" />
+            <shape name="spruce_stage3"		childName="LOD0"		to="spruceLOD0Winter" />
+            <shape name="spruce_stage3"		childName="LOD1"		to="spruce3LOD1Winter" />
+            <shape name="spruce_stage2"		childName="attachments"	to="spruceBranchWinter" />
+            <shape name="spruce_stage2"		childName="LOD0"		to="spruceLOD0Winter" />
+            <shape name="spruce_stage2"		childName="LOD1"		to="spruce2LOD1Winter" />
+            <shape name="spruce_stage1"		childName="LOD0"		to="spruceBranchWinter" />
+            <shape name="spruce_stage1"		childName="LOD1"		to="spruce1LOD1Winter" />
+			
+			<shape name="pine_stage6"		childName="LOD0Attachments"	to="pineBranchWinter" />
+            <shape name="pine_stage6"		childName="LOD0"		to="pineLOD0Winter" />
+            <shape name="pine_stage6"		childName="LOD1"		to="pine6LOD1Winter" />
+			<shape name="pine_stage5"		childName="LOD0Attachments"	to="pineBranchWinter" />
+            <shape name="pine_stage5"		childName="LOD0"		to="pineLOD0Winter" />
+            <shape name="pine_stage5"		childName="LOD1"		to="pine5LOD1Winter" />
+            <shape name="pine_stage4"		childName="LOD0Attachments"	to="pineBranchWinter" />
+            <shape name="pine_stage4"		childName="LOD0"		to="pineLOD0Winter" />
+            <shape name="pine_stage4"		childName="LOD1"		to="pine4LOD1Winter" />
+            <shape name="pine_stage3"		childName="LOD0Attachments"	to="pineBranchWinter" />
+            <shape name="pine_stage3"		childName="LOD0"		to="pineLOD0Winter" />
+            <shape name="pine_stage3"		childName="LOD1"		to="pine3LOD1Winter" />
+            <shape name="pine_stage2"		childName="LOD0Attachments"	to="pineBranchWinter" />
+            <shape name="pine_stage2"		childName="LOD0"		to="pineLOD0Winter" />
+            <shape name="pine_stage2"		childName="LOD1"		to="pine2LOD1Winter" />
+			
+			
+			
+			<foliage name="bush01" to="bush01Winter" />
+			<foliage name="decoFoliage" to="decoFoliagewinter" />
+			<foliage name="forestGrass" to="forestGrassWinter" />
+			<foliage name="forestGrass1" to="forestGrass1Winter" />
+			
+        </winter>
+    </materials>
+	
+	
+
+</visuals>

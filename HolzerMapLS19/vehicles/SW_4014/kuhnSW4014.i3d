@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="kuhnSW4014" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Files>
+        <File fileId="1" filename="$data/vehicles/kuhn/kuhnSW4014/kuhnSW4014_normal.png"/>
+        <File fileId="2" filename="$data/vehicles/kuhn/kuhnSW4014/kuhnSW4014_specular.png"/>
+        <File fileId="4" filename="$data/vehicles/kuhn/kuhnSW4014/kuhnSW4014Decals_diffuse.png"/>
+        <File fileId="5" filename="$data/shared/default_normal.png"/>
+        <File fileId="6" filename="$data/vehicles/kuhn/kuhnSW4014/kuhnSW4014Decals_specular.png"/>
+        <File fileId="7" filename="$data/shared/silageWrap_diffuse.png"/>
+        <File fileId="8" filename="$data/shared/silageWrap_specular.png"/>
+        <File fileId="10" filename="$data/vehicles/kuhn/kuhnSW4014/kuhnSW4014belt_normal.png"/>
+        <File fileId="11" filename="$data/vehicles/kuhn/kuhnSW4014/kuhnSW4014belt_specular.png"/>
+        <File fileId="12" filename="$data/vehicles/kuhn/kuhnWrap750_diffuse.png"/>
+        <File fileId="13" filename="$data/vehicles/kuhn/kuhnWrap750_specular.png"/>
+        <File fileId="15" filename="$data/shared/assets/assetLibraryDecals_normal.png"/>
+        <File fileId="14" filename="$data/shared/assets/assetLibraryDecals_diffuse.png"/>
+        <File fileId="16" filename="$data/vehicles/kuhn/kuhnSW4014/kuhnSW4014Decals_specular.png"/>
+        <File fileId="9" filename="$data/shaders/backLightShader.xml"/>
+        <File fileId="3" filename="$data/shaders/vehicleShader.xml"/>
+    </Files>
+    <Materials>
+        <Material name="lambert1" materialId="1" diffuseColor="0.5 0.5 0.5 1" specularColor="0 0 0" ambientColor="1 1 1"/>
+        <Material name="kuhnSW4014_mat" materialId="2" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+            <CustomParameter name="colorMat0" value="0.5860 0.0114 0.0094 0"/>
+            <CustomParameter name="colorMat1" value="1.0000 0.8751 0.0000 1"/>
+            <Normalmap fileId="1"/>
+            <Glossmap fileId="2"/>
+        </Material>
+        <Material name="kuhnSW4014Decals_mat" materialId="5" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" alphaBlending="true" customShaderId="3" customShaderVariation="Decal">
+            <CustomParameter name="RDT" value="1.0 1.0 4.0 4.0"/>
+            <Texture fileId="4"/>
+            <Normalmap fileId="5"/>
+            <Glossmap fileId="6"/>
+        </Material>
+        <Material name="silageWrap_mat" materialId="7" cosPower="10" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="9" customShaderVariation="colorMask">
+            <CustomParameter name="backLightScale" value="0.1 0.0 0.0 0.0"/>
+            <Texture fileId="7"/>
+            <Glossmap fileId="8"/>
+        </Material>
+        <Material name="kuhnSW4014belt_mat" materialId="8" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="CABLE_TRAY_colorMask">
+            <CustomParameter name="colorMat2" value="0.0356 0.0356 0.0356 5"/>
+            <CustomParameter name="colorMat3" value="0.0356 0.0356 0.0356 5"/>
+            <CustomParameter name="colorMat0" value="0.0356 0.0356 0.0356 5"/>
+            <CustomParameter name="colorMat1" value="0.0356 0.0356 0.0356 5"/>
+            <CustomParameter name="colorMat6" value="0.0356 0.0356 0.0356 5"/>
+            <CustomParameter name="colorMat7" value="0.0356 0.0356 0.0356 5"/>
+            <CustomParameter name="colorMat4" value="0.0356 0.0356 0.0356 5"/>
+            <CustomParameter name="colorMat5" value="0.0356 0.0356 0.0356 5"/>
+            <Normalmap fileId="10"/>
+            <Glossmap fileId="11"/>
+        </Material>
+        <Material name="silageWrap_mat2" materialId="6" cosPower="10" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="9" customShaderVariation="colorMask">
+            <CustomParameter name="backLightScale" value="1.0 0.0 0.0 0.0"/>
+            <Texture fileId="7"/>
+            <Glossmap fileId="8"/>
+        </Material>
+        <Material name="kuhnWrap750_mat" materialId="3" cosPower="20" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3">
+            <Texture fileId="12"/>
+            <Normalmap fileId="5"/>
+            <Glossmap fileId="13"/>
+        </Material>
+        <Material name="assetLibraryDecals_mat" materialId="4" cosPower="100" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="Decal_colorMask">
+            <CustomParameter name="RDT" value="1.0 1.0 5.0 5.0"/>
+            <CustomParameter name="colorMat0" value="0.5 0.5 0.5 2.0"/>
+            <Texture fileId="14"/>
+            <Normalmap fileId="15"/>
+            <Glossmap fileId="16"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="kuhnSW4014.i3d.shapes"/>
+    <Scene>
+        <Shape name="kuhnSW4014_main_component1" shapeId="1" dynamic="true" compound="true" density="2" collisionMask="8194" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="1">
+            <Shape name="kuhnSW4014_vis" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" skinBindNodeIds="2 13 16 17 26 27 29 147" nodeId="2">
+                <TransformGroup name="wheelLeft" translation="1.78482 0.406599 -0.769293" nodeId="3"/>
+                <TransformGroup name="lights" translation="0 -0.227378 0" nodeId="4">
+                    <TransformGroup name="sharedLights" translation="0 0.227378 0" nodeId="5">
+                        <TransformGroup name="backlightLeft" translation="1.76479 0.705006 -1.23518" rotation="-90 0 180" nodeId="6"/>
+                        <TransformGroup name="yellowRound02" translation="1.9819 0.655616 -1.26898" rotation="0 0 -90" scale="0.885575 0.885575 0.885575" collision="false" clipDistance="300" nodeId="7"/>
+                        <TransformGroup name="sideMarker_01" translation="1.982 0.739 -1.265" rotation="0 0 -90" collision="false" clipDistance="300" nodeId="8"/>
+                    </TransformGroup>
+                    <Light name="reverseLight" translation="1.73811 0.971065 -1.3639" rotation="-15 0 0" type="spot" color="0.9 0.9 1" emitDiffuse="true" emitSpecular="true" decayRate="0" range="5" coneAngle="110" dropOff="3" clipDistance="75" nodeId="9"/>
+                    <Light name="turnLightLeftBack" translation="1.81951 0.96478 -1.41871" rotation="-8 -5 -4.9886e-17" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" decayRate="0" range="4" coneAngle="120" dropOff="3" clipDistance="75" nodeId="10"/>
+                    <Light name="backLightsHigh" translation="1.70024 0.903391 -1.35904" rotation="-15 0 0" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" decayRate="0" range="2.5" coneAngle="110" dropOff="2" clipDistance="75" nodeId="11"/>
+                </TransformGroup>
+                <TransformGroup name="movingParts" nodeId="12">
+                    <TransformGroup name="drawbar" translation="1.89605 0.694045 0.595918" collision="false" nodeId="13">
+                        <TransformGroup name="hydraulicDrawbarRef" translation="0.00177864 -0.0459413 0.46422" rotation="0 43.2165 0" nodeId="14"/>
+                        <TransformGroup name="componentJoint" translation="0.638076 -0.138446 2.62363" rotation="0 101.608 0" nodeId="15"/>
+                        <TransformGroup name="support" translation="0.5027 -0.108722 2.05988" rotation="-79.87 13.5959 -1.02258e-16" collision="false" nodeId="16"/>
+                        <TransformGroup name="drawbarAttacherRotY" translation="0.638076 -0.138446 2.62363" rotation="0 101.608 0" scale="1 1 1" collision="false" nodeId="17"/>
+                        <Shape name="supportCol" translation="0.509729 -0.528 2.06406" rotation="0 13.6786 0" visibility="false" shapeId="3" compoundChild="true" density="0.001" collisionMask="8194" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="18"/>
+                        <Shape name="drawbarCol" translation="0.316456 0.293212 1.31692" rotation="0 13.535 0" visibility="false" shapeId="4" compoundChild="true" density="0.001" collisionMask="8194" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="19"/>
+                        <TransformGroup name="wheelChocks" translation="-1.89605 -0.694045 -0.595918" nodeId="20">
+                            <TransformGroup name="wheelChock01" translation="2.04884 0.830975 1.53404" rotation="39.4427 -68.4108 52.7514" scale="0.835 0.867 0.867" collision="false" nodeId="21"/>
+                            <TransformGroup name="wheelChock02" translation="1.985 0.812793 1.27756" rotation="41.6976 -69.4261 50.3349" scale="0.835 0.867 0.867" collision="false" nodeId="22"/>
+                        </TransformGroup>
+                        <Shape name="kuhnWraps" translation="0.373638 0.424438 1.20421" rotation="-16.4935 13.14 8.25028e-06" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="300" nodeId="23"/>
+                        <Shape name="rivet01_decal3" translation="-1.71154 0.885633 -0.0741768" shapeId="6" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="4" clipDistance="30" nodeId="24"/>
+                    </TransformGroup>
+                </TransformGroup>
+                <TransformGroup name="hydraulics" nodeId="25">
+                    <TransformGroup name="hydraulicDrawbar" translation="1.41861 0.648104 0.550119" rotation="0 43.2165 0" collision="false" nodeId="26">
+                        <TransformGroup name="hydraulicDrawbarPush" translation="1.42109e-16 0 0.291573" collision="false" nodeId="27"/>
+                    </TransformGroup>
+                </TransformGroup>
+                <TransformGroup name="j_Right_pm_root" nodeId="28">
+                    <TransformGroup name="bodyRight" collision="false" nodeId="29">
+                        <TransformGroup name="wheelRight" translation="-1.785 0.406599 -0.769293" nodeId="30"/>
+                        <TransformGroup name="lights1" translation="0 -0.227378 0" nodeId="31">
+                            <TransformGroup name="sharedLights" translation="0 0.227378 0" nodeId="32">
+                                <TransformGroup name="backlightRight" translation="-1.76479 0.705006 -1.23518" rotation="-90 0 180" nodeId="33"/>
+                                <TransformGroup name="yellowRound01" translation="-1.982 0.655616 -1.26898" rotation="-180 0 -90" scale="0.885575 0.885575 0.885575" collision="false" clipDistance="300" nodeId="34"/>
+                                <TransformGroup name="sideMarker_02" translation="-1.982 0.738672 -1.26516" rotation="0 0 90" collision="false" clipDistance="300" nodeId="35"/>
+                            </TransformGroup>
+                            <Light name="backLightsHigh1" translation="-1.85051 0.903391 -1.35904" rotation="-15 0 0" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" decayRate="0" range="2.5" coneAngle="110" dropOff="2" clipDistance="75" nodeId="36"/>
+                            <Light name="turnLightRightBack" translation="-1.82736 0.96478 -1.41871" rotation="-8 5 4.9886e-17" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" decayRate="0" range="4" coneAngle="120" dropOff="3" clipDistance="75" nodeId="37"/>
+                            <Light name="reverseLight11" translation="-1.72622 0.971065 -1.3639" rotation="-15 0 0" type="spot" color="0.9 0.9 1" emitDiffuse="true" emitSpecular="true" decayRate="0" range="5" coneAngle="110" dropOff="3" clipDistance="75" nodeId="38"/>
+                        </TransformGroup>
+                        <TransformGroup name="foliageCutterRight" translation="0.0409954 -0.0712445 0.0981053" nodeId="39">
+                            <TransformGroup name="j_Right_fc_root" translation="-1.21093 0.647194 0.569093" rotation="0 25 0" nodeId="40">
+                                <TransformGroup name="j_Right_fc_hand1" translation="0 0.278003 0.187121" rotation="0.000410589 2.81921 89.9997" scale="1 1 1" nodeId="41">
+                                    <TransformGroup name="j_Right_fc_hydrolic1" translation="0.029896 -2.51571e-06 -0.364218" rotation="71.055 -0.000181665 -89.9843" scale="1 1 1" nodeId="42"/>
+                                </TransformGroup>
+                                <TransformGroup name="j_Right_fc_hand2" translation="-7.44946e-05 0.150936 0.09192" rotation="-180 -18.2848 90.0006" scale="1 1 1" nodeId="43">
+                                    <TransformGroup name="j_Right_fc_hand3" translation="-1.06929e-06 7.69004e-05 0.439124" rotation="180 -21.104 0.00100787" scale="1 1 1" nodeId="44">
+                                        <TransformGroup name="j_Right_fc_rot2" translation="0.0386429 3.23793e-06 0.414072" scale="1 1 1" nodeId="45"/>
+                                    </TransformGroup>
+                                    <TransformGroup name="j_Right_fc_hydrolic2" translation="-6.32008e-07 1.42553e-06 0.259736" rotation="-130.049 -0.00451985 89.986" scale="1 1 1" nodeId="46"/>
+                                </TransformGroup>
+                                <TransformGroup name="j_Right_fc_rot1" translation="2.84217e-16 0.353258 0.259976" rotation="0.000410589 2.81921 89.9997" scale="1 1 1" nodeId="47"/>
+                            </TransformGroup>
+                            <Shape name="foliageCutterRight_decal" translation="-1.09109 1.02836 0.835493" rotation="-90 -5.00896e-06 5.00896e-06" shapeId="7" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="5" clipDistance="30" nodeId="48"/>
+                        </TransformGroup>
+                        <Shape name="bodyRight_decals" translation="-1.63687 1.50813 -0.213449" shapeId="8" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="5" clipDistance="50" nodeId="49"/>
+                        <TransformGroup name="collisions" nodeId="50">
+                            <Shape name="colPart2" visibility="false" shapeId="9" compoundChild="true" density="0.001" collisionMask="8194" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="51"/>
+                            <Shape name="colPart4" visibility="false" shapeId="10" compoundChild="true" density="0.001" collisionMask="8194" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="52"/>
+                            <Shape name="colPart5" visibility="false" shapeId="11" compoundChild="true" density="0.001" collisionMask="8194" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="53"/>
+                        </TransformGroup>
+                        <Shape name="rivet01_decal1" translation="0.184506 1.57968 0.521741" shapeId="12" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="4" clipDistance="30" nodeId="54"/>
+                    </TransformGroup>
+                    <TransformGroup name="j_Right_pm_frameBack" translation="-1.56979 0.792916 0.109965" rotation="55.529 -90 0" nodeId="55">
+                        <TransformGroup name="j_Right_pm_frame" translation="4.44089e-16 -8.66911e-07 0.368554" rotation="122.551 -0 0" nodeId="56">
+                            <TransformGroup name="j_Right_pm_frame_end" translation="-1.06581e-16 7.10543e-17 0.470839" nodeId="57">
+                                <TransformGroup name="j_Right_pm_balePush" translation="1.77636e-16 -0.0535135 0.294344" nodeId="58">
+                                    <TransformGroup name="j_Right_pm_spring" translation="-0.147938 -0.084147 0.0396462" rotation="-8.12 -0 -180" scale="1 1 1" nodeId="59"/>
+                                    <TransformGroup name="j_Right_pm_rotorUpper" translation="5.47118e-15 -0.214414 0.190563" rotation="-1.92 -0 -180" nodeId="60"/>
+                                    <TransformGroup name="j_Right_pm_rotorLower" translation="5.15143e-16 0.179925 0.224962" rotation="-1.92 -0 -180" nodeId="61"/>
+                                </TransformGroup>
+                            </TransformGroup>
+                            <TransformGroup name="j_Right_pm_springRoot" translation="-0.149858 -0.0258298 0.0417077" rotation="-8.12 -0 -180" scale="1 1 1" nodeId="62"/>
+                        </TransformGroup>
+                    </TransformGroup>
+                    <TransformGroup name="j_Right_pm_frameFront" translation="-1.11876 0.895066 0.111686" rotation="65.855 -89.478 180" nodeId="63">
+                        <TransformGroup name="j_Right_pm_hydraulicFrameFrontPush" translation="-0.00120088 3.46864e-05 -0.211266" rotation="65.8559 0.21352 -179.524" nodeId="64"/>
+                    </TransformGroup>
+                    <TransformGroup name="j_Right_pm_hydraulicFrameFront" translation="-1.82515 0.702269 0.109698" rotation="-0 90 0" nodeId="65"/>
+                </TransformGroup>
+                <TransformGroup name="foliageCutterLeft" nodeId="66">
+                    <TransformGroup name="j_Left_fc_root" translation="1.16745 0.57595 -0.439155" rotation="0 205 0" nodeId="67">
+                        <TransformGroup name="j_Left_fc_hand1" translation="-2.84217e-16 0.278003 0.187121" rotation="0.000410589 2.81921 89.9997" scale="1 1 1" nodeId="68">
+                            <TransformGroup name="j_Left_fc_hydrolic1" translation="0.029896 -2.51571e-06 -0.364218" rotation="108.923 -0.00956427 90.0008" scale="1 1 1" nodeId="69"/>
+                        </TransformGroup>
+                        <TransformGroup name="j_Left_fc_hand2" translation="-7.44946e-05 0.150936 0.09192" rotation="-180 -18.2848 90.0006" nodeId="70">
+                            <TransformGroup name="j_Left_fc_hand3" translation="-1.06929e-06 7.69004e-05 0.439124" rotation="180 -21.104 0.00100787" nodeId="71">
+                                <TransformGroup name="j_Left_fc_rot2" translation="0.0386429 3.23793e-06 0.414072" scale="1 1 1" nodeId="72"/>
+                            </TransformGroup>
+                            <TransformGroup name="j_Left_fc_hydrolic2" translation="-6.32008e-07 1.42553e-06 0.259736" rotation="-49.9732 0.00918014 -89.9963" scale="1 1 1" nodeId="73"/>
+                        </TransformGroup>
+                        <TransformGroup name="j_Left_fc_rot1" translation="0 0.353258 0.259976" rotation="0.000410589 2.81921 89.9997" scale="1 1 1" nodeId="74"/>
+                    </TransformGroup>
+                    <Shape name="foliageCutterLeft_decal" translation="1.14557 0.846961 -0.526066" rotation="-90 -5.00896e-06 5.00896e-06" shapeId="13" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="5" clipDistance="50" nodeId="75"/>
+                </TransformGroup>
+                <TransformGroup name="pickUpMechanicsLeft" translation="0 -0.227378 0" nodeId="76">
+                    <TransformGroup name="j_Left_pm_root" translation="0 0.227378 0" nodeId="77">
+                        <TransformGroup name="j_Left_pm_frameBack" translation="1.5697 0.79303 0.109965" rotation="124.476 -90 0" nodeId="78">
+                            <TransformGroup name="j_Left_pm_frame" translation="1.42109e-16 -1.6872e-06 0.368724" rotation="-122.552 0 0" nodeId="79">
+                                <TransformGroup name="j_Left_pm_frame_end" translation="0 -2.13163e-16 0.470928" nodeId="80">
+                                    <TransformGroup name="j_Left_pm_balePush" translation="-4.21885e-14 0.0533175 0.294367" nodeId="81">
+                                        <TransformGroup name="j_Left_pm_spring" translation="0.151886 0.0840856 0.0391363" rotation="-8.32 0 0" nodeId="82"/>
+                                        <TransformGroup name="j_Left_pm_rotorUpper" translation="-1.42109e-16 0.214675 0.189888" rotation="-1.924 0 0" nodeId="83"/>
+                                        <TransformGroup name="j_Left_pm_rotorLower" translation="-1.42109e-16 -0.179165 0.228059" rotation="-1.924 0 0" nodeId="84"/>
+                                    </TransformGroup>
+                                </TransformGroup>
+                                <TransformGroup name="j_Left_pm_springRoot" translation="0.151886 0.0258599 0.0416942" rotation="-8.32 0 0" nodeId="85"/>
+                            </TransformGroup>
+                        </TransformGroup>
+                        <TransformGroup name="j_Left_pm_frameFront" translation="1.11857 0.895102 0.111686" rotation="-65.844 -89.479 0" nodeId="86">
+                            <TransformGroup name="j_Left_pm_hydraulicFrameFrontPush" translation="-0.00119064 0.00108923 -0.211828" rotation="65.8449 -0.213202 -0.475381" nodeId="87"/>
+                        </TransformGroup>
+                        <TransformGroup name="j_Left_pm_hydraulicFrameFront" translation="1.82491 0.702269 0.109698" rotation="0 -90 0" nodeId="88"/>
+                    </TransformGroup>
+                </TransformGroup>
+                <TransformGroup name="wrapperNodes" nodeId="89">
+                    <TransformGroup name="baleGrabNode" translation="0 0.4 0.114" nodeId="90"/>
+                    <TransformGroup name="j_wrapperNode" translation="0 0.4 0.114" nodeId="91">
+                        <TransformGroup name="baleNode" translation="0 0 3.8147e-09" nodeId="92">
+                            <TransformGroup name="grabNode" nodeId="93"/>
+                            <Shape name="squareBaleCollision" visibility="false" shapeId="14" compoundChild="true" density="0.001" collisionMask="0" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="94"/>
+                            <Shape name="roundBaleCollision" visibility="false" shapeId="15" compoundChild="true" density="0.001" collisionMask="0" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="95"/>
+                        </TransformGroup>
+                    </TransformGroup>
+                </TransformGroup>
+                <TransformGroup name="wrappingMechanics" translation="0 -0.227378 0" nodeId="96">
+                    <TransformGroup name="j_mainRotor_root" translation="0 0.227378 0" nodeId="97">
+                        <TransformGroup name="j_mainRotor" translation="6.32811e-05 2.29751 0.112575" rotation="0 -73.682 0" nodeId="98">
+                            <TransformGroup name="j_Right_baleWrap_root" translation="0.291534 -0.952491 1.5924" rotation="0 73.682 0" nodeId="99">
+                                <TransformGroup name="j_Right_bend_left" translation="-0.000318216 -0.00613657 -0.243781" nodeId="100"/>
+                            </TransformGroup>
+                            <TransformGroup name="j_Left_baleWrap_root" translation="-0.286614 -0.952491 -1.59513" rotation="0 253.682 0" nodeId="101">
+                                <TransformGroup name="j_Left_bend_left" translation="0.00381228 -0.00613672 -0.245541" nodeId="102"/>
+                            </TransformGroup>
+                            <TransformGroup name="j_Right_plasticRoll" translation="0.291937 -0.958628 1.59251" rotation="0 73.682 0" scale="1 1 1" nodeId="103"/>
+                            <TransformGroup name="j_Left_plasticRoll" translation="-0.286818 -0.958628 -1.59599" rotation="0 73.682 0" scale="1 1 1" nodeId="104"/>
+                            <TransformGroup name="j_mainRotor_arm2" translation="-0.0996678 -0.0282397 -0.230878" rotation="0 -34.402 0" scale="1 1 1" nodeId="105">
+                                <TransformGroup name="j_mainRotor_arm2Spring" translation="-0.00719795 0.000459976 0.212028" rotation="0 203.766 0" scale="1 1 1" nodeId="106"/>
+                            </TransformGroup>
+                            <TransformGroup name="j_mainRotor_arm2SpringEnd" translation="-0.127424 -0.0277798 -0.581741" rotation="0 169.364 0" scale="1 1 1" nodeId="107"/>
+                            <TransformGroup name="j_mainRotor_arm1" translation="0.0975703 -0.028241 0.228709" rotation="0 142.975 0" scale="1 1 1" nodeId="108">
+                                <TransformGroup name="j_mainRotor_arm1Spring" translation="-1.81122e-06 0.00314568 0.209313" rotation="0 206.803 0" scale="1 1 1" nodeId="109"/>
+                            </TransformGroup>
+                            <TransformGroup name="j_mainRotor_arm1SpringEnd" translation="0.129963 -0.0250953 0.580951" rotation="0 -10.222 0" scale="1 1 1" nodeId="110"/>
+                        </TransformGroup>
+                        <TransformGroup name="j_smallRotor" translation="-0.196276 2.38086 0.0180197" rotation="0 -73.682 0" nodeId="111"/>
+                    </TransformGroup>
+                    <TransformGroup name="baleWrapJoints" translation="0 0.227378 0" nodeId="112">
+                        <TransformGroup name="j_Right_mid_top" translation="-1.44659 1.72028 -0.679646" nodeId="113"/>
+                        <TransformGroup name="j_Right_end_top" translation="-1.44659 1.72028 -1.95517" nodeId="114"/>
+                        <TransformGroup name="j_Right_mid_middle" translation="-1.44045 1.33888 -0.679507" nodeId="115"/>
+                        <TransformGroup name="j_Right_end_middle" translation="-1.43431 1.33888 -1.95501" nodeId="116"/>
+                        <TransformGroup name="j_Right_mid_bottom" translation="-1.43431 0.957485 -0.679475" nodeId="117"/>
+                        <TransformGroup name="j_Right_end_bottom" translation="-1.42202 0.957485 -1.95495" nodeId="118"/>
+                        <TransformGroup name="j_Left_mid_top" translation="1.43431 1.72028 0.909919" rotation="0 180 0" nodeId="119"/>
+                        <TransformGroup name="j_Left_end_top" translation="1.42202 1.72028 2.18539" rotation="0 180 0" nodeId="120"/>
+                        <TransformGroup name="j_Left_mid_middle" translation="1.44045 1.33888 0.910005" rotation="0 180 0" nodeId="121"/>
+                        <TransformGroup name="j_Left_end_middle" translation="1.43431 1.33888 2.18539" rotation="0 180 0" nodeId="122"/>
+                        <TransformGroup name="j_Left_mid_bottom" translation="1.44659 0.957485 0.91009" rotation="0 180 0" nodeId="123"/>
+                        <TransformGroup name="j_Left_end_bottom" translation="1.44659 0.957485 2.18573" rotation="0 180 0" nodeId="124"/>
+                    </TransformGroup>
+                    <TransformGroup name="fakeAnimationNodeLoadUnload" translation="0 0.227378 0" nodeId="125">
+                        <TransformGroup name="fakeAnimationNodeWrap" nodeId="126"/>
+                    </TransformGroup>
+                </TransformGroup>
+                <TransformGroup name="skinnedNodes" nodeId="127">
+                    <Shape name="baleWrapRight" shapeId="16" castsShadows="true" receiveShadows="true" materialIds="6" skinBindNodeIds="99 100 113 114 115 116 117 118" clipDistance="300" nodeId="128"/>
+                    <Shape name="baleWrapLeft" shapeId="17" castsShadows="true" receiveShadows="true" materialIds="6" skinBindNodeIds="101 102 119 120 123 124 121 122" clipDistance="300" nodeId="129"/>
+                    <Shape name="foliageCutterRight" shapeId="18" castsShadows="true" receiveShadows="true" materialIds="2" skinBindNodeIds="40 41 42 43 44 45 46 47" clipDistance="300" nodeId="130"/>
+                    <Shape name="foliageCutterLeft" shapeId="19" castsShadows="true" receiveShadows="true" materialIds="2" skinBindNodeIds="67 68 69 70 71 72 73 74" clipDistance="300" nodeId="131"/>
+                    <Shape name="pickUpMechanicsRight" shapeId="20" castsShadows="true" receiveShadows="true" materialIds="2" skinBindNodeIds="28 55 56 57 58 59 60 61 62 63 64 65" clipDistance="300" nodeId="132"/>
+                    <Shape name="pickUpMechanicsLeft" shapeId="21" castsShadows="true" receiveShadows="true" materialIds="2" skinBindNodeIds="77 78 79 80 81 82 83 84 85 86 87 88" clipDistance="300" nodeId="133"/>
+                    <Shape name="mainRotor" shapeId="22" castsShadows="true" receiveShadows="true" materialIds="2" skinBindNodeIds="97 98 99 101 103 104 105 106 107 108 109 110 111" clipDistance="300" nodeId="134"/>
+                    <Shape name="mainRotor_silage" shapeId="23" castsShadows="true" receiveShadows="true" materialIds="7" skinBindNodeIds="103 104" clipDistance="300" nodeId="135"/>
+                    <Shape name="mainRotor_decal" shapeId="24" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="5" skinBindNodeIds="97 98 99 100 101 102 103 104 105 106 107 108 109 110 111" clipDistance="50" nodeId="136"/>
+                </TransformGroup>
+                <TransformGroup name="visuals" nodeId="137">
+                    <Shape name="decals" translation="0.979257 1.72027 -0.275063" shapeId="25" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="5" clipDistance="50" nodeId="138"/>
+                    <Shape name="belt" translation="-0.166152 2.45437 -0.635753" shapeId="26" castsShadows="true" receiveShadows="true" materialIds="8" clipDistance="300" nodeId="139"/>
+                    <Shape name="rivet01_decal" translation="0.184506 1.57968 0.521741" shapeId="27" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="4" clipDistance="30" nodeId="140"/>
+                </TransformGroup>
+            </Shape>
+            <TransformGroup name="collisions" nodeId="141">
+                <Shape name="colPart0" visibility="false" shapeId="28" compoundChild="true" density="0.001" collisionMask="8194" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="142"/>
+                <Shape name="colPart1" visibility="false" shapeId="29" compoundChild="true" density="0.001" collisionMask="8194" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="143"/>
+            </TransformGroup>
+        </Shape>
+        <Shape name="kuhnSW4014_attacher_component2" translation="2.53461 0.618058 3.21916" rotation="0 11.6569 0" scale="1 1 1" shapeId="30" dynamic="true" compound="true" density="40" collisionMask="8194" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="144">
+            <TransformGroup name="attacherJoint" translation="-0.000555162 -0.0624594 0.000284557" rotation="0 89.9512 0" scale="1 1 1" nodeId="145"/>
+            <TransformGroup name="drawbarAttacherRotYRef" translation="0.329567 -0.0624594 0.000565838" rotation="0 89.9512 0" scale="1 1 1" nodeId="146"/>
+            <TransformGroup name="drawbarAttacher" translation="-0.000555162 -0.0624594 0.000284557" rotation="0 89.9512 0" scale="1 1 1" collision="false" nodeId="147"/>
+        </Shape>
+    </Scene>
+    <Animation externalAnimFile="kuhnSW4014.i3d.anim"/>
+    <UserAttributes>
+        <UserAttribute nodeId="28">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="40">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="41">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="42">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="43">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="44">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="45">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="46">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="47">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="55">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="56">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="57">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="58">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="59">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="60">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="61">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="62">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="63">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="64">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="65">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="67">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="68">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="69">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="70">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="71">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="72">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="73">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="74">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="77">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="78">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="79">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="80">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="81">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="82">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="83">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="84">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="85">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="86">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="87">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="88">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="97">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="98">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="99">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="100">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="101">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="102">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="103">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="104">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="105">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="106">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="107">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="108">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="109">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="110">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="111">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="113">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="114">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="115">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="116">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="117">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="118">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="119">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="120">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="121">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="122">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="123">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="124">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+    </UserAttributes>
+</i3D>

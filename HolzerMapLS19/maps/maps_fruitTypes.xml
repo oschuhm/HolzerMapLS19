@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map>
+    <fruitTypes>
+        
+		<fruitType name="alfalfa" shownOnMap="true" useForFieldJob="true">
+            <general startStateChannel="0" numStateChannels="4" />
+            <cultivation needsSeeding="true" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" seedUsagePerSqm="0.03" plantsWeed="false"/>
+            <harvest minHarvestingGrowthState="4" maxHarvestingGrowthState="6" cutState="8" allowsPartialGrowthState="true" literPerSqm="4.37" />
+            <growth witheringNumGrowthStates="8" numGrowthStates="7" growthStateTime="36000000" resetsSpray="true" groundTypeChangeGrowthState="1" groundTypeChanged="GRASS" groundTypeChangeMask="GRASS CULTIVATOR PLOW SOWING SOWING_WIDTH" growthRequiresLime="false" regrows="true" firstRegrowthState="1" />
+            <windrow name="alfalfa_windrow" litersPerSqm="4.37" />
+            <options lowSoilDensityRequired="false" increasesSoilDensity="false" consumesLime="false" startSprayState="1" destroyedByRoller="false" />
+            <mapColors default="0.3523 0.1221 0.2252 1" colorBlind="1.0000 0.9473 0.0369 1"/>
+        </fruitType>
+        <fruitType name="dryAlfalfa" showOnPriceTable="true" shownOnMap="false" useForFieldJob="false">
+            <general startStateChannel="0" numStateChannels="4" />
+            <cultivation needsSeeding="false" allowsSeeding="false" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" seedUsagePerSqm="0.02" />
+            <harvest minHarvestingGrowthState="2" maxHarvestingGrowthState="3" cutState="1" allowsPartialGrowthState="false" literPerSqm="4.37" />
+            <growth witheringNumGrowthStates="4" numGrowthStates="4" growthStateTime="36000000" resetsSpray="true" groundTypeChangeGrowthState="-1" groundTypeChanged="NONE" growthRequiresLime="false" />
+            <windrow name="dryAlfalfa_windrow" litersPerSqm="6" />
+            <options lowSoilDensityRequired="false" increasesSoilDensity="false" consumesLime="false" startSprayState="1" />
+            <mapColors default="0.0423 0.1221 0.0252 1" colorBlind="1.0000 0.9473 0.0369 1"/>
+        </fruitType>
+        <fruitType name="clover" shownOnMap="true" useForFieldJob="true">
+            <general startStateChannel="0" numStateChannels="4" />
+            <cultivation needsSeeding="false" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" seedUsagePerSqm="0.03" plantsWeed="false"/>
+            <harvest minHarvestingGrowthState="2" maxHarvestingGrowthState="3" cutState="4" allowsPartialGrowthState="true" literPerSqm="4.37" />
+            <growth witheringNumGrowthStates="4" numGrowthStates="4" growthStateTime="16000000" resetsSpray="true" groundTypeChangeGrowthState="1" groundTypeChanged="GRASS" groundTypeChangeMask="GRASS CULTIVATOR PLOW SOWING SOWING_WIDTH" growthRequiresLime="false" regrows="true" firstRegrowthState="1" />
+            <windrow name="clover_windrow" litersPerSqm="6" />
+            <options lowSoilDensityRequired="false" increasesSoilDensity="false" consumesLime="false" startSprayState="1" destroyedByRoller="false" />
+            <mapColors default="0.0523 0.2221 0.1252 1" colorBlind="1.0000 0.9473 0.0369 1"/>
+        </fruitType>
+        <fruitType name="dryClover" showOnPriceTable="false" shownOnMap="false" useForFieldJob="false">
+            <general startStateChannel="0" numStateChannels="4" />
+            <cultivation needsSeeding="false" allowsSeeding="false" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" seedUsagePerSqm="0.02" />
+            <harvest minHarvestingGrowthState="2" maxHarvestingGrowthState="3" cutState="1" allowsPartialGrowthState="false" literPerSqm="4.37" />
+            <growth witheringNumGrowthStates="4" numGrowthStates="4" growthStateTime="36000000" resetsSpray="true" groundTypeChangeGrowthState="-1" groundTypeChanged="NONE" growthRequiresLime="false" />
+            <windrow name="dryClover_windrow" litersPerSqm="6" />
+            <options lowSoilDensityRequired="false" increasesSoilDensity="false" consumesLime="false" startSprayState="1" />
+            <mapColors default="0.0423 0.1221 0.0252 1" colorBlind="1.0000 0.9473 0.0369 1"/>
+        </fruitType>
+		
+		<fruitType name="incarase_grass" shownOnMap="true" useForFieldJob="true">
+            <general startStateChannel="0" numStateChannels="4" />
+            <cultivation needsSeeding="false" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" seedUsagePerSqm="0.04" plantsWeed="false"/>
+            <harvest minHarvestingGrowthState="4" maxHarvestingGrowthState="6" cutState="8" minForageGrowthState="3" allowsPartialGrowthState="false" literPerSqm="0.72" />
+            <growth witheringNumGrowthStates="8" numGrowthStates="7" growthStateTime="24000000" resetsSpray="true" groundTypeChangeGrowthState="1" groundTypeChanged="GRASS" groundTypeChangeMask="GRASS CULTIVATOR PLOW SOWING SOWING_WIDTH" growthRequiresLime="false" regrows="true" firstRegrowthState="1" />
+            <windrow name="grass_windrow" litersPerSqm="4.20" />
+            <options lowSoilDensityRequired="false" increasesSoilDensity="false" consumesLime="false" startSprayState="0" />
+            <destruction filterStart="2" filterEnd="7" state="1" />
+            <mapColors default="0.0385 0.0430 0.0600 1" colorBlind="0.5385 0.0430 0.0600 1"/>
+        </fruitType>
+		<fruitType name="carrot" shownOnMap="true" useForFieldJob="false">
+            <general startStateChannel="0" numStateChannels="4" />
+            <cultivation needsSeeding="true" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" seedUsagePerSqm="0.04" />
+            <harvest minHarvestingGrowthState="9" maxHarvestingGrowthState="9" cutState="8" allowsPartialGrowthState="false" literPerSqm="5.78" />
+            <growth witheringNumGrowthStates="8" numGrowthStates="7" growthStateTime="24000000" resetsSpray="true" groundTypeChangeGrowthState="-1" groundTypeChanged="NONE" growthRequiresLime="true" />
+            <preparing outputName="carrot_haulm" minGrowthState="4" maxGrowthState="6" preparedGrowthState="9" />
+			<options lowSoilDensityRequired="true" increasesSoilDensity="true" consumesLime="true" startSprayState="0" />
+            <destruction filterStart="1" filterEnd="7" state="8" />
+            <mapColors default="0.9939 0.0663 0.0047 1" colorBlind="0.3329 0.4664 0.8911 1"/>
+        </fruitType>
+		<fruitType name="onion" shownOnMap="true" useForFieldJob="false">
+            <general startStateChannel="0" numStateChannels="4" />
+            <cultivation needsSeeding="true" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" seedUsagePerSqm="0.04" />
+            <harvest minHarvestingGrowthState="9" maxHarvestingGrowthState="9" cutState="8" allowsPartialGrowthState="false" literPerSqm="5.78" />
+            <growth witheringNumGrowthStates="8" numGrowthStates="7" growthStateTime="24000000" resetsSpray="true" groundTypeChangeGrowthState="-1" groundTypeChanged="NONE" growthRequiresLime="true" />
+            <preparing outputName="onion_haulm" minGrowthState="4" maxGrowthState="6" preparedGrowthState="9" />
+			<options lowSoilDensityRequired="true" increasesSoilDensity="true" consumesLime="true" startSprayState="0" />
+            <destruction filterStart="1" filterEnd="7" state="8" />
+            <mapColors default="0.1339 0.7063 0.6707 1" colorBlind="0.3029 0.4064 0.8011 1"/>
+        </fruitType>
+		 <fruitType name="potato" shownOnMap="true" useForFieldJob="true">
+            <general startStateChannel="0" numStateChannels="4" />
+            <cultivation needsSeeding="true" allowsSeeding="true" useSeedingWidth="true" directionSnapAngle="11.25" alignsToSun="false" seedUsagePerSqm="0.38" />
+            <harvest minHarvestingGrowthState="9" maxHarvestingGrowthState="9" cutState="8" allowsPartialGrowthState="false" literPerSqm="4.13" />
+            <growth witheringNumGrowthStates="8" numGrowthStates="7" growthStateTime="24000000" resetsSpray="true" groundTypeChangeGrowthState="-1" groundTypeChanged="NONE" growthRequiresLime="true" />
+            <preparing outputName="potato_haulm" minGrowthState="4" maxGrowthState="6" preparedGrowthState="9" />
+            <options lowSoilDensityRequired="true" increasesSoilDensity="true" consumesLime="true" startSprayState="0" />
+            <destruction filterStart="1" filterEnd="7" state="8" />
+            <mapColors default="0.2622 0.1248 0.0782 1" colorBlind="0.7991 0.7304 0.3419 1"/>
+        </fruitType>
+    </fruitTypes>
+
+    <fruitTypeCategories>
+        <fruitTypeCategory name="GRAINHEADER" >INCARASE_GRASS WHEAT BARLEY OAT CANOLA SOYBEAN CLOVER</fruitTypeCategory>
+        <fruitTypeCategory name="MAIZEHEADER" >MAIZE SUNFLOWER</fruitTypeCategory>
+        <fruitTypeCategory name="MAIZECUTTER" >MAIZE INCARASE_GRASS</fruitTypeCategory>
+        <fruitTypeCategory name="DIRECTCUTTER" >INCARASE_GRASS GRASS ALFALFA CLOVER WHEAT BARLEY OAT CANOLA SOYBEAN CLOVER</fruitTypeCategory>
+        <fruitTypeCategory name="PICKUP" >GRASS ALFALFA DRYALFALFA DRYGRASS CLOVER DRYCLOVER </fruitTypeCategory>
+        <fruitTypeCategory name="SOWINGMACHINE" >INCARASE_GRASS ONION CARROT WHEAT BARLEY OAT CANOLA SOYBEAN OILSEEDRADISH GRASS ALFALFA CLOVER</fruitTypeCategory>
+        <fruitTypeCategory name="SUGARCANE_PLANTER" >SUGARCANE</fruitTypeCategory>
+        <fruitTypeCategory name="PLANTER" >MAIZE SUNFLOWER SOYBEAN SUGARBEET COTTON</fruitTypeCategory>
+        <fruitTypeCategory name="WEEDER" >OILSEEDRADISH GRASS ALFALFA CLOVER INCARASE_GRASS</fruitTypeCategory>
+    </fruitTypeCategories>
+
+    <fruitTypeConverters>
+        <fruitTypeConverter name="FORAGEHARVESTER">
+            <converter from="DRYCLOVER"     to="CHAFF"            factor="4"   windrowFactor="1.0" />
+            <converter from="CLOVER"        to="CHAFF"            factor="4"   windrowFactor="1.0" />
+            <converter from="DRYALFALFA"    to="CHAFF"          factor="4"   windrowFactor="1.0" />
+            <converter from="ALFALFA"       to="CHAFF"          factor="4"   windrowFactor="1.0" />
+            <converter from="MAIZE"         to="CHAFF"            factor="7.8" />
+            <converter from="GRASS"         to="GRASS_WINDROW"    factor="1.0" windrowFactor="1.0" />
+			<converter from="INCARASE_GRASS"    to="CHAFF" 		   factor="4.0" windrowFactor="1.0"/>
+            <converter from="DRYGRASS"      to="DRYGRASS_WINDROW" factor="1.0" windrowFactor="1.0" />
+            <converter from="WHEAT"         to="CHAFF"            factor="4.0" windrowFactor="1.0" /> <!-- straw 1:1 conversion -->
+            <converter from="BARLEY"        to="CHAFF"            factor="4.0" windrowFactor="1.0" /> <!-- straw 1:1 conversion -->
+            <converter from="OAT"           to="CHAFF"            factor="4.0" windrowFactor="1.0" /> <!-- straw 1:1 conversion -->           
+            <converter from="CANOLA"        to="CHAFF"            factor="3.0" />
+            <converter from="SUNFLOWER"     to="CHAFF"            factor="3.0" />
+            <converter from="SOYBEAN"       to="CHAFF"            factor="3.0" />
+            <converter from="POPLAR"        to="WOODCHIPS"        factor="3.0" />
+        </fruitTypeConverter>
+        <fruitTypeConverter name="MOWER">
+            <converter from="CLOVER"    to="CLOVER_WINDROW" factor="2.5" windrowFactor="2.5" />
+            <converter from="ALFALFA"   to="ALFALFA_WINDROW"   factor="2.5" windrowFactor="2.5" />
+            <converter from="GRASS"     to="GRASS_WINDROW"     factor="2.0" windrowFactor="2.0" />
+			<converter from="INCARASE_GRASS"    to="GRASS_WINDROW"  factor="4.0" windrowFactor="2.0" />
+            <converter from="WHEAT"     to="STRAW"             factor="2.0" windrowFactor="2.0" />
+            <converter from="BARLEY"    to="STRAW"             factor="2.0" windrowFactor="2.0" />
+            <converter from="OAT"       to="STRAW"             factor="2.0" windrowFactor="2.0" />
+            
+        </fruitTypeConverter>
+    </fruitTypeConverters>
+</map>

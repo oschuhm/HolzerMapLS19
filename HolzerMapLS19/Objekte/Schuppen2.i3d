@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="SCS_UNTERSTAND_SCHUETTGUT" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="14" filename="../maps/textures/SCS_UNTERSTAND_A_BODEN.dds"/>
+    <File fileId="15" filename="../maps/textures/SCS_UNTERSTAND_A_BODEN_SPEC.dds"/>
+    <File fileId="1" filename="../maps/textures/SCS_UNTERSTAND_A_BRETTER.dds"/>
+    <File fileId="9" filename="../maps/textures/SCS_UNTERSTAND_A_BRETTER_B.dds"/>
+    <File fileId="10" filename="../maps/textures/SCS_UNTERSTAND_A_BRETTER_B_NRM.dds"/>
+    <File fileId="11" filename="../maps/textures/SCS_UNTERSTAND_A_BRETTER_B_SPEC_DIRT.dds"/>
+    <File fileId="2" filename="../maps/textures/SCS_UNTERSTAND_A_BRETTER_NRM.dds"/>
+    <File fileId="3" filename="../maps/textures/SCS_UNTERSTAND_A_BRETTER_SPEC.dds"/>
+    <File fileId="4" filename="../maps/textures/SCS_UNTERSTAND_A_MAUER.dds"/>
+    <File fileId="5" filename="../maps/textures/SCS_UNTERSTAND_A_MAUER_NRM.dds"/>
+    <File fileId="6" filename="../maps/textures/SCS_UNTERSTAND_A_MAUER_SPEC.dds"/>
+    <File fileId="7" filename="../maps/textures/SCS_UNTERSTAND_A_METALL.dds"/>
+    <File fileId="8" filename="../maps/textures/SCS_UNTERSTAND_A_METALL_SPEC.dds"/>
+    <File fileId="12" filename="../maps/textures/buildingDecals01_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="buildingDecals01_diffuse" materialId="6" alphaBlending="true">
+      <Texture fileId="12"/>
+    </Material>
+    <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="SCS_UNTERSTAND_A_METALL" materialId="8">
+      <Texture fileId="7"/>
+      <Glossmap fileId="8"/>
+    </Material>
+    <Material name="SCS_UNTERSTAND_A_BODEN" materialId="9">
+      <Texture fileId="14"/>
+      <Glossmap fileId="15"/>
+    </Material>
+    <Material name="SCS_UNTERSTAND_A_MAUER" materialId="5">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="SCS_UNTERSTAND_A_BRETTER" materialId="7">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="SCS_UNTERSTAND_BRETTER_B" materialId="10">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Schuppen2.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="SCS_UNTERSTAND_A5" clipDistance="500" nodeId="22">
+      <TransformGroup name="pCube308" translation="1.37539 0 -6.78863" scale="0.834014 1 1" nodeId="23">
+        <Shape shapeId="1" name="polySurface79" translation="-1.08923 6.44125 6.87972" static="true" nodeId="24" materialIds="7,5" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <Shape shapeId="2" name="polySurface69" translation="0.226662 0.660245 -2.72152" static="true" nodeId="25" materialIds="5" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="3" name="pCube309" translation="5.47486 4.37211 -3.86133" static="true" nodeId="26" materialIds="8" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="4" name="DOOR1" translation="5.519 2.189 -1.338" kinematic="true" nodeId="27" materialIds="8,10" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="4" name="DORR2" translation="5.439 2.189 0.199" kinematic="true" nodeId="28" materialIds="8,10" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="5" name="polySurface253" translation="0.283241 4.42847 -2.71003" static="true" nodeId="29" materialIds="10" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="6" name="pPlane107" translation="0.203685 3.87828 -2.73156" static="true" nodeId="30" materialIds="6" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="7" name="pCylinder63" translation="0.242899 2.45377 -2.76678" static="true" nodeId="31" materialIds="8" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="8" name="polySurface66" translation="0.229355 3.95297 -2.7398" static="true" nodeId="32" materialIds="7" castsShadows="true" receiveShadows="true"/>
+      <TransformGroup name="clearArea" nodeId="33">
+        <TransformGroup name="start" translation="-4.78121 0 -9.96662" nodeId="34">
+          <TransformGroup name="width" translation="9.94108 0 0" nodeId="35"/>
+          <TransformGroup name="height" translation="0 0 14.5119" nodeId="36"/>
+        </TransformGroup>
+      </TransformGroup>
+      <Shape shapeId="9" name="gateTrigger" translation="5.91196 0.1 -6.44132" scale="0.8 1 0.5" static="true" trigger="true" collisionMask="11534336" linearDamping="0.5" angularDamping="0.5" nodeId="37" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="10" name="pPlane108" translation="1.23802 0.0214666 -1.404" static="true" nodeId="38" materialIds="9" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

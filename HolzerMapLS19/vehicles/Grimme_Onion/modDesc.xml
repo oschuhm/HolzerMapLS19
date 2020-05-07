@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="46">
+    <author>The-Alien-Paul</author>
+    <version>1.0.0.0</version>
+    <iconFilename>icon.png</iconFilename>
+    <storeItems>
+        <storeItem xmlFilename="SE260.xml"/>
+    </storeItems>
+</modDesc>

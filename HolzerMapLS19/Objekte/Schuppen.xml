@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable>
+    <storeData>
+        <name>Schuppen</name>
+        <functions>
+            <function>$l10n_function_decoration</function>
+        </functions>
+        <image>store_schuppen.png</image>
+        <price>9000</price>
+		<canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>EASYSHEDS</brand>
+        <species>placeable</species>
+        <category>sheds</category>
+        <vertexBufferMemoryUsage>352244</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>30594</indexBufferMemoryUsage>
+        <textureMemoryUsage>4543912</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <placeableType>placeable</placeableType>
+    <filename>Objekte/Schuppen.i3d</filename>
+    <placement testSizeX="31.5" testSizeZ="16" sizeX="31.5" sizeZ="16" useRandomYRotation="false" useManualYRotation="true" />
+	<animatedObjects>
+        <animatedObject saveId="openBackDoor" >
+            <animation duration="4">
+                <part node="2|1|14">
+					<keyFrame time="0" translation="0 0 0" />
+					<keyFrame time="1.20" translation="-4.7 0 0"/>
+				</part>
+            </animation>
+            <controls triggerNode="2|1|13" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="$data/sounds/prefab/gate/gate_loop.wav" loops="0" linkNode="2|1|14" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.wav" linkNode="2|1|14" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.wav" linkNode="2|1|14" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="openFrontDoor1" >
+            <animation duration="4">
+				<part node="2|1|15">
+					<keyFrame time="0" translation="0 0 0" />
+					<keyFrame time="1.10" translation="-3.65 0 0"/>
+				</part>
+            </animation>
+            <controls triggerNode="2|1|12" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="$data/sounds/prefab/gate/gate_loop.wav" loops="0" linkNode="2|1|15" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.wav" linkNode="2|1|15" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.wav" linkNode="2|1|15" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+		</animatedObject>
+		<animatedObject saveId="openFrontDoor2" >
+            <animation duration="4">
+				<part node="2|1|16">
+					<keyFrame time="0" translation="0 0 0" />
+					<keyFrame time="1.10" translation="3.65 0 0"/>
+				</part>
+            </animation>
+            <controls triggerNode="2|1|11" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="$data/sounds/prefab/gate/gate_loop.wav" loops="0" linkNode="2|1|16" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.wav" linkNode="2|1|16" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.wav" linkNode="2|1|16" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+    </animatedObjects>
+	
+	
+	
+    <clearAreas>
+        <clearArea startNode="0|0" widthNode="0|0|0" heightNode="0|0|1"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="5" maxSlope="30" maxEdgeAngle="20" >
+        <levelAreas>
+            <levelArea startNode="1|0" widthNode="1|0|0" heightNode="1|0|1" groundType="dirt"/>
+        </levelAreas>
+    </leveling>
+	
+	<seasons>
+        <maskAreas>
+            <!-- empty list so there is no masking -->
+        </maskAreas>
+    </seasons>
+</placeable>

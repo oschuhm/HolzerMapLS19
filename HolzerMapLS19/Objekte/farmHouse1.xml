@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable>
+    <storeData>
+        <name>Bauernhaus Boarhof</name>
+        <functions>
+            <function>$l10n_function_farmHouse</function>
+        </functions>
+        <image>Objekte/store_FarmhouseBoarhof.png</image>
+        <price>180000</price>
+		<canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <species>placeable</species>
+        <category>farmhouses</category>
+        <vertexBufferMemoryUsage>1152</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>144</indexBufferMemoryUsage>
+        <textureMemoryUsage>128</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <placeableType>placeable</placeableType>
+    <filename>Objekte/farmHouse1.i3d</filename>
+    <placement testSizeX="24" testSizeZ="38" sizeX="18" sizeZ="32" useRandomYRotation="false" useManualYRotation="true" />
+
+    
+
+	<dayNightObjects>
+        <dayNightObject node="1|0|0|0" intensityDay="0" intensityNight="1" />
+        <dayNightObject node="1|0|0|1" visibleDay="false" visibleNight="true" />
+        <dayNightObject node="1|1|0" visibleDay="false" visibleNight="true" />
+        <dayNightObject node="1|1|1" visibleDay="false" visibleNight="true" />
+        <dayNightObject node="1|1|2" visibleDay="false" visibleNight="true" />
+        <dayNightObject node="1|1|3" visibleDay="false" visibleNight="true" />
+        <dayNightObject node="1|1|4" visibleDay="false" visibleNight="true" />
+    </dayNightObjects>
+
+    <tipOcclusionUpdateArea sizeX="18" sizeZ="32" />
+
+    <clearAreas>
+        <clearArea startNode="6|0" widthNode="6|0|0" heightNode="6|0|1"/>
+    </clearAreas>
+
+    
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="7|0" widthNode="7|0|0" heightNode="7|0|1" groundType="asphalt"/>
+        </levelAreas>
+        <rampAreas> <!-- Deprecated! no longer used in script -->
+            <rampArea maxSlope="75" rootNode="8|0" startNode="8|0" widthNode="8|0|0" heightNode="8|0|1" />
+            <rampArea maxSlope="75" rootNode="8|1" startNode="8|1" widthNode="8|1|0" heightNode="8|1|1" />
+            <rampArea maxSlope="75" rootNode="8|2" startNode="8|2" widthNode="8|2|0" heightNode="8|2|1" />
+            <rampArea maxSlope="75" rootNode="8|3" startNode="8|3" widthNode="8|3|0" heightNode="8|3|1" />
+        </rampAreas>
+    </leveling>
+	
+	<seasons>
+        <maskAreas>
+            <maskArea startNode="16" widthNode="16|0" heightNode="16|1" />
+        </maskAreas>
+		<admirers>
+            <seasonAdmirer node="17" />
+			<seasonAdmirer node="2|10|0" />
+			<seasonAdmirer node="2|11|0" />
+            <snowAdmirer node="2|23" />
+			<snowAdmirer node="18" />
+        </admirers>
+    </seasons>
+</placeable>

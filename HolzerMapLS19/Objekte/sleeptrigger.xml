@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable>
+    <storeData>
+        <name>sleeptrigger</name>
+        <functions>
+            <function>$l10n_function_farmHouse</function>
+        </functions>
+        <image>Objekte/store_sleeptrigger.png</image>
+        <price>180000</price>
+		<canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <species>placeable</species>
+        <category>farmhouses</category>
+        <vertexBufferMemoryUsage>1152</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>144</indexBufferMemoryUsage>
+        <textureMemoryUsage>128</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <placeableType>farmhouse</placeableType>
+    <filename>Objekte/sleeptrigger.i3d</filename>
+    <placement testSizeX="24" testSizeZ="38" sizeX="18" sizeZ="32" useRandomYRotation="false" useManualYRotation="true" />
+
+    <farmhouse spawnNode="0">
+        <sleeping triggerNode="1" cameraNode="2"/>
+    </farmhouse>
+
+
+    <tipOcclusionUpdateArea sizeX="18" sizeZ="32" />
+
+
+    <hotspots>
+        <hotspot name="Farm house" fullName="Bauernhaus" imageName="FARM_HOUSE" hidable="false" linkNode="0" category="CATEGORY_DEFAULT" />
+    </hotspots>
+
+</placeable>

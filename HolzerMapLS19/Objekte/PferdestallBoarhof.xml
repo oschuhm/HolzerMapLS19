@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable>
+    <storeData>
+        <name>Pferdestall Boarhof</name>
+        <image>Objekte/store_PferdestallBoarhof2.png</image>
+        <price>1</price>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+        <vertexBufferMemoryUsage>1152</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>144</indexBufferMemoryUsage>
+        <textureMemoryUsage>64</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <!-- <placeableType>sellingStation</placeableType> -->
+    <filename>Objekte/PferdestallBoarhof.i3d</filename>
+    <placement testSizeX="15" testSizeZ="8" sizeX="4" sizeZ="3" useRandomYRotation="false" useManualYRotation="true" />
+	
+	<!--<dayNightObjects>
+        <dayNightObject node="0|0|0|0" intensityDay="0" intensityNight="1" />
+        <dayNightObject node="0|0|0|0|0" visibleDay="false" visibleNight="true" />
+        
+		<dayNightObject node="0|0|2|24|0" intensityDay="0" intensityNight="1" />
+        <dayNightObject node="0|0|2|24|0|0" visibleDay="false" visibleNight="true" />
+		<dayNightObject node="0|0|2|24|0|0|0" intensityDay="0" intensityNight="1" />
+        <dayNightObject node="0|0|2|24|0|0|1" visibleDay="false" visibleNight="true" />
+		
+		<dayNightObject node="0|0|2|24|1" intensityDay="0" intensityNight="1" />
+        <dayNightObject node="0|0|2|24|1|0" visibleDay="false" visibleNight="true" />
+		<dayNightObject node="0|0|2|24|1|0|0" intensityDay="0" intensityNight="1" />
+        <dayNightObject node="0|0|2|24|1|0|1" visibleDay="false" visibleNight="true" />
+		
+		<dayNightObject node="0|0|2|24|2" intensityDay="0" intensityNight="1" />
+        <dayNightObject node="0|0|2|24|2|0" visibleDay="false" visibleNight="true" />
+		<dayNightObject node="0|0|2|24|2|0|0" intensityDay="0" intensityNight="1" />
+        <dayNightObject node="0|0|2|24|2|0|1" visibleDay="false" visibleNight="true" />		
+		
+		
+    </dayNightObjects>-->
+	
+	<seasons>
+        <maskAreas>
+            <!-- empty list so there is no masking -->
+        </maskAreas>
+		<admirers>
+            <seasonAdmirer node="1" />
+			<snowAdmirer node="4" />
+        </admirers>
+    </seasons>
+    
+
+</placeable>

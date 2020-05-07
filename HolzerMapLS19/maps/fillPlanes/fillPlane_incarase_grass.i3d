@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="fillPlane_materialHolder" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/shaders/fillIconShader.xml"/>
+    <File fileId="4" filename="$data/shaders/fillPlaneShader.xml"/>
+    <File fileId="1" filename="incarase_grass_diffuse.png"/>
+    <File fileId="2" filename="incarase_grass_normal.png"/>
+    <File fileId="3" filename="incarase_grass_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="hud_fill_grass_seed_mat" materialId="4" alphaBlending="true" customShaderId="5">
+      <CustomParameter name="iconColor" value="0 0 0 1"/>
+    </Material>
+    <Material name="grass_seed_mat" materialId="5" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="uvScale" value="1 1 1 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="fillPlane_incarase_grass.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="incarase_grass" clipDistance="10" nodeId="9">
+      <Shape shapeId="1" name="incarase_grass_materialHolder" clipDistance="10" nodeId="10" materialIds="5" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="incarase_grass_icon_materialHolder" clipDistance="10" nodeId="11" materialIds="4" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="10">
+      <Attribute name="fillType" type="string" value="incarase_grass"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="11">
+      <Attribute name="fillType" type="string" value="incarase_grass"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>
