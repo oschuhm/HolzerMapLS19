@@ -1,31 +1,31 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <l10n>
     <elements>
-    <e k="HolzerMapLS19_function_gcGrastrocknung" v="In der Heutrocknung kann Gras zu Heu verarbeitet werden."/>
-    <e k="HolzerMapLS19_shopItem_GrastrocknungSmall" v="Heutrocknung Unterreiter"/>
-    <e k="HolzerMapLS19_FactoryName" v="Heutrocknung Unterreiter"/>
-    <e k="HolzerMapLS19_Description" v="In der Heutrocknung kann Gras zu Heu verarbeitet werden."/>
-    <e k="HolzerMapLS19_HeaderInput" v="Rohstoffe"/>
-    <e k="HolzerMapLS19_Input1" v="Gras, Klee, Luzerne"/>
-	<e k="HolzerMapLS19_Input2" v="Hackschnitzel, Strohpellets"/>
-    <e k="HolzerMapLS19_HeaderOutput" v="Produkte"/>
-    <e k="HolzerMapLS19_Output1" v="Heu"/>
+    <e k="HolzerMapLS19_function_gcGrastrocknung" v="In the hay drying grass, clover and alfalfa can be made to hay."/>
+    <e k="HolzerMapLS19_shopItem_GrastrocknungSmall" v="Hay drying Unterreiter"/>
+    <e k="HolzerMapLS19_FactoryName" v="Hay drying Unterreiter"/>
+    <e k="HolzerMapLS19_Description" v="In the hay drying grass, clover and alfalfa can be made to hay."/>
+    <e k="HolzerMapLS19_HeaderInput" v="Raw material"/>
+    <e k="HolzerMapLS19_Input1" v="grass, clover, alfalfa"/>
+	<e k="HolzerMapLS19_Input2" v="woodchips, strawpellets"/>
+    <e k="HolzerMapLS19_HeaderOutput" v="product"/>
+    <e k="HolzerMapLS19_Output1" v="hay"/>
 	
 	<!-- Startfarm -->
 		<e k="HolzerMapLS19_startfarm_1_header" v="Boarhof"/>
-		<e k="HolzerMapLS19_startfarm_1_description" v="Hier können neben Schafen auch Pferde gehalten werden."/>
+		<e k="HolzerMapLS19_startfarm_1_description" v="In addition to sheep, horses can also be kept here."/>
 		<e k="HolzerMapLS19_startfarm_2_header" v="Unterreiterhof"/>
-		<e k="HolzerMapLS19_startfarm_2_description" v="Hier können Rinder im Stall, auf einer angrenzenden Weide sowie einer Bergwiese gehalten werden. Zudem besitzt der Hof eine Heutrocknung."/>
+		<e k="HolzerMapLS19_startfarm_2_description" v="Here cattle can be kept in the stable, on an adjacent pasture and in a mountain meadow. The farm also has a hay drying."/>
 		<e k="HolzerMapLS19_startfarm_3_header" v="Oberreiterhof"/>
-		<e k="HolzerMapLS19_startfarm_3_description" v="Neben Hühnern und ein paar Schweinen kann man hier Milchvieh halten. Zudem besitzt der Hof ein kleines Getreidelager."/>
+		<e k="HolzerMapLS19_startfarm_3_description" v="In addition to chickens and a few pigs, you can keep dairy cattle here. The farm also has a small grain warehouse."/>
 		<e k="HolzerMapLS19_startfarm_4_header" v="Graberhof"/>
-		<e k="HolzerMapLS19_startfarm_4_description" v="Bei diesem Hof handelt es sich um einen reinen Milchviehbetrieb."/>
+		<e k="HolzerMapLS19_startfarm_4_description" v="This farm is a dairy farm."/>
 		<e k="HolzerMapLS19_startfarm_5_header" v="Gundischhof"/>
-		<e k="HolzerMapLS19_startfarm_5_description" v="Hier können neben Milchvieh auch einige Schafe und Hühner gehalten werden."/>
+		<e k="HolzerMapLS19_startfarm_5_description" v="In addition to dairy cattle, some sheep and chicken can also be kept here."/>
 		<e k="HolzerMapLS19_startfarm_6_header" v="Schwoagahof"/>
-		<e k="HolzerMapLS19_startfarm_6_description" v="Bei diesem Hof handelt es sich um einen reinen Milchviehbetrieb."/>
+		<e k="HolzerMapLS19_startfarm_6_description" v="This farm is a dairy farm."/>
 		<e k="HolzerMapLS19_startfarm_7_header" v="Buchberghof"/>
-		<e k="HolzerMapLS19_startfarm_7_description" v="Dieser Hof wurde vor kurzem vollständig zurückgebaut. Hier hast Du die Möglichkeit einen neuen Hof ganz nach Deinen Vorstellungen aufzubauen."/>
+		<e k="HolzerMapLS19_startfarm_7_description" v="This farm was recently completely dismantled. Here you have the opportunity to build a new farm according to your ideas."/>
 		
     </elements>
 </l10n>

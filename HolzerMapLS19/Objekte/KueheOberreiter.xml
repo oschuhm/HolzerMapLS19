@@ -46,9 +46,7 @@
     </hotspots>
 
 	<dayNightObjects>
-        <dayNightObject node="0|15|26|16|0|0" intensityDay="0" intensityNight="1" />
-        <dayNightObject node="0|15|26|16|0|1" visibleDay="false" visibleNight="true" />
-        <dayNightObject node="0|15|26|17|0|0" intensityDay="0" intensityNight="1" />
+		<dayNightObject node="0|15|26|17|0|0" intensityDay="0" intensityNight="1" />
         <dayNightObject node="0|15|26|17|0|1" visibleDay="false" visibleNight="true" />
         <dayNightObject node="0|15|26|18|0|0" intensityDay="0" intensityNight="1" />
         <dayNightObject node="0|15|26|18|0|1" visibleDay="false" visibleNight="true" />
@@ -62,6 +60,22 @@
         <dayNightObject node="0|15|26|22|0|1" visibleDay="false" visibleNight="true" />
         <dayNightObject node="0|15|26|23|0|0" intensityDay="0" intensityNight="1" />
         <dayNightObject node="0|15|26|23|0|1" visibleDay="false" visibleNight="true" />
+        <dayNightObject node="0|15|26|24|0|0" intensityDay="0" intensityNight="1" />
+        <dayNightObject node="0|15|26|24|0|1" visibleDay="false" visibleNight="true" />
+		
+		<!-- Rotlicht -->
+	    <dayNightObject node="0|21|0|0|0" visibleDay="false" visibleNight="true" /> 
+        <dayNightObject node="0|21|0|0|1" visibleDay="false" visibleNight="true" /> 
+		<dayNightObject node="0|21|1|0|0" visibleDay="false" visibleNight="true" /> 
+        <dayNightObject node="0|21|1|0|1" visibleDay="false" visibleNight="true" /> 
+		<dayNightObject node="0|21|2|0|0" visibleDay="false" visibleNight="true" /> 
+        <dayNightObject node="0|21|2|0|1" visibleDay="false" visibleNight="true" /> 		
+		<dayNightObject node="0|21|3|0|0" visibleDay="false" visibleNight="true" /> 
+        <dayNightObject node="0|21|3|0|1" visibleDay="false" visibleNight="true" /> 		
+		<dayNightObject node="0|21|4|0|0" visibleDay="false" visibleNight="true" /> 
+        <dayNightObject node="0|21|4|0|1" visibleDay="false" visibleNight="true" /> 		
+		<dayNightObject node="0|21|5|0|0" visibleDay="false" visibleNight="true" /> 
+        <dayNightObject node="0|21|5|0|1" visibleDay="false" visibleNight="true" /> 	
     </dayNightObjects>	
 
     <animatedObjects>
@@ -122,8 +136,63 @@
             </sounds>
         </animatedObject>
 		
-		
-		
+	<!-- Tueren -->
+        <animatedObject saveId="Door_01" >
+            <animation duration="1">
+                <part node="0|1|2|15|1">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 -90 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="0|1|2|15|0" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="$data//sounds/prefab/gate/gate_loop.wav" loops="0" linkNode="0|1|2|15|0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data//sounds/prefab/gate/gate_opened.wav" linkNode="0|1|2|15|0" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data//sounds/prefab/gate/gate_closed.wav" linkNode="0|1|2|15|0" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="Door_02" >
+            <animation duration="1">
+                <part node="0|1|2|17|1">
+                    <keyFrame time="0.0" rotation="0 90 0"/>
+                    <keyFrame time="1.0" rotation="0 0 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="0|1|2|17|0" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="$data//sounds/prefab/gate/gate_loop.wav" loops="0" linkNode="0|1|2|17|0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data//sounds/prefab/gate/gate_opened.wav" linkNode="0|1|2|17|0" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data//sounds/prefab/gate/gate_closed.wav" linkNode="0|1|2|17|0" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="Door_03" >
+            <animation duration="1">
+                <part node="0|1|2|30|1">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 -90 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="0|1|2|30|0" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="$data//sounds/prefab/gate/gate_loop.wav" loops="0" linkNode="0|1|2|30|0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data//sounds/prefab/gate/gate_opened.wav" linkNode="0|1|2|30|0" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data//sounds/prefab/gate/gate_closed.wav" linkNode="0|1|2|30|0" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="Door_04" >
+            <animation duration="1">
+                <part node="0|1|2|40|1">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 -90 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="0|1|2|40|0" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="$data//sounds/prefab/gate/gate_loop.wav" loops="0" linkNode="0|1|2|40|0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data//sounds/prefab/gate/gate_opened.wav" linkNode="0|1|2|40|0" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="$data//sounds/prefab/gate/gate_closed.wav" linkNode="0|1|2|40|0" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>			 
        <animatedObject saveId="SCS_Light_01" >
             <animation duration="1">
                 <part node="0|18|1|0">

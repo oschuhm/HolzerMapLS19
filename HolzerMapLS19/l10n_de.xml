@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <l10n>
     <elements>
-    <e k="HolzerMapLS19_function_gcGrastrocknung" v="In der Heutrocknung kann Gras zu Heu verarbeitet werden."/>
+    <e k="HolzerMapLS19_function_gcGrastrocknung" v="In der Heutrocknung kann Gras, Klee und Luzerne zu Heu verarbeitet werden."/>
     <e k="HolzerMapLS19_shopItem_GrastrocknungSmall" v="Heutrocknung Unterreiter"/>
     <e k="HolzerMapLS19_FactoryName" v="Heutrocknung Unterreiter"/>
-    <e k="HolzerMapLS19_Description" v="In der Heutrocknung kann Gras zu Heu verarbeitet werden."/>
+    <e k="HolzerMapLS19_Description" v="In der Heutrocknung kann Gras, Klee und Luzerne zu Heu verarbeitet werden."/>
     <e k="HolzerMapLS19_HeaderInput" v="Rohstoffe"/>
     <e k="HolzerMapLS19_Input1" v="Gras, Klee, Luzerne"/>
 	<e k="HolzerMapLS19_Input2" v="Hackschnitzel, Strohpellets"/>

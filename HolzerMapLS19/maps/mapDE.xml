@@ -52,26 +52,29 @@
     <groundTypeMappings>
         <!-- Base -->
         <groundTypeMapping type="dirt"         layer="ROUGHDIRT" />
-        <!-- Standard -->
-        <groundTypeMapping type="asphalt"      layer="ASPHALT" />
-        <groundTypeMapping type="gravel"       layer="GRAVEL" />
-        <groundTypeMapping type="grass"        layer="GRASS" paintableFoliageId="1" />
-        <groundTypeMapping type="grassRough"   layer="GRASSROUGH" paintableFoliageId="1"/>
+		<groundTypeMapping type="animalMud"    layer="ANIMALMUD" />
+		<groundTypeMapping type="grass"        layer="GRASS" paintableFoliageId="1" />
+		<groundTypeMapping type="grassTown"        layer="GRASSTOWN" />
+		<groundTypeMapping type="grassRough"   layer="GRASSROUGH" paintableFoliageId="1"/>
+		<groundTypeMapping type="rock"         layer="MOUNTAINROCK" />
+		<groundTypeMapping type="rockDark"         layer="MOUNTAINROCKDARK" />
+		<groundTypeMapping type="forestGround" layer="FORESTLEAVES" />
+		<groundTypeMapping type="forestGroundNeedles" layer="FORESTNEEDLES" />
+		<groundTypeMapping type="sand"         layer="SANDWET" />
+		<groundTypeMapping type="riverBank" layer="RIVERBANK" />
+		<groundTypeMapping type="asphalt"      layer="ASPHALT" />
+		<groundTypeMapping type="concrete"     layer="CONCRETE" />
+		<groundTypeMapping type="gravel"       layer="GRAVEL" />
+		<groundTypeMapping type="plates"       layer="PLATE" />
+		<groundTypeMapping type="platesDamaged"       layer="PLATEDAMAGED" />
+		<groundTypeMapping type="forstboden" layer="FORSTBODEN" />
 		<groundTypeMapping type="grass1"          layer="GRASS1" paintableFoliageId="2" />
         <groundTypeMapping type="grass2"          layer="GRASS2" paintableFoliageId="3" />
         <groundTypeMapping type="grass3"          layer="GRASS3" paintableFoliageId="4" />
         <groundTypeMapping type="grass4"          layer="GRASS4" paintableFoliageId="5" />
-        <groundTypeMapping type="sand"         layer="SANDWET" />
-        <groundTypeMapping type="animalMud"    layer="ANIMALMUD" />
-        <groundTypeMapping type="concrete"     layer="CONCRETE" />
-        <groundTypeMapping type="plates"       layer="PLATE" />
-        <groundTypeMapping type="cobblestones" layer="CONCRETE" />
-        <groundTypeMapping type="flagstones"   layer="CONCRETE" />
-        <!-- Special -->
-        <groundTypeMapping type="forestGround" layer="FORESTLEAVES" />
 		<groundTypeMapping type="forestGround1" layer="FORESTLEAVES1" paintableFoliageId="6"/>
 		<groundTypeMapping type="forestGround2" layer="FORESTLEAVES2" paintableFoliageId="7"/>
-        <groundTypeMapping type="rock"         layer="MOUNTAINROCK" />
+        
     </groundTypeMappings>
 	
 	<paintableFoliages>

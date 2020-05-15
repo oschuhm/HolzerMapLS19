@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="40">
-    <author>Stefan Ludwig, LSFarmers</author>
-    <version>1.4.0.0.1</version>
+    <author>Stefan Ludwig</author>
+    <version>1.4.1</version>
     <title>
         <en>Holzer Map</en>
         <de>Holzer Map</de>
@@ -44,6 +44,8 @@
         <storeItem xmlFilename="vehicles/FBP_3135/kuhnFBP3135.xml"/> 
 		<storeItem xmlFilename="vehicles/Grimme_Carrot/SE260.xml"/> 
 		<storeItem xmlFilename="vehicles/Grimme_Onion/SE260.xml"/> 
+		<storeItem xmlFilename="vehicles/Grimme_Carrot_prepairer/grimmeKS75.xml"/>
+		<storeItem xmlFilename="vehicles/Grimme_Carrot_prepairer/grimmeKS75_onion.xml"/> 
     </storeItems>
 	
 	<l10n>
@@ -65,6 +67,100 @@
         <text name="action_closeDoorBottom"> <en><![CDATA[Close the Gate below]]></en> <de><![CDATA[Untere Tür schließen]]></de> </text>
         <text name="action_openDoorTop"> <en><![CDATA[Open the upper Gate]]></en> <de><![CDATA[Obere Tür öffnen]]></de> </text>
         <text name="action_closeDoorTop"> <en><![CDATA[Close the upper Gate]]></en> <de><![CDATA[Obere Tür schließen]]></de> </text>
+		
+		<text name="fillType_alfalfa">
+            <en>Alfalfa</en>
+            <de>Luzerne</de>
+		</text>	
+		<text name="fillType_alfalfa_windrow">
+            <en>Alfalfa</en>
+            <de>Luzerne frisch</de>
+		</text>	
+		<text name="fillType_dryAlfalfa">
+            <en>DryAlfalfa</en>
+            <de>Luzerne Heu</de>
+		</text>	
+		<text name="fillType_dryAlfalfa_windrow">
+            <en>Alfalfa Hay</en>
+            <de>Luzerne Heu</de>
+		</text>	
+		<text name="fillType_alfalfa_fermented">
+            <en>Alfalfa Silage</en>
+            <de>Luzerne Silage</de>
+		</text>		
+		<text name="fillType_incarase_grass">
+            <en>Fieldgrass</en>
+            <de>Ackergras</de>
+        </text>
+		<text name="fillType_clover">
+            <en>Clover</en>
+            <de>Klee</de>
+		</text>	
+		<text name="fillType_clover_windrow">
+            <en>Clover</en>
+            <de>Klee frisch</de>
+		</text>	
+		<text name="fillType_dryClover">
+            <en>DryClover</en>
+            <de>Klee Heu</de>
+		</text>	
+		<text name="fillType_dryClover_windrow">
+            <en>Clover Hay</en>
+            <de>Klee Heu</de>
+		</text>	
+		<text name="fillType_clover_fermented">
+            <en>Clover Silage</en>
+            <de>Kleesilage</de>
+		</text>		
+		<text name="fillType_carrot">
+            <en>Carrot</en>
+            <de>Karotten</de>
+        </text>
+		<text name="fillType_onion">
+            <en>Onion</en>
+            <de>Zwiebeln</de>
+        </text>
+		<text name="function_haulmTopperCarrot">
+            <en>topper carrots</en>
+            <de>Entkrauter Karotten</de>
+		</text>	
+		<text name="function_haulmTopperOnion">
+            <en>topper onion</en>
+            <de>Entkrauter Zwiebeln</de>
+		</text>	
+		<text name="function_harvestingCarrotWithoutPreparer">
+            <en>harvester carrots</en>
+            <de>Vollernter Karotten</de>
+		</text>	
+		<text name="function_harvestingOnionWithoutPreparer">
+            <en>harvester for onion</en>
+            <de>Vollernter Zwiebeln</de>
+		</text>
+		
+		<text name="groundtype_dirt"> <en>dirt</en> <de>Dreck</de> </text>
+		<text name="groundtype_animalMud"> <en>animal mud</en> <de>Tiermatsch</de> </text>
+		<text name="groundtype_grass"> <en>grass</en> <de>Gras</de> </text>
+		<text name="groundtype_grassTown"> <en>garden grass</en> <de>Rasen</de> </text>
+		<text name="groundtype_grassRough"> <en>grassRough</en> <de>Gras + Erde</de> </text>
+		<text name="groundtype_rock"> <en>rock</en> <de>Felsen</de> </text>
+		<text name="groundtype_rockDark"> <en>rock dark</en> <de>dunkler Felsen</de> </text>
+		<text name="groundtype_forestGround"> <en>forestground leaves</en> <de>Waldboden Blätter</de> </text>
+		<text name="groundtype_forestGroundNeedles"> <en>forestground needles</en> <de>Waldboden Nadeln</de> </text>
+		<text name="groundtype_sand"> <en>sand</en> <de>Sand</de> </text>
+		<text name="groundtype_riverBank"> <en>river bank</en> <de>Flussbett</de> </text>
+		<text name="groundtype_asphalt"> <en>asphalt</en> <de>Asphalt</de> </text>
+		<text name="groundtype_concrete"> <en>concrete</en> <de>Beton</de> </text>
+		<text name="groundtype_gravel"> <en>gravel</en> <de>Kies</de> </text>
+		<text name="groundtype_plates"> <en>plates</en> <de>Betonplatten</de> </text>
+		<text name="groundtype_platesDamaged"> <en>plates damaged</en> <de>Betonplatten kaputt</de> </text>
+		<text name="groundtype_forstboden"> <en>forestground</en> <de>Forstboden</de> </text>
+		<text name="groundtype_grass1"> <en>grass + bush 1</en> <de>Gras + Büsche 1</de> </text>
+		<text name="groundtype_grass2"> <en>grass + bush 2</en> <de>Gras + Büsche 2</de> </text>
+		<text name="groundtype_grass3"> <en>grass + bush 3</en> <de>Gras + Büsche 3</de> </text>
+		<text name="groundtype_grass4"> <en>grass + bush 4</en> <de>Gras + Büsche 4</de> </text>
+		<text name="groundtype_forestGround1"> <en>forestground + forestgrass 1</en> <de>Waldboden + Pflanzen 1</de> </text>
+		<text name="groundtype_forestGround2"> <en>forestground + forestgrass 2</en> <de>Waldboden + Pflanzen 2</de> </text>
+		
 	</l10n>
 	
 	<extraSourceFiles>
@@ -73,12 +169,13 @@
 		<sourceFile filename="scripts/EnhancedWeighStation.lua" />
 		<sourceFile filename="scripts/clipDistanceControl.lua"/>
 		<sourceFile filename="scripts/GC_Checker.lua" />
+		<sourceFile filename="scripts/register.lua" />
 	</extraSourceFiles>
 	
 	<globalCompany minimumVersion="1.4.1.0" />
     
 	<maps>
-        <map id="SampleModMap" className="ModMap" filename="scripts/ModMap.lua" configFilename="maps/mapDE.xml" defaultVehiclesXMLFilename="defaultVehicles.xml" defaultItemsXMLFilename="defaultItems.xml">
+        <map id="SampleModMap" className="HolzerMap" filename="scripts/HolzerMap.lua" configFilename="maps/mapDE.xml" defaultVehiclesXMLFilename="xml/defaultVehicles.xml" defaultVehiclesMPXMLFilename="xml/defaultVehiclesMP.xml" defaultItemsXMLFilename="xml/defaultItems.xml" defaultItemsMPXMLFilename="xml/defaultItemsMP.xml" >
             <title>
                 <en>Holzer Map</en>
                 <de>Holzer Map</de>

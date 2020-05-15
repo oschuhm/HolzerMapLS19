@@ -3,8 +3,8 @@
    
     <farmStarter>
         <farm header="HolzerMapLS19_startfarm_1_header" description="HolzerMapLS19_startfarm_1_description" preview="GC/startFarm1.dds" preview2="GC/startFarm1.dds">
-            <items>defaultItems1.xml</items>
-            <vehicles>vehicles1.xml</vehicles>
+            <items>xml/defaultItems1.xml</items>
+            <vehicles>xml/vehicles1.xml</vehicles>
             <money1>200000</money1>
             <money2>1000000</money2>
             <farmlands>
@@ -12,8 +12,8 @@
             </farmlands>
         </farm>
         <farm header="HolzerMapLS19_startfarm_2_header" description="HolzerMapLS19_startfarm_2_description" preview="GC/startFarm2.dds" preview2="GC/startFarm2.dds">
-            <items>defaultItems2.xml</items>
-            <vehicles>vehicles2.xml</vehicles>
+            <items>xml/defaultItems2.xml</items>
+            <vehicles>xml/vehicles2.xml</vehicles>
             <money1>200000</money1>
             <money2>1000000</money2>
             <farmlands>
@@ -22,8 +22,8 @@
             </farmlands>
         </farm>
 		<farm header="HolzerMapLS19_startfarm_3_header" description="HolzerMapLS19_startfarm_3_description" preview="GC/startFarm3.dds" preview2="GC/startFarm3.dds">
-            <items>defaultItems3.xml</items>
-            <vehicles>vehicles3.xml</vehicles>
+            <items>xml/defaultItems3.xml</items>
+            <vehicles>xml/vehicles3.xml</vehicles>
             <money1>200000</money1>
             <money2>1000000</money2>
             <farmlands>
@@ -31,8 +31,8 @@
             </farmlands>
         </farm>
 		<farm header="HolzerMapLS19_startfarm_4_header" description="HolzerMapLS19_startfarm_4_description" preview="GC/startFarm4.dds" preview2="GC/startFarm4.dds">
-            <items>defaultItems4.xml</items>
-            <vehicles>vehicles4.xml</vehicles>
+            <items>xml/defaultItems4.xml</items>
+            <vehicles>xml/vehicles4.xml</vehicles>
             <money1>200000</money1>
             <money2>1000000</money2>
             <farmlands>
@@ -40,8 +40,8 @@
             </farmlands>
         </farm>
 		<farm header="HolzerMapLS19_startfarm_5_header" description="HolzerMapLS19_startfarm_5_description" preview="GC/startFarm5.dds" preview2="GC/startFarm5.dds">
-            <items>defaultItems5.xml</items>
-            <vehicles>vehicles5.xml</vehicles>
+            <items>xml/defaultItems5.xml</items>
+            <vehicles>xml/vehicles5.xml</vehicles>
             <money1>200000</money1>
             <money2>1000000</money2>
             <farmlands>
@@ -49,8 +49,8 @@
             </farmlands>
         </farm>
 		<farm header="HolzerMapLS19_startfarm_6_header" description="HolzerMapLS19_startfarm_6_description" preview="GC/startFarm6.dds" preview2="GC/startFarm6.dds">
-            <items>defaultItems6.xml</items>
-            <vehicles>vehicles6.xml</vehicles>
+            <items>xml/defaultItems6.xml</items>
+            <vehicles>xml/vehicles6.xml</vehicles>
             <money1>200000</money1>
             <money2>1000000</money2>
             <farmlands>
@@ -58,8 +58,8 @@
             </farmlands>
         </farm>
 		<farm header="HolzerMapLS19_startfarm_7_header" description="HolzerMapLS19_startfarm_7_description" preview="GC/startFarm7.dds" preview2="GC/startFarm7.dds">
-            <items>defaultItems7.xml</items>
-            <vehicles>vehicles7.xml</vehicles>
+            <items>xml/defaultItems7.xml</items>
+            <vehicles>xml/vehicles7.xml</vehicles>
             <money1>2000000</money1>
             <money2>2000000</money2>
             <farmlands>

@@ -16,8 +16,8 @@
     0 1 0 1 - cut haulm (not extructed)
 
     -->
-    <foliageLayer cellSize="8" objectMask="16711935" decalLayer="0" densityMapChannelOffset="0" numDensityMapChannels="4" numBlocksPerUnit="2" shapeSource="carrot.i3d">
-        <foliageStateDefaults distanceMapLayer="1" widthVariance="0" heightVariance="0.07" horizontalPositionVariance="0.08" />
+    <foliageLayer cellSize="8" objectMask="16711935" decalLayer="0" densityMapChannelOffset="0" numDensityMapChannels="4" numBlocksPerUnit="3" shapeSource="carrot.i3d">
+        <foliageStateDefaults distanceMapLayer="1" widthVariance="0.05" heightVariance="0.07" horizontalPositionVariance="0.08" />
         <!-- default LOD distances etc -->
         <foliageLodDefaults lod="0" viewDistance="20" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
         <foliageLodDefaults lod="1" viewDistance="80" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />

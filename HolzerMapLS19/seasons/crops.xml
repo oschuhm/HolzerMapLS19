@@ -20,11 +20,9 @@
             <defaultCrop name="WEED" />
             <defaultCrop name="DRYGRASS" />
             <defaultCrop name="SUGARCANE" />
-            <defaultCrop name="COTTON"/>
-			<defaultCrop name="LUZERNE"/>
+            <defaultCrop name="COTTON"/>			
 			<defaultCrop name="ALFALFA"/>
-			<defaultCrop name="CLOVER"/>
-			<defaultCrop name="KLEE"/>
+			<defaultCrop name="CLOVER"/>			
 			<defaultCrop name="ONION"/>
 			<defaultCrop name="CARROT"/>
 			<defaultCrop name="INCARASE_GRASS"/>
@@ -52,9 +50,7 @@
                 <crop name="GRASS" incrementByOneRange="1-2" setRange="CUT"  setTo="2"/>
                 <crop name="OILSEEDRADISH" incrementByOneRange="1-MAX"/>
 				<crop name="ALFALFA" incrementByOneRange="1-2" setRange="CUT"  setTo="2"/>
-				<crop name="LUZERNE" incrementByOneRange="1-2" setRange="CUT"  setTo="2"/>
 				<crop name="CLOVER" incrementByOneRange="1-2" setRange="CUT"  setTo="2"/>
-				<crop name="KLEE" incrementByOneRange="1-2" setRange="CUT"  setTo="2"/>
 				<crop name="CARROT"    incrementByOneRange="1"/>
                 <crop name="ONION" incrementByOneRange="1"/>
 				<crop name="INCARASE_GRASS" incrementByOneRange="1-2" setRange="CUT"  setTo="2"/>
@@ -87,9 +83,7 @@
                 <crop name="GRASS" incrementByOneRange="1-MAX" setRange="CUT"  setTo="2"/>
                 <crop name="OILSEEDRADISH" incrementByOneRange="1-MAX"/>
 				<crop name="ALFALFA" incrementByOneRange="1-MAX" setRange="CUT"  setTo="2"/>
-				<crop name="LUZERNE" incrementByOneRange="1-MAX" setRange="CUT"  setTo="2"/>
 				<crop name="CLOVER" incrementByOneRange="1-MAX" setRange="CUT"  setTo="2"/>
-				<crop name="KLEE" incrementByOneRange="1-MAX" setRange="CUT"  setTo="2"/>
 				<crop name="ONION"    incrementByOneRange="1-3"/>
                 <crop name="CARROT" incrementByOneRange="1-3"/>
 				<crop name="INCARASE_GRASS" incrementByOneRange="1-MAX" setRange="CUT"  setTo="2"/>
@@ -106,9 +100,7 @@
                 <crop name="SUGARBEET" incrementByOneRange="1-4" />
                 <crop name="GRASS" incrementByOneRange="1-MAX" setRange="CUT"  setTo="2"/>
 				<crop name="ALFALFA" incrementByOneRange="1-MAX" setRange="CUT"  setTo="2"/>
-				<crop name="LUZERNE" incrementByOneRange="1-MAX" setRange="CUT"  setTo="2"/>
 				<crop name="CLOVER" incrementByOneRange="1-MAX" setRange="CUT"  setTo="2"/>
-				<crop name="KLEE" incrementByOneRange="1-MAX" setRange="CUT"  setTo="2"/>
 				<crop name="ONION"    incrementByOneRange="1-4" />
                 <crop name="CARROT" incrementByOneRange="1-4" />
 				<crop name="INCARASE_GRASS" incrementByOneRange="1-MAX" setRange="CUT"  setTo="2"/>
@@ -126,9 +118,7 @@
                 <crop name="SUGARBEET" incrementByOneRange="3-5" />
                 <crop name="GRASS" incrementByOneRange="1-MAX" setRange="CUT"  setTo="2"/>
 				<crop name="ALFALFA" incrementByOneRange="1-MAX" setRange="CUT"  setTo="2"/>
-				<crop name="LUZERNE" incrementByOneRange="1-MAX" setRange="CUT"  setTo="2"/>
 				<crop name="CLOVER" incrementByOneRange="1-MAX" setRange="CUT"  setTo="2"/>
-				<crop name="KLEE" incrementByOneRange="1-MAX" setRange="CUT"  setTo="2"/>
 				<crop name="ONION"    incrementByOneRange="3-5" />
                 <crop name="CARROT" incrementByOneRange="3-5" />
 				<crop name="INCARASE_GRASS" incrementByOneRange="1-MAX" setRange="CUT"  setTo="2"/>
@@ -148,9 +138,7 @@
                 <crop name="GRASS" incrementByOneRange="1-MAX" setRange="CUT"  setTo="2"/>
                 <crop name="OILSEEDRADISH" incrementByOneRange="1-MAX"/>
 				<crop name="ALFALFA" incrementByOneRange="1-MAX" setRange="CUT"  setTo="2"/>
-				<crop name="LUZERNE" incrementByOneRange="1-MAX" setRange="CUT"  setTo="2"/>
 				<crop name="CLOVER" incrementByOneRange="1-MAX" setRange="CUT"  setTo="2"/>
-				<crop name="KLEE" incrementByOneRange="1-MAX" setRange="CUT"  setTo="2"/>
 				<crop name="ONION"    incrementByOneRange="4-6"/>
                 <crop name="CARROT" incrementByOneRange="4-6"/>
 				<crop name="INCARASE_GRASS" incrementByOneRange="1-MAX" setRange="CUT"  setTo="2"/>
@@ -202,9 +190,7 @@
                 <crop name="SUGARBEET" setRange="1-4" setTo="CUT" incrementByOneRange="7"/>
                 <crop name="GRASS" setRange="1-CUT" setTo="2"/>
 				<crop name="ALFALFA" setRange="1-CUT" setTo="2"/>
-				<crop name="LUZERNE" setRange="1-CUT" setTo="2"/>
 				<crop name="CLOVER" setRange="1-CUT" setTo="2"/>
-				<crop name="KLEE" setRange="1-CUT" setTo="2"/>
 				<crop name="ONION" setRange="1-4" setTo="CUT" incrementByOneRange="7"/>
                 <crop name="CARROT" setRange="1-4" setTo="CUT" incrementByOneRange="7"/>
 				<crop name="INCARASE_GRASS" setRange="1-CUT" setTo="2"/>
@@ -226,9 +212,7 @@
                 <crop name="GRASS" setRange="1-MAX" setTo="2"/>
                 <crop name="OILSEEDRADISH" setRange="1-MAX" setTo="CUT"/>
 				<crop name="ALFALFA" setRange="1-MAX" setTo="2"/>
-				<crop name="LUZERNE" setRange="1-MAX" setTo="2"/>
 				<crop name="CLOVER" setRange="1-MAX" setTo="2"/>
-				<crop name="KLEE" setRange="1-MAX" setTo="2"/>
 				<crop name="ONION" setRange="1-MAX" setTo="WITHERED"/>
                 <crop name="CARROT" setRange="1-MAX" setTo="WITHERED"/>
 				<crop name="INCARASE_GRASS" setRange="1-MAX" setTo="2"/>
@@ -507,24 +491,7 @@
                         seedFrostResistanceFactor="3"
                         youngPlantFrostResistanceFactor="4"
                         maturePlantFrostResistanceFactor="3"/>
-            <rotation category="GRASS"
-                      returnPeriod="1" />
-        </fruitType>
-		<fruitType name="LUZERNE">
-            <cultivation plantsWeed="true"/>
-            <growth germinateTemp="3"
-                    germinatesoilMoisture="5"
-                    youngPlantMaxState="2"
-                    youngPlantDamageState = "2"
-                    maturePlantDamageState="2"
-                    maxFertiliseState="4"/>
-            <options    seedDroughtResistanceFactor="2"
-                        youngPlantDroughtResistanceFactor="2"
-                        maturePlantDroughtResistanceFactor="3"
-                        seedFrostResistanceFactor="3"
-                        youngPlantFrostResistanceFactor="4"
-                        maturePlantFrostResistanceFactor="3"/>
-            <rotation category="GRASS"
+            <rotation category="LEGUME"
                       returnPeriod="1" />
         </fruitType>
 		<fruitType name="CLOVER">
@@ -541,24 +508,7 @@
                         seedFrostResistanceFactor="3"
                         youngPlantFrostResistanceFactor="4"
                         maturePlantFrostResistanceFactor="3"/>
-            <rotation category="GRASS"
-                      returnPeriod="1" />
-        </fruitType>
-		<fruitType name="KLEE">
-            <cultivation plantsWeed="true"/>
-            <growth germinateTemp="3"
-                    germinatesoilMoisture="5"
-                    youngPlantMaxState="2"
-                    youngPlantDamageState = "2"
-                    maturePlantDamageState="2"
-                    maxFertiliseState="4"/>
-            <options    seedDroughtResistanceFactor="2"
-                        youngPlantDroughtResistanceFactor="2"
-                        maturePlantDroughtResistanceFactor="3"
-                        seedFrostResistanceFactor="3"
-                        youngPlantFrostResistanceFactor="4"
-                        maturePlantFrostResistanceFactor="3"/>
-            <rotation category="GRASS"
+            <rotation category="LEGUME"
                       returnPeriod="1" />
         </fruitType>
 		<fruitType name="ONION">

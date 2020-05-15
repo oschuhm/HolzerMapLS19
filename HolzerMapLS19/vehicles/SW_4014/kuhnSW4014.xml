@@ -217,9 +217,11 @@
                 <dropFromWrapper animName="dropSquareBaleFromWrapper" animSpeed="1"/>
             </animations>
             <baleTypes>
-                <baleType fillType="GRASS_WINDROW" wrapperBaleFilename="maps/bales/squarebales/baleSilage240.i3d" minBaleWidth="1.15" maxBaleWidth="1.25" minBaleHeight="0.75" maxBaleHeight="0.85" minBaleLength="2.35" maxBaleLength="2.45"/>
-                <baleType fillType="ALFALFA_WINDROW" wrapperBaleFilename="maps/bales/squarebales/baleAlfalfaSilage240.i3d" minBaleWidth="1.15" maxBaleWidth="1.25" minBaleHeight="0.75" maxBaleHeight="0.85" minBaleLength="2.35" maxBaleLength="2.45"/>
-				<baleType fillType="CLOVER_WINDROW" wrapperBaleFilename="maps/bales/squarebales/baleCloverSilage240.i3d" minBaleWidth="1.15" maxBaleWidth="1.25" minBaleHeight="0.75" maxBaleHeight="0.85" minBaleLength="2.35" maxBaleLength="2.45"/>
+                <baleType fillType="GRASS_WINDROW" wrapperBaleFilename="maps/bales/squarebales/baleSilage240.i3d" minBaleWidth="1.15" maxBaleWidth="1.25" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
+                <baleType fillType="ALFALFA_WINDROW" wrapperBaleFilename="maps/bales/squarebales/baleAlfalfaSilage240.i3d" minBaleWidth="1.15" maxBaleWidth="1.25" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
+                <baleType fillType="CLOVER_WINDROW" wrapperBaleFilename="maps/bales/squarebales/baleCloverSilage240.i3d" minBaleWidth="1.15" maxBaleWidth="1.25" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
+				<baleType fillType="ALFALFA_WINDROW" wrapperBaleFilename="maps/bales/squarebales/squareBaleAlfalfaFermented_8Knots.i3d" minBaleWidth="1.15" maxBaleWidth="1.20" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>
+                <baleType fillType="CLOVER_WINDROW" wrapperBaleFilename="maps/bales/squarebales/squareBaleCloverFermented_8Knots.i3d" minBaleWidth="1.15" maxBaleWidth="1.20" minBaleHeight="0.75" maxBaleHeight="0.90" minBaleLength="2.35" maxBaleLength="2.45"/>		
             </baleTypes>
             <wrappingState>
                 <key time="0" wrappingState="0"/>
